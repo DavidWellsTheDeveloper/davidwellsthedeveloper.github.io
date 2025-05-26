@@ -30,15 +30,5 @@ export default defineNuxtConfig({
   // Ensure proper static generation
   experimental: {
     payloadExtraction: false
-  },
-
-  // Add error handling for missing routes
-  hooks: {
-    'render:errorMiddleware': (app) => {
-      app.use('/_nuxt', (req, res, next) => {
-        res.setHeader('Cache-Control', 'max-age=31536000, immutable')
-        next()
-      })
-    }
   }
 })
