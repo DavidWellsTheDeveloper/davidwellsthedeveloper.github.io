@@ -19,10 +19,26 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-27',
   
   // Configure for static site generation
-  ssr: true,
+  ssr: false,
   nitro: {
     prerender: {
-      crawlLinks: true
+      crawlLinks: true,
+      routes: ['/']
+    }
+  },
+
+  // Ensure proper static generation
+  experimental: {
+    payloadExtraction: false
+  },
+
+  // Add error handling for missing routes
+  hooks: {
+    'render:errorMiddleware': (app) => {
+      app.use('/_nuxt', (req, res, next) => {
+        res.setHeader('Cache-Control', 'max-age=31536000, immutable')
+        next()
+      })
     }
   }
 })
