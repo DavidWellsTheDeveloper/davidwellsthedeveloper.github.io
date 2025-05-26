@@ -1,29 +1,76 @@
 <template>
   <div>
-    <UCard class="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-primary-900 border-slate-200 dark:border-slate-700">
-      <template #header>
-        <div class="flex items-center justify-between">
-          <h2 class="text-xl font-semibold">Contact Me</h2>
+    <PageCard variant="experience" title="Contact Me" icon="i-lucide-mail">
+      <div class="space-y-8">
+        <div class="space-y-4">
+          <p class="text-lg leading-relaxed">I'd love to hear from you! Whether you have a project in mind, want to collaborate, or just want to say hello, feel free to reach out.</p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
+              <UIcon name="i-lucide-mail" class="text-2xl text-teal-600 mx-auto mb-2" />
+              <h3 class="font-semibold mb-1">Email</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">hello@davidwells.dev</p>
+            </div>
+            
+            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
+              <UIcon name="i-simple-icons-github" class="text-2xl text-teal-600 mx-auto mb-2" />
+              <h3 class="font-semibold mb-1">GitHub</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">@DavidWellsTheDeveloper</p>
+            </div>
+            
+            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
+              <UIcon name="i-lucide-map-pin" class="text-2xl text-teal-600 mx-auto mb-2" />
+              <h3 class="font-semibold mb-1">Location</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-400">Available Remotely</p>
+            </div>
+          </div>
+        </div>
+
+        <UDivider />
+        
+        <div class="space-y-6">
+          <h3 class="text-lg font-semibold text-teal-700 dark:text-teal-300">Send me a message</h3>
+          
+          <UForm class="space-y-6">
+            <div class="flex flex-col lg:flex-row gap-6">
+              <div class="flex-1">
+                <UFormField label="Name" name="name">
+                  <UInput placeholder="Your name" size="lg" class="w-full" />
+                </UFormField>
+              </div>
+              <div class="flex-1">
+                <UFormField label="Email" name="email">
+                  <UInput placeholder="Your email" type="email" size="lg" class="w-full" />
+                </UFormField>
+              </div>
+            </div>
+            
+            <div class="flex">
+              <div class="w-full">
+                <UFormField label="Subject" name="subject">
+                  <UInput placeholder="What's this about?" size="lg" class="w-full" />
+                </UFormField>
+              </div>
+            </div>
+            
+            <div class="flex">
+              <div class="w-full">
+                <UFormField label="Message" name="message">
+                  <UTextarea placeholder="Your message" rows="10" size="lg" class="w-full resize-none" />
+                </UFormField>
+              </div>
+            </div>
+          </UForm>
+        </div>
+      </div>
+
+      <template #footer>
+        <div class="pt-4 border-t border-gray-200 dark:border-gray-700 flex gap-3">
+          <UButton type="submit" color="primary" size="lg">Send Message</UButton>
+          <UButton to="/" variant="outline" color="secondary">Back to Home</UButton>
         </div>
       </template>
-      
-      <div>
-        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus enim quaerat dolorum expedita distinctio inventore esse nostrum quos minus officiis. Doloribus, assumenda dolores. Quisquam nisi repellendus dolorem quas voluptatum explicabo.</p>
-        <p class="mb-8">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        <UForm>
-          <UFormGroup label="Name" name="name">
-            <UInput placeholder="Your name" />
-          </UFormGroup>
-          <UFormGroup label="Email" name="email">
-            <UInput placeholder="Your email" type="email" />
-          </UFormGroup>
-          <UFormGroup label="Message" name="message" class="mt-6 w-full">
-            <UTextarea placeholder="Your message" rows="6" class="w-full" />
-          </UFormGroup>
-          <UButton type="submit" color="primary" class="mt-4">Send Message</UButton>
-        </UForm>
-      </div>
-    </UCard>
+    </PageCard>
   </div>
 </template>
 
