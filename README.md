@@ -11,7 +11,7 @@ A modern, responsive portfolio website built with Nuxt UI showcasing my skills a
 - **Component-Based Architecture**: Reusable Vue components
 - **Gradient Navigation**: Eye-catching teal/cyan gradient sidebar
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack 
 
 - **Framework**: Nuxt 3
 - **UI Library**: Nuxt UI
