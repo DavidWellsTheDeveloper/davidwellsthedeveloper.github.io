@@ -60,7 +60,7 @@
           <div class="space-y-2">
             <div class="flex items-start justify-between">
               <h3 class="font-semibold text-lg text-teal-700 dark:text-teal-300">{{ project.title }}</h3>
-              <UBadge :color="project.type === 'Full Stack' ? 'primary' : project.type === 'Front-End' ? 'secondary' : 'tertiary'" variant="soft">
+              <UBadge :color="project.type === 'Full Stack' ? 'primary' : project.type === 'Front-End' ? 'secondary' : 'success'" variant="soft">
                 {{ project.role }}
               </UBadge>
             </div>
