@@ -31,23 +31,26 @@
 
     <!-- Skills Section -->
     <PageCard variant="skills" title="Technical Skills" icon="i-lucide-wrench">
-      <div class="flex gap-4">
+      <div class="flex flex-col md:flex-row gap-4">
         <SkillsList 
           header="Front-end" 
           :skills="frontendSkills" 
           badge-color="primary" 
+          class="flex-1"
         />
-        <USeparator class="h-48" orientation="vertical" color="secondary" />
+        <USeparator class="hidden lg:block h-48" orientation="vertical" color="secondary" />
         <SkillsList 
           header="Back-end" 
           :skills="backendSkills" 
-          badge-color="secondary" 
+          badge-color="secondary"
+          class="flex-1" 
         />
-        <USeparator class="h-48" orientation="vertical" color="secondary" />
+        <USeparator class="hidden lg:block h-48" orientation="vertical" color="secondary" />
         <SkillsList 
           header="DevOps & Tools" 
           :skills="devopsSkills" 
-          badge-color="success" 
+          badge-color="success"
+          class="flex-1"
         />
       </div>
     </PageCard>

@@ -79,8 +79,8 @@ const cardClasses = computed(() => {
       return `${baseClasses} bg-gradient-to-r from-teal-50 to-cyan-50 dark:from-teal-950 dark:to-cyan-950 border-teal-200 dark:border-teal-800`
     case 'skills':
       return `${baseClasses} bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 border-slate-200 dark:border-slate-700`
-    case 'experience':
-      return `${baseClasses} bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950 dark:to-indigo-950 border-blue-200 dark:border-blue-800`
+    case 'midnight':
+      return `${baseClasses} bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-indigo-950 dark:to-slate-950 border-blue-200 dark:border-blue-800`
     default:
       return baseClasses
   }

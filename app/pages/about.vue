@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PageCard variant="skills" title="About Me" icon="i-lucide-user">
+    <PageCard variant="midnight" title="About Me" icon="i-lucide-user">
       <div class="space-y-6">
         <p class="text-lg leading-relaxed">Welcome to my portfolio! I'm a passionate full stack developer with a love for creating innovative web solutions.</p>
         
