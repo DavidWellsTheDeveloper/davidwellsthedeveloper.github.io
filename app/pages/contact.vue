@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PageCard variant="experience" title="Contact Me" icon="i-lucide-mail">
+    <PageCard variant="midnight" title="Contact Me" icon="i-lucide-mail">
       <div class="space-y-8">
         <div class="space-y-4">
           <p class="text-lg leading-relaxed">I'd love to hear from you! Whether you have a project in mind, want to collaborate, or just want to say hello, feel free to reach out.</p>
