@@ -29,7 +29,7 @@
               </div>
               <div class="text-sm text-gray-600 dark:text-gray-400 md:text-right">
                 <p class="font-semibold">March 2021 - Present</p>
-                <p>3+ years</p>
+                <p>4+ years</p>
               </div>
             </div>
             

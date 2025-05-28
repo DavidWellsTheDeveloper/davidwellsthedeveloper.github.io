@@ -25,7 +25,8 @@
         <div class="flex flex-wrap gap-3 pt-2">
           <UButton to="/about" color="primary" size="lg">About Me</UButton>
           <UButton to="/experience" color="secondary" variant="outline" size="lg">Experience</UButton>
-          <UButton to="/contact" color="success" variant="outline" size="lg">Contact</UButton>
+          <UButton to="/projects" color="success" variant="outline" size="lg">Projects</UButton>
+          <UButton to="/contact" color="orange" variant="outline" size="lg">Contact</UButton>
         </div>
       </template>
     </PageCard>
@@ -75,8 +76,8 @@
 
       <template #footer>
         <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
-          <UButton to="/experience" variant="ghost" color="primary" trailing-icon="i-lucide-arrow-right" size="lg">
-            View Full Experience
+          <UButton to="/projects" variant="ghost" color="primary" trailing-icon="i-lucide-arrow-right" size="lg">
+            View Technical Projects
           </UButton>
         </div>
       </template>

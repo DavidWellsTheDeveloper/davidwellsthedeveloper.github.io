@@ -260,6 +260,11 @@ const navigationItems = [
     icon: 'i-lucide-briefcase'
   },
   {
+    label: 'Projects',
+    to: '/projects',
+    icon: 'i-lucide-code'
+  },
+  {
     label: 'Contact',
     to: '/contact',
     icon: 'i-lucide-mail'
