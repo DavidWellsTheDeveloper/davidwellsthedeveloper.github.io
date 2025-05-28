@@ -60,7 +60,7 @@ const props = defineProps({
   // Spacing props
   spacing: {
     type: String,
-    default: 'mb-8'
+    default: 'mb-20'
   },
   
   // Custom classes
@@ -72,17 +72,17 @@ const props = defineProps({
 
 // Computed classes based on variant
 const cardClasses = computed(() => {
-  const baseClasses = props.customClasses
+  const baseClasses = `${props.customClasses} backdrop-blur-sm shadow-xl`
   
   switch (props.variant) {
     case 'hero':
-      return `${baseClasses} bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-primary-950 dark:to-slate-950 border-teal-200 dark:border-teal-800`
+      return `${baseClasses} bg-gradient-to-br from-teal-50/80 to-cyan-50/80 dark:from-primary-950/80 dark:to-slate-950/80 border-teal-200 dark:border-teal-800`
     case 'skills':
-      return `${baseClasses} bg-gradient-to-br from-slate-50 to-slate-100 dark:from-primary-900 dark:to-slate-900 border-slate-200 dark:border-slate-700`
+      return `${baseClasses} bg-gradient-to-br from-slate-50/80 to-slate-100/80 dark:from-primary-900/80 dark:to-slate-900/80 border-slate-200 dark:border-slate-700`
     case 'midnight':
-      return `${baseClasses} bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-secondary-950 dark:to-slate-950 border-blue-200 dark:border-blue-800`
+      return `${baseClasses} bg-gradient-to-br from-blue-50/80 to-indigo-50/80 dark:from-secondary-950/80 dark:to-slate-950/80 border-blue-200 dark:border-blue-800`
     default:
-      return baseClasses
+      return `${baseClasses} bg-white/80 dark:bg-gray-900/80 border border-gray-200/50 dark:border-gray-700/50`
   }
 })
 

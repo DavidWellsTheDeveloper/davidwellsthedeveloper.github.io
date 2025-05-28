@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="py-8">
     <PageCard variant="midnight" title="Contact Me" icon="i-lucide-mail">
       <div class="space-y-8">
         <div class="space-y-4">
@@ -49,55 +49,66 @@
           <h2 class="text-xl font-semibold text-teal-700 dark:text-teal-300">Send a Message</h2>
           
           <form @submit.prevent="submitForm" class="space-y-6">
-            <div class="flex flex-col md:flex-row gap-4">
-              <UFormGroup label="Name" class="flex-1">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
                 <UInput 
                   v-model="form.name" 
                   placeholder="Your name" 
                   size="lg"
                   required 
+                  class="w-full"
                 />
-              </UFormGroup>
+              </div>
               
-              <UFormGroup label="Email" class="flex-1">
+              <div class="space-y-2">
+                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
                 <UInput 
                   v-model="form.email" 
                   type="email" 
                   placeholder="your.email@example.com" 
                   size="lg"
                   required 
+                  class="w-full"
                 />
-              </UFormGroup>
+              </div>
             </div>
             
-            <UFormGroup label="Subject">
+            <div class="space-y-2">
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">Subject</label>
               <UInput 
                 v-model="form.subject" 
                 placeholder="What's this about?" 
                 size="lg"
                 required 
+                class="w-full"
               />
-            </UFormGroup>
+            </div>
             
-            <UFormGroup label="Message">
+            <div class="space-y-2">
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
               <UTextarea 
                 v-model="form.message" 
                 placeholder="Tell me about your project, team, or opportunity..." 
                 :rows="10"
                 size="lg"
                 required 
+                class="w-full resize-none"
               />
-            </UFormGroup>
+            </div>
             
-            <UButton 
-              type="submit" 
-              color="primary" 
-              size="lg" 
-              :loading="isSubmitting"
-              class="w-full md:w-auto"
-            >
-              Send Message
-            </UButton>
+            <div class="flex justify-start">
+              <UButton 
+                type="submit" 
+                color="primary" 
+                size="lg" 
+                :loading="isSubmitting"
+                class="px-8"
+              >
+                <UIcon name="i-lucide-send" class="mr-2" />
+                Send Message
+              </UButton>
+            </div>
           </form>
         </div>
 

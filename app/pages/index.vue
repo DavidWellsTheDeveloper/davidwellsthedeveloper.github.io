@@ -1,9 +1,9 @@
 <template>
-  <div class="space-y-8">
+  <div class="space-y-12 py-8">
     <!-- Hero Section -->
     <PageCard 
       variant="hero" 
-      spacing="mb-8"
+      spacing="mb-12"
     >
       <template #header>
         <div class="flex items-center justify-between w-full">

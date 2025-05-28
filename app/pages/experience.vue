@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-8">
+  <div class="space-y-12 py-8">
     <!-- Page Header -->
     <PageCard variant="hero" title="Professional Experience" icon="i-lucide-briefcase">
       <div class="space-y-4">
@@ -67,7 +67,7 @@
                 <p>1 year 10 months</p>
               </div>
             </div>
-            
+
             <div class="space-y-3">
               <h4 class="font-semibold text-gray-800 dark:text-gray-200">Big Data & Analytics:</h4>
               <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 ml-4">
@@ -76,7 +76,7 @@
                 <li>Developed big data solutions utilizing <strong>time series modeling</strong> to assist in data forecasting performance</li>
                 <li>Analyzed and searched for datasets to improve forecasting models including demographic and weather data across the UK</li>
               </ul>
-              
+
               <h4 class="font-semibold text-gray-800 dark:text-gray-200 mt-4">Performance & Automation:</h4>
               <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 ml-4">
                 <li>Automated monthly updates to eliminate downtime and save development time</li>
@@ -109,7 +109,7 @@
                 <li>Designed full stack systems including databases, models, and attractive informative dashboards ensuring data integrity and reliability</li>
                 <li>Acted as <strong>lead developer</strong> for select .NET data-driven solutions for tracking university drones, logging public health complaints, and performing risk management for international travel</li>
               </ul>
-              
+
               <h4 class="font-semibold text-gray-800 dark:text-gray-200 mt-4">Client Collaboration & Best Practices:</h4>
               <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 ml-4">
                 <li>Worked directly with clients to develop custom pages and tools for administrative problems and needs</li>

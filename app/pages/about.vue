@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="py-8">
     <PageCard variant="midnight" title="About Me" icon="i-lucide-user">
       <div class="space-y-6">
         <div class="space-y-4">
