@@ -15,8 +15,8 @@
             </div>
             <div>
               <h3 class="font-semibold text-secondary-700 dark:text-secondary-300">Email</h3>
-              <a href="mailto:dave1twells@gmail.com" class="text-sm text-secondary-600 dark:text-secondary-400 hover:underline">
-                dave1twells@gmail.com
+              <a :href="`mailto:${CONTACT_INFO.email}`" class="text-sm text-secondary-600 dark:text-secondary-400 hover:underline">
+                {{ CONTACT_INFO.email }}
               </a>
             </div>
           </div>
@@ -27,8 +27,8 @@
             </div>
             <div>
               <h3 class="font-semibold text-secondary-700 dark:text-secondary-300">Phone</h3>
-              <a href="tel:+19706913143" class="text-sm text-secondary-600 dark:text-secondary-400 hover:underline">
-                (970) 691-3143
+              <a :href="`tel:+1${CONTACT_INFO.phone.replace(/\D/g, '')}`" class="text-sm text-secondary-600 dark:text-secondary-400 hover:underline">
+                {{ CONTACT_INFO.phone }}
               </a>
             </div>
           </div>
@@ -39,7 +39,7 @@
             </div>
             <div>
               <h3 class="font-semibold text-secondary-700 dark:text-secondary-300">Location</h3>
-              <p class="text-sm text-secondary-600 dark:text-secondary-400">Fort Collins, CO</p>
+              <p class="text-sm text-secondary-600 dark:text-secondary-400">{{ CONTACT_INFO.location }}</p>
             </div>
           </div>
         </div>
@@ -115,38 +115,15 @@
         <!-- Professional Links -->
         <div class="space-y-4">
           <h2 class="text-xl font-semibold text-teal-700 dark:text-teal-300">Professional Links</h2>
-          <div class="flex flex-wrap gap-4">
-            <UButton 
-              to="https://github.com/DavidWellsTheDeveloper"
-              target="_blank"
-              color="gray"
-              variant="outline"
-              size="lg"
-            >
-              <UIcon name="i-simple-icons-github" class="mr-2" />
-              GitHub
-            </UButton>
-            <UButton 
-              to="https://gitlab.com/DavidWellsTheDeveloper"
-              target="_blank"
-              color="gray"
-              variant="outline"
-              size="lg"
-            >
-              <UIcon name="i-simple-icons-gitlab" class="mr-2" />
-              GitLab
-            </UButton>
-            <UButton 
-              to="https://www.linkedin.com/in/davidwellsdeveloper/"
-              target="_blank"
-              color="gray"
-              variant="outline"
-              size="lg"
-            >
-              <UIcon name="i-simple-icons-linkedin" class="mr-2" />
-              LinkedIn
-            </UButton>
-          </div>
+          <SocialLinks 
+            :show-labels="true"
+            color="gray"
+            variant="outline"
+            size="lg"
+            container-class="flex flex-wrap gap-4"
+            button-class=""
+            icon-class="mr-2"
+          />
         </div>
       </div>
     </PageCard>
@@ -154,6 +131,8 @@
 </template>
 
 <script setup>
+import { CONTACT_INFO } from '~/constants'
+
 definePageMeta({
   layout: 'default'
 })

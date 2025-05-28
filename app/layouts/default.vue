@@ -68,7 +68,7 @@
               <!-- Mobile Navigation Menu -->
               <nav class="flex-1 space-y-1 px-4 py-6">
                 <UNavigationMenu
-                  :items="navigationItems"
+                  :items="NAVIGATION_ITEMS"
                   orientation="vertical"
                   class="space-y-2"
                   @click="closeMobileMenu"
@@ -92,35 +92,7 @@
 
               <!-- Mobile Footer Links -->
               <div class="border-t border-teal-500/30 p-4">
-                <div class="flex justify-center space-x-4">
-                  <UButton 
-                    to="https://github.com/DavidWellsTheDeveloper"
-                    target="_blank"
-                    variant="ghost" 
-                    size="sm"
-                    class="text-white hover:text-teal-200"
-                  >
-                    <UIcon name="i-simple-icons-github" class="text-lg" />
-                  </UButton>
-                  <UButton 
-                    to="https://gitlab.com/DavidWellsTheDeveloper" 
-                    target="_blank"
-                    variant="ghost" 
-                    size="sm"
-                    class="text-white hover:text-teal-200"
-                  >
-                    <UIcon name="i-simple-icons-gitlab" class="text-lg" />
-                  </UButton>
-                  <UButton 
-                    to="https://www.linkedin.com/in/davidwellsdeveloper/" 
-                    target="_blank"
-                    variant="ghost" 
-                    size="sm"
-                    class="text-white hover:text-teal-200"
-                  >
-                    <UIcon name="i-simple-icons-linkedin" class="text-lg" />
-                  </UButton>
-                </div>
+                <SocialLinks />
               </div>
             </div>
           </div>
@@ -139,7 +111,7 @@
         <!-- Navigation Menu -->
         <nav class="flex-1 space-y-1 px-4 py-6">
           <UNavigationMenu
-            :items="navigationItems"
+            :items="NAVIGATION_ITEMS"
             orientation="vertical"
             class="space-y-2"
           />
@@ -162,35 +134,7 @@
 
         <!-- Footer Links -->
         <div class="border-t border-teal-500/30 p-4">
-          <div class="flex justify-center space-x-4">
-            <UButton 
-              to="https://github.com/DavidWellsTheDeveloper"
-              target="_blank"
-              variant="ghost" 
-              size="sm"
-              class="text-white hover:text-teal-200"
-            >
-              <UIcon name="i-simple-icons-github" class="text-lg" />
-            </UButton>
-            <UButton 
-              to="https://gitlab.com/DavidWellsTheDeveloper" 
-              target="_blank"
-              variant="ghost" 
-              size="sm"
-              class="text-white hover:text-teal-200"
-            >
-              <UIcon name="i-simple-icons-gitlab" class="text-lg" />
-            </UButton>
-            <UButton 
-              to="https://www.linkedin.com/in/davidwellsdeveloper/" 
-              target="_blank"
-              variant="ghost" 
-              size="sm"
-              class="text-white hover:text-teal-200"
-            >
-              <UIcon name="i-simple-icons-linkedin" class="text-lg" />
-            </UButton>
-          </div>
+          <SocialLinks />
         </div>
       </div>
     </div>
@@ -208,71 +152,11 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { NAVIGATION_ITEMS } from '~/constants'
 
-const cursorEnabled = ref(true) // Default to enabled
-const mobileMenuOpen = ref(false)
-
-const toggleCursor = () => {
-  cursorEnabled.value = !cursorEnabled.value
-}
-
-const toggleMobileMenu = () => {
-  mobileMenuOpen.value = !mobileMenuOpen.value
-}
-
-const closeMobileMenu = () => {
-  mobileMenuOpen.value = false
-}
-
-// Close mobile menu on escape key
-const handleEscape = (event) => {
-  if (event.key === 'Escape' && mobileMenuOpen.value) {
-    closeMobileMenu()
-  }
-}
-
-// Close mobile menu on route change
-const router = useRouter()
-router.afterEach(() => {
-  closeMobileMenu()
-})
-
-onMounted(() => {
-  document.addEventListener('keydown', handleEscape)
-})
-
-onUnmounted(() => {
-  document.removeEventListener('keydown', handleEscape)
-})
-
-const navigationItems = [
-  {
-    label: 'Home',
-    to: '/',
-    icon: 'i-lucide-home'
-  },
-  {
-    label: 'About',
-    to: '/about',
-    icon: 'i-lucide-user'
-  },
-  {
-    label: 'Experience',
-    to: '/experience',
-    icon: 'i-lucide-briefcase'
-  },
-  {
-    label: 'Projects',
-    to: '/projects',
-    icon: 'i-lucide-code'
-  },
-  {
-    label: 'Contact',
-    to: '/contact',
-    icon: 'i-lucide-mail'
-  }
-]
+// Use composables for clean separation of concerns
+const { cursorEnabled, toggleCursor } = useCursor()
+const { mobileMenuOpen, toggleMobileMenu, closeMobileMenu } = useMobileMenu()
 </script>
 
 <style>
