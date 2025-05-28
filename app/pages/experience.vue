@@ -10,7 +10,7 @@
           <UBadge color="primary" variant="soft" size="lg">Scrum Master</UBadge>
           <UBadge color="secondary" variant="soft" size="lg">Team Leadership</UBadge>
           <UBadge color="success" variant="soft" size="lg">Big Data Analytics</UBadge>
-          <UBadge color="orange" variant="soft" size="lg">Performance Optimization</UBadge>
+          <UBadge color="info" variant="soft" size="lg">Performance Optimization</UBadge>
         </div>
       </div>
     </PageCard>

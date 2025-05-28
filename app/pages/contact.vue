@@ -9,37 +9,37 @@
 
         <!-- Contact Information Cards -->
         <div class="grid md:grid-cols-3 gap-6">
-          <div class="flex items-center space-x-4 p-4 bg-teal-50 dark:bg-teal-950 rounded-lg border border-teal-200 dark:border-teal-800">
-            <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center">
+          <div class="flex items-center space-x-4 p-4 bg-neutral-50 dark:bg-neutral-950 rounded-2xl border border-teal-200 dark:border-teal-800">
+            <div class="w-10 h-10 bg-secondary-600 rounded-full flex items-center justify-center">
               <UIcon name="i-lucide-mail" class="text-white" />
             </div>
             <div>
-              <h3 class="font-semibold text-teal-700 dark:text-teal-300">Email</h3>
-              <a href="mailto:dave1twells@gmail.com" class="text-sm text-teal-600 dark:text-teal-400 hover:underline">
+              <h3 class="font-semibold text-secondary-700 dark:text-secondary-300">Email</h3>
+              <a href="mailto:dave1twells@gmail.com" class="text-sm text-secondary-600 dark:text-secondary-400 hover:underline">
                 dave1twells@gmail.com
               </a>
             </div>
           </div>
 
-          <div class="flex items-center space-x-4 p-4 bg-teal-50 dark:bg-teal-950 rounded-lg border border-teal-200 dark:border-teal-800">
-            <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center">
+          <div class="flex items-center space-x-4 p-4 bg-neutral-50 dark:bg-neutral-950 rounded-2xl border border-teal-200 dark:border-teal-800">
+            <div class="w-10 h-10 bg-secondary-600 rounded-full flex items-center justify-center">
               <UIcon name="i-lucide-phone" class="text-white" />
             </div>
             <div>
-              <h3 class="font-semibold text-teal-700 dark:text-teal-300">Phone</h3>
-              <a href="tel:+19706913143" class="text-sm text-teal-600 dark:text-teal-400 hover:underline">
+              <h3 class="font-semibold text-secondary-700 dark:text-secondary-300">Phone</h3>
+              <a href="tel:+19706913143" class="text-sm text-secondary-600 dark:text-secondary-400 hover:underline">
                 (970) 691-3143
               </a>
             </div>
           </div>
 
-          <div class="flex items-center space-x-4 p-4 bg-teal-50 dark:bg-teal-950 rounded-lg border border-teal-200 dark:border-teal-800">
-            <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center">
+          <div class="flex items-center space-x-4 p-4 bg-neutral-50 dark:bg-neutral-950 rounded-2xl border border-teal-200 dark:border-teal-800">
+            <div class="w-10 h-10 bg-secondary-600 rounded-full flex items-center justify-center">
               <UIcon name="i-lucide-map-pin" class="text-white" />
             </div>
             <div>
-              <h3 class="font-semibold text-teal-700 dark:text-teal-300">Location</h3>
-              <p class="text-sm text-teal-600 dark:text-teal-400">Fort Collins, CO</p>
+              <h3 class="font-semibold text-secondary-700 dark:text-secondary-300">Location</h3>
+              <p class="text-sm text-secondary-600 dark:text-secondary-400">Fort Collins, CO</p>
             </div>
           </div>
         </div>
