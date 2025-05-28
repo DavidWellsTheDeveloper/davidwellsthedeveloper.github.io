@@ -8,8 +8,8 @@
       <template #header>
         <div class="flex items-center justify-between w-full">
           <div class="flex flex-col">
-            <h1 class="text-3xl font-bold bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">David Wells</h1>
-            <p class="text-lg text-gray-600 dark:text-gray-300 mt-1">Full Stack Developer</p>
+            <h1 class="text-3xl font-bold bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">David T. Wells</h1>
+            <p class="text-lg text-gray-600 dark:text-gray-300 mt-1">Fullstack Developer & Scrum Master</p>
           </div>
           <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-full flex items-center justify-center">
             <UIcon name="i-lucide-code" class="text-white text-2xl" />
@@ -18,37 +18,38 @@
       </template>
 
       <div class="space-y-6">
-        <p class="text-lg leading-relaxed">I'm a passionate full stack developer with expertise in building modern web applications that deliver exceptional user experiences.</p>
-        <p class="leading-relaxed">Specializing in front-end technologies like Vue.js and back-end solutions with Node.js, I create scalable, performant applications that solve real business problems.</p>
+        <p class="text-lg leading-relaxed">Highly skilled Fullstack Developer with <strong>8+ years of experience</strong> designing, developing, and maintaining scalable, data-driven applications. Currently serving as <strong>Scrum Master</strong> at MeasuringU, leading agile teams and delivering cutting-edge analytics solutions.</p>
+        <p class="leading-relaxed">Proven expertise in Vue.js, React, PHP, and Python with a track record of working with <strong>billion-record datasets</strong>, optimizing performance by orders of magnitude, and mentoring development teams to maintain high coding standards.</p>
       </div>
       <template #footer>
         <div class="flex flex-wrap gap-3 pt-2">
           <UButton to="/about" color="primary" size="lg">About Me</UButton>
-          <UButton to="/contact" color="secondary" variant="outline" size="lg">Contact</UButton>
+          <UButton to="/experience" color="secondary" variant="outline" size="lg">Experience</UButton>
+          <UButton to="/contact" color="success" variant="outline" size="lg">Contact</UButton>
         </div>
       </template>
     </PageCard>
 
     <!-- Skills Section -->
-    <PageCard variant="skills" title="Technical Skills" icon="i-lucide-wrench">
+    <PageCard variant="skills" title="Core Technical Competencies" icon="i-lucide-wrench">
       <div class="flex flex-col md:flex-row gap-4">
         <SkillsList 
-          header="Front-end" 
-          :skills="frontendSkills" 
+          header="Core Technologies" 
+          :skills="coreSkills" 
           badge-color="primary" 
           class="flex-1"
         />
         <USeparator class="hidden lg:block h-48" orientation="vertical" color="secondary" />
         <SkillsList 
-          header="Back-end" 
-          :skills="backendSkills" 
+          header="Backend & Data" 
+          :skills="backendDataSkills" 
           badge-color="secondary"
           class="flex-1" 
         />
         <USeparator class="hidden lg:block h-48" orientation="vertical" color="secondary" />
         <SkillsList 
-          header="DevOps & Tools" 
-          :skills="devopsSkills" 
+          header="Leadership & Process" 
+          :skills="leadershipSkills" 
           badge-color="success"
           class="flex-1"
         />
@@ -56,26 +57,26 @@
     </PageCard>
 
     <!-- Experience Highlight -->
-    <PageCard variant="skills" spacing="mb-0" title="Recent Project Highlights" icon="i-lucide-briefcase">
+    <PageCard variant="skills" spacing="mb-0" title="Professional Highlights" icon="i-lucide-briefcase">
       <div>
-        <div v-for="(project, index) in projects" :key="index">
+        <div v-for="(highlight, index) in professionalHighlights" :key="index">
           <UDivider v-if="index > 0" class="my-6" />
           <div class="space-y-2">
             <div class="flex items-start justify-between">
-              <h3 class="font-semibold text-lg text-teal-700 dark:text-teal-300">{{ project.title }}</h3>
-              <UBadge :color="project.type === 'Full Stack' ? 'primary' : project.type === 'Front-End' ? 'secondary' : 'success'" variant="soft">
-                {{ project.role }}
+              <h3 class="font-semibold text-lg text-teal-700 dark:text-teal-300">{{ highlight.title }}</h3>
+              <UBadge :color="highlight.type === 'Leadership' ? 'primary' : highlight.type === 'Performance' ? 'secondary' : 'success'" variant="soft">
+                {{ highlight.category }}
               </UBadge>
             </div>
-            <p class="leading-relaxed">{{ project.description }}</p>
+            <p class="leading-relaxed">{{ highlight.description }}</p>
           </div>
         </div>
       </div>
 
       <template #footer>
         <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
-          <UButton to="/about" variant="ghost" color="primary" trailing-icon="i-lucide-arrow-right" size="lg">
-            View Full Portfolio
+          <UButton to="/experience" variant="ghost" color="primary" trailing-icon="i-lucide-arrow-right" size="lg">
+            View Full Experience
           </UButton>
         </div>
       </template>
@@ -88,56 +89,58 @@ definePageMeta({
   layout: 'default'
 })
 
-// Skills data
-const frontendSkills = ref([
-  'Vue.js', 
-  'Nuxt', 
+// Updated skills based on resume
+const coreSkills = ref([
   'JavaScript', 
-  'TypeScript', 
-  'Tailwind CSS',
-  'React',
-  'HTML5/CSS3'
-])
-
-const backendSkills = ref([
-  'Node.js',
-  'Express',
+  'Vue.js', 
+  'React', 
+  'Nuxt', 
+  'PHP',
   'Python',
-  'REST APIs',
-  'GraphQL',
-  'SQL',
-  'NoSQL'
+  'HTML5/CSS3',
+  'Tailwind CSS'
 ])
 
-const devopsSkills = ref([
-  'Git',
-  'Docker',
-  'CI/CD',
-  'AWS',
-  'Testing',
-  'GitHub Actions',
-  'Vercel'
+const backendDataSkills = ref([
+  'RESTful APIs',
+  'MySQL',
+  'SQL Server',
+  'Database Design',
+  'Django',
+  'Laravel',
+  'Big Data Analytics',
+  'Data Modeling'
 ])
 
-// Project data
-const projects = ref([
+const leadershipSkills = ref([
+  'Scrum Master',
+  'Agile Practices',
+  'Team Mentoring',
+  'Code Reviews',
+  'Sprint Planning',
+  'Technical Documentation',
+  'Process Improvement'
+])
+
+// Real professional highlights from resume
+const professionalHighlights = ref([
   {
-    title: 'E-Commerce Platform',
-    role: 'Full Stack Development',
-    type: 'Full Stack',
-    description: 'Built a modern e-commerce solution with Vue.js frontend and Node.js backend, integrating payment processing and inventory management.'
+    title: 'Scrum Master & Team Leadership',
+    category: 'Leadership',
+    type: 'Leadership',
+    description: 'Leading scrum ceremonies, sprint planning, and retrospectives at MeasuringU. Mentoring developers and contributing to organizational direction through backlog and roadmap meetings.'
   },
   {
-    title: 'Data Analytics Dashboard',
-    role: 'Front-End Development',
-    type: 'Front-End',
-    description: 'Designed and implemented a responsive dashboard that visualizes complex data sets using Vue.js and D3.js.'
+    title: 'Big Data Performance Optimization',
+    category: 'Performance',
+    type: 'Performance',
+    description: 'Optimized queries on datasets with 1+ billion records, improving performance by orders of magnitude. Automated monthly updates to eliminate downtime and save development time.'
   },
   {
-    title: 'API Integration Service',
-    role: 'Back-End Development',
-    type: 'Back-End',
-    description: 'Developed a microservice architecture to integrate multiple third-party APIs into a unified platform.'
+    title: 'Scalable Analytics Solutions',
+    category: 'Architecture',
+    type: 'Technical',
+    description: 'Designed and developed scalable data analytics solutions using PHP and Vue.js at MeasuringU, built to last and continue growing with normalized relational database systems.'
   }
 ])
 </script>

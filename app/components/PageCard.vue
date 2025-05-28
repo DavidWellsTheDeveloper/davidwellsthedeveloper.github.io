@@ -11,7 +11,7 @@
         <div v-if="title || subtitle || icon || $slots.title" class="flex-1">
           <slot name="title">
             <div v-if="title || icon" class="flex items-center gap-3">
-              <UIcon v-if="icon" :name="icon" class="text-teal-600 text-2xl" />
+              <UIcon v-if="icon" :name="icon" class="text-teal-500 text-2xl" />
               <h1 v-if="title" :class="titleClasses">{{ title }}</h1>
             </div>
             <p v-if="subtitle" :class="subtitleClasses">{{ subtitle }}</p>
@@ -76,11 +76,11 @@ const cardClasses = computed(() => {
   
   switch (props.variant) {
     case 'hero':
-      return `${baseClasses} bg-gradient-to-r from-teal-50 to-cyan-50 dark:from-teal-950 dark:to-cyan-950 border-teal-200 dark:border-teal-800`
+      return `${baseClasses} bg-gradient-to-br from-teal-50 to-cyan-50 dark:from-primary-950 dark:to-slate-950 border-teal-200 dark:border-teal-800`
     case 'skills':
-      return `${baseClasses} bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 border-slate-200 dark:border-slate-700`
+      return `${baseClasses} bg-gradient-to-br from-slate-50 to-slate-100 dark:from-primary-900 dark:to-slate-900 border-slate-200 dark:border-slate-700`
     case 'midnight':
-      return `${baseClasses} bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-indigo-950 dark:to-slate-950 border-blue-200 dark:border-blue-800`
+      return `${baseClasses} bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-secondary-950 dark:to-slate-950 border-blue-200 dark:border-blue-800`
     default:
       return baseClasses
   }

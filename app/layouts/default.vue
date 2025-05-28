@@ -109,7 +109,7 @@
                     <UIcon name="i-simple-icons-gitlab" class="text-lg" />
                   </UButton>
                   <UButton 
-                    to="https://linkedin.com/in/davidwellsthedeveloper" 
+                    to="https://www.linkedin.com/in/davidwellsdeveloper/" 
                     target="_blank"
                     variant="ghost" 
                     size="sm"
@@ -179,7 +179,7 @@
               <UIcon name="i-simple-icons-gitlab" class="text-lg" />
             </UButton>
             <UButton 
-              to="https://linkedin.com/in/davidwellsthedeveloper" 
+              to="https://www.linkedin.com/in/davidwellsdeveloper/" 
               target="_blank"
               variant="ghost" 
               size="sm"
@@ -253,6 +253,11 @@ const navigationItems = [
     label: 'About',
     to: '/about',
     icon: 'i-lucide-user'
+  },
+  {
+    label: 'Experience',
+    to: '/experience',
+    icon: 'i-lucide-briefcase'
   },
   {
     label: 'Contact',
