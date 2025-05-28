@@ -1,7 +1,10 @@
 <template>
-  <div class="min-h-screen bg-gray-50 dark:bg-gray-900" :class="{ 'custom-cursor': cursorEnabled }">
+  <div class="min-h-screen relative" :class="{ 'custom-cursor': cursorEnabled }">
+    <!-- Parallax Background -->
+    <ParallaxBackground />
+    
     <!-- Mobile Header (visible on small screens only) -->
-    <div class="block lg:hidden fixed top-0 left-0 right-0 z-40 bg-gradient-to-r from-teal-600 to-cyan-700 shadow-lg">
+    <div class="block lg:hidden fixed top-0 left-0 right-0 z-40 bg-gradient-to-r from-teal-600/90 to-cyan-700/90 backdrop-blur-sm shadow-lg">
       <div class="flex items-center justify-between h-16 px-4">
         <h1 class="text-xl font-bold text-white">David Wells</h1>
         <UButton
@@ -126,7 +129,7 @@
     </Transition>
 
     <!-- Desktop Navigation Drawer (hidden on mobile) -->
-    <div class="hidden lg:block fixed inset-y-0 left-0 z-50 w-64 bg-gradient-to-b from-teal-600 to-cyan-700 shadow-lg">
+    <div class="hidden lg:block fixed inset-y-0 left-0 z-50 w-64 bg-gradient-to-b from-teal-600/90 to-cyan-700/90 backdrop-blur-sm shadow-lg border-r border-teal-500/20">
       <div class="flex h-full flex-col">
         <!-- Logo/Brand -->
         <div class="flex h-16 items-center justify-center border-b border-teal-500/30">
@@ -193,8 +196,8 @@
     </div>
 
     <!-- Main Content -->
-    <div class="pt-16 lg:pt-0 pl-0 lg:pl-64">
-      <main class="p-8">
+    <div class="pt-16 lg:pt-0 pl-0 lg:pl-64 relative z-10">
+      <main class="p-8 lg:px-10 xl:px-12 max-w-7xl mx-auto">
         <slot />
       </main>
     </div>

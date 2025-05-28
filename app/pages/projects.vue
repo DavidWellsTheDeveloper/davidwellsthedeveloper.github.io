@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-8">
+  <div class="space-y-12 py-8">
     <!-- Page Header -->
     <PageCard variant="hero" title="Technical Projects & Achievements" icon="i-lucide-code">
       <div class="space-y-4">
