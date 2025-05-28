@@ -3,73 +3,141 @@
     <PageCard variant="midnight" title="Contact Me" icon="i-lucide-mail">
       <div class="space-y-8">
         <div class="space-y-4">
-          <p class="text-lg leading-relaxed">I'd love to hear from you! Whether you have a project in mind, want to collaborate, or just want to say hello, feel free to reach out.</p>
-          
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
-              <UIcon name="i-lucide-mail" class="text-2xl text-teal-600 mx-auto mb-2" />
-              <h3 class="font-semibold mb-1">Email</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-400">hello@davidwells.dev</p>
+          <p class="text-lg leading-relaxed">I'd love to hear from you! Whether you're looking for a <strong>Scrum Master</strong>, need a <strong>fullstack developer</strong> for your team, or want to discuss data analytics solutions, feel free to reach out.</p>
+          <p class="leading-relaxed">With 8+ years of experience in scalable application development and team leadership, I'm always interested in new opportunities and challenging projects.</p>
+        </div>
+
+        <!-- Contact Information Cards -->
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="flex items-center space-x-4 p-4 bg-teal-50 dark:bg-teal-950 rounded-lg border border-teal-200 dark:border-teal-800">
+            <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center">
+              <UIcon name="i-lucide-mail" class="text-white" />
             </div>
-            
-            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
-              <UIcon name="i-simple-icons-github" class="text-2xl text-teal-600 mx-auto mb-2" />
-              <h3 class="font-semibold mb-1">GitHub</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-400">@DavidWellsTheDeveloper</p>
+            <div>
+              <h3 class="font-semibold text-teal-700 dark:text-teal-300">Email</h3>
+              <a href="mailto:dave1twells@gmail.com" class="text-sm text-teal-600 dark:text-teal-400 hover:underline">
+                dave1twells@gmail.com
+              </a>
             </div>
-            
-            <div class="text-center p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700">
-              <UIcon name="i-lucide-map-pin" class="text-2xl text-teal-600 mx-auto mb-2" />
-              <h3 class="font-semibold mb-1">Location</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-400">Available Remotely</p>
+          </div>
+
+          <div class="flex items-center space-x-4 p-4 bg-teal-50 dark:bg-teal-950 rounded-lg border border-teal-200 dark:border-teal-800">
+            <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center">
+              <UIcon name="i-lucide-phone" class="text-white" />
+            </div>
+            <div>
+              <h3 class="font-semibold text-teal-700 dark:text-teal-300">Phone</h3>
+              <a href="tel:+19706913143" class="text-sm text-teal-600 dark:text-teal-400 hover:underline">
+                (970) 691-3143
+              </a>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-4 p-4 bg-teal-50 dark:bg-teal-950 rounded-lg border border-teal-200 dark:border-teal-800">
+            <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center">
+              <UIcon name="i-lucide-map-pin" class="text-white" />
+            </div>
+            <div>
+              <h3 class="font-semibold text-teal-700 dark:text-teal-300">Location</h3>
+              <p class="text-sm text-teal-600 dark:text-teal-400">Fort Collins, CO</p>
             </div>
           </div>
         </div>
 
-        <UDivider />
-        
+        <!-- Contact Form -->
         <div class="space-y-6">
-          <h3 class="text-lg font-semibold text-teal-700 dark:text-teal-300">Send me a message</h3>
+          <h2 class="text-xl font-semibold text-teal-700 dark:text-teal-300">Send a Message</h2>
           
-          <UForm class="space-y-6">
-            <div class="flex flex-col lg:flex-row gap-6">
-              <div class="flex-1">
-                <UFormField label="Name" name="name">
-                  <UInput placeholder="Your name" size="lg" class="w-full" />
-                </UFormField>
-              </div>
-              <div class="flex-1">
-                <UFormField label="Email" name="email">
-                  <UInput placeholder="Your email" type="email" size="lg" class="w-full" />
-                </UFormField>
-              </div>
+          <form @submit.prevent="submitForm" class="space-y-6">
+            <div class="flex flex-col md:flex-row gap-4">
+              <UFormGroup label="Name" class="flex-1">
+                <UInput 
+                  v-model="form.name" 
+                  placeholder="Your name" 
+                  size="lg"
+                  required 
+                />
+              </UFormGroup>
+              
+              <UFormGroup label="Email" class="flex-1">
+                <UInput 
+                  v-model="form.email" 
+                  type="email" 
+                  placeholder="your.email@example.com" 
+                  size="lg"
+                  required 
+                />
+              </UFormGroup>
             </div>
             
-            <div class="flex">
-              <div class="w-full">
-                <UFormField label="Subject" name="subject">
-                  <UInput placeholder="What's this about?" size="lg" class="w-full" />
-                </UFormField>
-              </div>
-            </div>
+            <UFormGroup label="Subject">
+              <UInput 
+                v-model="form.subject" 
+                placeholder="What's this about?" 
+                size="lg"
+                required 
+              />
+            </UFormGroup>
             
-            <div class="flex">
-              <div class="w-full">
-                <UFormField label="Message" name="message">
-                  <UTextarea placeholder="Your message" rows="10" size="lg" class="w-full resize-none" />
-                </UFormField>
-              </div>
-            </div>
-          </UForm>
+            <UFormGroup label="Message">
+              <UTextarea 
+                v-model="form.message" 
+                placeholder="Tell me about your project, team, or opportunity..." 
+                :rows="10"
+                size="lg"
+                required 
+              />
+            </UFormGroup>
+            
+            <UButton 
+              type="submit" 
+              color="primary" 
+              size="lg" 
+              :loading="isSubmitting"
+              class="w-full md:w-auto"
+            >
+              Send Message
+            </UButton>
+          </form>
+        </div>
+
+        <!-- Professional Links -->
+        <div class="space-y-4">
+          <h2 class="text-xl font-semibold text-teal-700 dark:text-teal-300">Professional Links</h2>
+          <div class="flex flex-wrap gap-4">
+            <UButton 
+              to="https://github.com/DavidWellsTheDeveloper"
+              target="_blank"
+              color="gray"
+              variant="outline"
+              size="lg"
+            >
+              <UIcon name="i-simple-icons-github" class="mr-2" />
+              GitHub
+            </UButton>
+            <UButton 
+              to="https://gitlab.com/DavidWellsTheDeveloper"
+              target="_blank"
+              color="gray"
+              variant="outline"
+              size="lg"
+            >
+              <UIcon name="i-simple-icons-gitlab" class="mr-2" />
+              GitLab
+            </UButton>
+            <UButton 
+              to="https://www.linkedin.com/in/davidwellsdeveloper/"
+              target="_blank"
+              color="gray"
+              variant="outline"
+              size="lg"
+            >
+              <UIcon name="i-simple-icons-linkedin" class="mr-2" />
+              LinkedIn
+            </UButton>
+          </div>
         </div>
       </div>
-
-      <template #footer>
-        <div class="pt-4 border-t border-gray-200 dark:border-gray-700 flex gap-3">
-          <UButton type="submit" color="primary" size="lg">Send Message</UButton>
-          <UButton to="/" variant="outline" color="secondary">Back to Home</UButton>
-        </div>
-      </template>
     </PageCard>
   </div>
 </template>
@@ -78,4 +146,36 @@
 definePageMeta({
   layout: 'default'
 })
+
+const form = ref({
+  name: '',
+  email: '',
+  subject: '',
+  message: ''
+})
+
+const isSubmitting = ref(false)
+
+const submitForm = async () => {
+  isSubmitting.value = true
+  
+  // Simulate form submission
+  await new Promise(resolve => setTimeout(resolve, 1000))
+  
+  // Here you would typically send the form data to your backend
+  console.log('Form submitted:', form.value)
+  
+  // Reset form
+  form.value = {
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  }
+  
+  isSubmitting.value = false
+  
+  // You could add a success notification here
+  alert('Message sent successfully!')
+}
 </script> 
