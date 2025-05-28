@@ -7,10 +7,10 @@
           A showcase of key technical projects and achievements from my 8+ years of professional development experience. From <strong>billion-record data optimization</strong> to <strong>scalable analytics platforms</strong>, these projects demonstrate expertise in fullstack development, database architecture, and performance engineering.
         </p>
         <div class="flex flex-wrap gap-4">
-          <UBadge color="primary" variant="soft" size="lg">Data Analytics</UBadge>
-          <UBadge color="secondary" variant="soft" size="lg">Performance Optimization</UBadge>
-          <UBadge color="success" variant="soft" size="lg">Database Architecture</UBadge>
-          <UBadge color="orange" variant="soft" size="lg">Fullstack Development</UBadge>
+          <UBadge color="success" variant="soft" size="lg">Data Analytics</UBadge>
+          <UBadge color="primary" variant="soft" size="lg">Performance Optimization</UBadge>
+          <UBadge color="secondary" variant="soft" size="lg">Database Architecture</UBadge>
+          <UBadge color="info" variant="soft" size="lg">Fullstack Development</UBadge>
         </div>
       </div>
     </PageCard>
@@ -30,10 +30,10 @@
               Leading design and development of data analytics solutions using <strong>PHP and Vue.js</strong>. Built to scale and grow with normalized relational database systems ensuring data integrity and performance.
             </p>
             <div class="flex flex-wrap gap-2">
-              <UBadge color="primary" variant="soft">PHP</UBadge>
+              <UBadge color="success" variant="soft">PHP</UBadge>
               <UBadge color="primary" variant="soft">Vue.js</UBadge>
               <UBadge color="secondary" variant="soft">MySQL</UBadge>
-              <UBadge color="success" variant="soft">Database Design</UBadge>
+              <UBadge color="info" variant="soft">Database Design</UBadge>
             </div>
           </div>
 
@@ -48,10 +48,10 @@
               Serving as <strong>Scrum Master</strong>, leading ceremonies, sprint planning, and retrospectives. Contributing to organizational direction through backlog and roadmap meetings while mentoring development teams.
             </p>
             <div class="flex flex-wrap gap-2">
-              <UBadge color="primary" variant="soft">Scrum Master</UBadge>
-              <UBadge color="secondary" variant="soft">Team Leadership</UBadge>
-              <UBadge color="success" variant="soft">Mentoring</UBadge>
-              <UBadge color="orange" variant="soft">Code Reviews</UBadge>
+              <UBadge color="success" variant="soft">Scrum Master</UBadge>
+              <UBadge color="primary" variant="soft">Team Leadership</UBadge>
+              <UBadge color="secondary" variant="soft">Mentoring</UBadge>
+              <UBadge color="info" variant="soft">Code Reviews</UBadge>
             </div>
           </div>
         </div>
@@ -73,10 +73,10 @@
               Optimized queries on datasets with <strong>over 1 billion records</strong>, improving performance by orders of magnitude. Automated monthly updates to eliminate downtime and save development time.
             </p>
             <div class="flex flex-wrap gap-2">
-              <UBadge color="primary" variant="soft">Python</UBadge>
-              <UBadge color="secondary" variant="soft">Big Data</UBadge>
-              <UBadge color="success" variant="soft">Query Optimization</UBadge>
-              <UBadge color="orange" variant="soft">Automation</UBadge>
+              <UBadge color="success" variant="soft">Python</UBadge>
+              <UBadge color="primary" variant="soft">Big Data</UBadge>
+              <UBadge color="secondary" variant="soft">Query Optimization</UBadge>
+              <UBadge color="info" variant="soft">Automation</UBadge>
             </div>
             <div class="mt-4 p-3 bg-green-50 dark:bg-green-950 rounded border border-green-200 dark:border-green-800">
               <p class="text-sm text-green-700 dark:text-green-300 font-semibold">
@@ -96,10 +96,10 @@
               Enhanced statistical models by incorporating external datasets including <strong>census, weather, and crime data</strong>. Developed time series modeling for data forecasting across UK demographics.
             </p>
             <div class="flex flex-wrap gap-2">
-              <UBadge color="primary" variant="soft">Statistical Modeling</UBadge>
-              <UBadge color="secondary" variant="soft">Time Series</UBadge>
-              <UBadge color="success" variant="soft">Data Integration</UBadge>
-              <UBadge color="orange" variant="soft">GIS</UBadge>
+              <UBadge color="success" variant="soft">Statistical Modeling</UBadge>
+              <UBadge color="primary" variant="soft">Time Series</UBadge>
+              <UBadge color="secondary" variant="soft">Data Integration</UBadge>
+              <UBadge color="info" variant="soft">GIS</UBadge>
             </div>
           </div>
         </div>
@@ -121,9 +121,9 @@
               Lead developer for .NET data-driven solution tracking university drones. Ensured data integrity and reliability for Environmental Health department.
             </p>
             <div class="flex flex-wrap gap-2">
-              <UBadge color="primary" variant="soft">.NET</UBadge>
-              <UBadge color="secondary" variant="soft">SQL Server</UBadge>
-              <UBadge color="success" variant="soft">Lead Developer</UBadge>
+              <UBadge color="success" variant="soft">.NET</UBadge>
+              <UBadge color="primary" variant="soft">SQL Server</UBadge>
+              <UBadge color="secondary" variant="soft">Lead Developer</UBadge>
             </div>
           </div>
 
@@ -138,9 +138,9 @@
               Developed comprehensive logging system for public health complaints with attractive informative dashboards for administrators.
             </p>
             <div class="flex flex-wrap gap-2">
-              <UBadge color="primary" variant="soft">Dashboard Design</UBadge>
-              <UBadge color="secondary" variant="soft">Data Visualization</UBadge>
-              <UBadge color="success" variant="soft">Public Health</UBadge>
+              <UBadge color="success" variant="soft">Dashboard Design</UBadge>
+              <UBadge color="primary" variant="soft">Data Visualization</UBadge>
+              <UBadge color="secondary" variant="soft">Public Health</UBadge>
             </div>
           </div>
 
@@ -155,9 +155,9 @@
               Built risk management system for international travel, working directly with clients to develop custom administrative tools.
             </p>
             <div class="flex flex-wrap gap-2">
-              <UBadge color="primary" variant="soft">Risk Management</UBadge>
-              <UBadge color="secondary" variant="soft">Client Collaboration</UBadge>
-              <UBadge color="success" variant="soft">Custom Solutions</UBadge>
+              <UBadge color="success" variant="soft">Risk Management</UBadge>
+              <UBadge color="primary" variant="soft">Client Collaboration</UBadge>
+              <UBadge color="secondary" variant="soft">Custom Solutions</UBadge>
             </div>
           </div>
         </div>

@@ -19,11 +19,17 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-27',
   
   // Configure for static site generation
-  ssr: false,
+  ssr: true,
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/']
+      routes: [
+        '/',
+        '/about',
+        '/experience',
+        '/projects',
+        '/contact'
+      ]
     }
   },
 

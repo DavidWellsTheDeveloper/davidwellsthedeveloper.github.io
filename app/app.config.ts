@@ -11,6 +11,7 @@ export default defineAppConfig({
       primary: 'teal',
       secondary: 'cyan',
       success: 'emerald',
+      info: 'sky',
       neutral: 'zinc',
     },
     button: {
