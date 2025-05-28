@@ -36,21 +36,21 @@
       <div class="flex flex-col md:flex-row gap-4">
         <SkillsList 
           header="Core Technologies" 
-          :skills="coreSkills" 
+          :skills="SKILLS.core" 
           badge-color="primary" 
           class="flex-1"
         />
         <USeparator class="hidden lg:block h-48" orientation="vertical" color="secondary" />
         <SkillsList 
           header="Backend & Data" 
-          :skills="backendDataSkills" 
+          :skills="SKILLS.backendData" 
           badge-color="secondary"
           class="flex-1" 
         />
         <USeparator class="hidden lg:block h-48" orientation="vertical" color="secondary" />
         <SkillsList 
           header="Leadership & Process" 
-          :skills="leadershipSkills" 
+          :skills="SKILLS.leadership" 
           badge-color="success"
           class="flex-1"
         />
@@ -60,7 +60,7 @@
     <!-- Experience Highlight -->
     <PageCard variant="skills" spacing="mb-0" title="Professional Highlights" icon="i-lucide-briefcase">
       <div>
-        <div v-for="(highlight, index) in professionalHighlights" :key="index">
+        <div v-for="(highlight, index) in PROFESSIONAL_HIGHLIGHTS" :key="index">
           <UDivider v-if="index > 0" class="my-6" />
           <div class="space-y-2">
             <div class="flex items-start justify-between">
@@ -86,62 +86,9 @@
 </template>
 
 <script setup>
+import { SKILLS, PROFESSIONAL_HIGHLIGHTS } from '~/constants'
+
 definePageMeta({
   layout: 'default'
 })
-
-// Updated skills based on resume
-const coreSkills = ref([
-  'JavaScript', 
-  'Vue.js', 
-  'React', 
-  'Nuxt', 
-  'PHP',
-  'Python',
-  'HTML5/CSS3',
-  'Tailwind CSS'
-])
-
-const backendDataSkills = ref([
-  'RESTful APIs',
-  'MySQL',
-  'SQL Server',
-  'Database Design',
-  'Django',
-  'Laravel',
-  'Big Data Analytics',
-  'Data Modeling'
-])
-
-const leadershipSkills = ref([
-  'Scrum Master',
-  'Agile Practices',
-  'Team Mentoring',
-  'Code Reviews',
-  'Sprint Planning',
-  'Technical Documentation',
-  'Process Improvement'
-])
-
-// Real professional highlights from resume
-const professionalHighlights = ref([
-  {
-    title: 'Scrum Master & Team Leadership',
-    category: 'Leadership',
-    type: 'Leadership',
-    description: 'Leading scrum ceremonies, sprint planning, and retrospectives at MeasuringU. Mentoring developers and contributing to organizational direction through backlog and roadmap meetings.'
-  },
-  {
-    title: 'Big Data Performance Optimization',
-    category: 'Performance',
-    type: 'Performance',
-    description: 'Optimized queries on datasets with 1+ billion records, improving performance by orders of magnitude. Automated monthly updates to eliminate downtime and save development time.'
-  },
-  {
-    title: 'Scalable Analytics Solutions',
-    category: 'Architecture',
-    type: 'Technical',
-    description: 'Designed and developed scalable data analytics solutions using PHP and Vue.js at MeasuringU, built to last and continue growing with normalized relational database systems.'
-  }
-])
 </script>

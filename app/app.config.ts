@@ -1,8 +1,8 @@
 export default defineAppConfig({
   // Site configuration
   site: {
-    name: 'My Nuxt UI Website',
-    description: 'A static website built with Nuxt UI',
+    name: 'David Wells - Fullstack Developer & Scrum Master',
+    description: 'Portfolio of David Wells, a Fullstack Developer and Scrum Master with 8+ years of experience in scalable application development and team leadership.',
   },
   
   // https://ui.nuxt.com/getting-started/theme#design-system
@@ -15,10 +15,7 @@ export default defineAppConfig({
       neutral: 'zinc',
     },
     button: {
-      defaultVariants: {
-        // Set default button color to neutral
-        // color: 'neutral'
-      }
+      defaultVariants: {}
     },
     // Add custom container max width
     container: {

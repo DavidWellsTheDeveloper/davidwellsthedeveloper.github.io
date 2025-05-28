@@ -54,7 +54,7 @@ const props = defineProps({
   variant: {
     type: String,
     default: 'default',
-    validator: (value) => ['default', 'hero', 'skills', 'experience'].includes(value)
+    validator: (value) => ['default', 'hero', 'skills', 'midnight'].includes(value)
   },
   
   // Spacing props
@@ -100,7 +100,6 @@ const subtitleClasses = computed(() => {
 })
 
 const cardUi = computed(() => {
-  // Return any custom UI overrides if needed
   return {}
 })
 </script> 
