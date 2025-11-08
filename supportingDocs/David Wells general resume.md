@@ -1,0 +1,228 @@
+
+
+| DAVID T. WELLS *Phone: (970) 691-3143				         Fort Collins, CO		           Email: dave1twells@gmail.com* SOFTWARE DEVELOPER PROFILE |
+| ----- |
+
+# **SUMMARY**
+
+* Experience conducting designing and conducting technical interviews, onboarding new hires, and leading small development teams on projects  
+* Comfortable doing query analysis and database optimizations. Improved performance of database queries for Mountain Data group by up to 50X by utilizing query analysis, indexing, and physical implementation analysis for Mountain Data Group.  
+* Acted as the lead developer for .NET data-driven web applications used by Colorado State University department administrators to track university drones, manage international traveler insurance, and generate annual fiscal reports in a data driven web application.  
+* Skilled in some of the best frontend technologies available including Vue, React, SASS, Bootstrap, and Material Design   
+* Experienced in a variety of technical services including Database Development, Research, IT Support, Full-Stack Web Development, and Scientific Programming using Python.  
+* Goal-oriented developer with proven results delivering dynamic and scalable software for clients with diverse needs.  
+* Experience planning long term projects, introducing and leading agile practices on teams and organizing tasks for developers.
+
+# ---
+
+# **SKILLS**
+
+| Top Languages Python SQL Java HTML CSS JavaScript Bash JSON PHP C++ C\# | Platforms & Tools GitHub GitLab Linux/Unix Windows OS X JUnit GCloud Node Yarn Vim Docker Nginx MySQL | Frameworks Vue.js React Django Laravel SQLAlchemy Entity Framework Bootstrap Material Design SQL Server MySql Travis CI | Skills & Concepts Data Science Algorithms Relational Data Modeling Database Normalization Full Stack Security Big Data Analysis RESTful API’s Test Driven Development Agile & Scrum Object Oriented Design Continuous Integration Parallel Programming Encryption Client Server Model |
+| :---- | :---- | :---- | :---- |
+
+---
+
+# **EDUCATION**
+
+**Bachelor of Science in Computer Science**, *Colorado State University, Fort Collins, CO*			  **December 2019**
+
+* 3 upper level database courses focused on relational algebra, data modeling, normalization, advanced SQL and database architecture, ideal for building database architecture skills.  
+* Worked on a team in a scrum environment utilizing React, Sass, Javascript, RESTful API’s, and testing suites to build a production ready web application.  
+* Excelled in courses focused on analyzing and optimizing algorithms for performance.  
+* Worked as a professional web application developer for Colorado State University while attending classes to reinforce lessons & help put myself through school.  
+* Well versed in systems security with skills in hardening systems to prevent and mitigate attacks.  
+* Worked on a big data team with graduate & undergraduate students using the Random Forest algorithm to analyze PM2.5 & PM10 air quality data across the United States.
+
+**Bachelor of Arts in Sociology**, *Fort Lewis College, Durango, CO*				    **Graduated:**  **May 2013**  
+---
+
+# 
+
+# **RELATED EXPERIENCE**
+
+**Senior Full Stack Developer,** *MeasuringU*							        **March 2021-Present**
+
+* Introduced, and implemented Agile methodologies to an early development team, improving efficiency and team performance.  
+* Conducted technical interviews, onboarded new hires and led team projects showcasing senior leadership skills.  
+* Led full stack development projects through the architectural design process ensuring scalability and minimizing technical debt.  
+* Designed and built a data visualization dashboard using advanced statistics, charts, tables, and attractive data visualizations, providing valuable insights.  
+* Utilized Behavior Driven Design practices to build loosely coupled scalable systems.  
+* Designed scalable and normalized relational database systems, ensuring data integrity, accuracy, and usability.  
+* Advised, mentored, and oversaw junior developers, promoting growth, and independence.  
+* Implemented full web API solutions using data models, class based object mapping, and RESTful API’s.  
+* Maintain a high standard for clean code, emphasizing the importance of code readability.
+
+**Data Science Intern,** *Mountain Data Group*							    **May 2019-March 2020**  
+**Full Stack Web Application Developer							March 2020-March 2021**
+
+* Integrated full stack web application solutions with Mountain Data Group’s primary client, showcasing client focused development.  
+* Conducted database benchmarking to track optimizations and improve query speeds, achieving significant performance improvements.  
+* Utilize python’s data analytics libraries and statistical modeling to gain insights into census & weather datasets with over 1 billion records each.  
+* Developed Django API’s to serve our data needs quickly, and securely.  
+* Automated monthly updates to eliminate data downtime and improve speeds by orders of magnitude.  
+* Gained experience working with GIS and census data to improve statistical analysis and enhance data-driven decision making.  
+* Developed big data solutions utilizing time series modeling to assist in data forecasting.  
+* Analyzed and searched for datasets to improve forecasting models including demographic and weather data across the UK.  
+* Met weekly in a modified scrum environment for team meetings to share project developments and progress.
+
+**Web Application Developer,** *Environmental Health Services at CSU*				        **May 2017-May 2019**
+
+* Provided programming solutions and technical support for administrators in the Environmental Health, Public Health, and Risk Management departments.  
+* Designed and implemented relational databases to ensure data integrity, and accurate relational models.  
+* Acted as the lead developer for select .NET data-driven solutions, including tracking university drones, logging public health complaints, and performing risk management assessments for international travel.  
+* Worked directly with clients to develop custom pages and tools addressing specific administrative needs.  
+* Created and maintained Microsoft Access forms for administrative usage and easy data manipulation.  
+* Worked as a team on projects utilizing agile, and pair programming practices.  
+* Wrote well documented code using SOLID development principles of object oriented design.
+
+	**Administrative Office Staff,** *Center for Adult Learning at Front Range Community College*	   **August 2016-May 2017**
+
+* Performed data analytics in the form of database queries essential to daily administrative duties and assisting staff.  
+* Secured information critical to applying for grants and funding such as student enrollment and attendance data.  
+* Administered placement exams in english, reading, and math for adults pursuing improved language skills, GED’s, job skills, and beyond.  
+* Provided administrative support to assist the center in educating students.
+
+**Chef/Baker,** *Starry Night Café*								    **March 2016-May 2017**
+
+* Bake a variety of pastries and prepare a variety of other foods.  
+* Assist baristas in their daily responsibilities and tasks  
+* Maintain a clear, and sanitary environment in the bakery room.  
+* Keep track of inventory, for ordering.
+
+**Holiday Delivery Driver,** *Fedex Ground, Johnstown, Colorado*			    **December 2015-February 2016**
+
+* Match electronic manifest to actual package count every morning and evening.  
+* Load packages into truck in pick order to maximize efficiency throughout the day’s deliveries.  
+* Navigate the town, and country roads of Fort Collins, and Wellington to deliver packages safely.  
+* Compete collectively to make sure that all team members have successfully completed tasks.
+
+**Adventure Guide**, *Gateway Canyons Resort and Spa, Gateway, Colorado*		        **March 2015-November 2015**
+
+* Book, prepare, and lead a variety of informative tours including ATV and UTV tours in the canyons surrounding the Gateway region.  
+* Schedule itineraries for guests, and VIP’s at our 4 star resort.  
+* Key holder responsible for opening, closing, and bank deposits.  
+* Maintain UTV’s including filter changes, checking fluids, and drive tests.  
+* Educate guests about the ecology, mining, and geological history of the Colorado Plateau.  
+* Lead guided hikes, and bike rides on a variety of trails.  
+* Lead guided river tours on the Dolores River including kayaking, rafting, paddle boarding, and tubing.  
+* Provide professional chauffeur services as a shuttle driver for group bookings.  
+* Charge trips, and merchandise sales using the “resort suite” Point of Sale program.  
+* Stock, display, and sell outdoor gear in the Adventure Center shop.  
+* Prioritize tasks independently, while maintaining a commitment to teamwork to accomplish tasks.  
+* Active participant in the “Hotel Awareness Team” with the primary goal to increase workplace safety, satisfying and exceeding OSHA guidelines.  
+* Lead a variety of team building activities for corporate groups, and professional teams such as low ropes courses, and laser tag.
+
+**Resident Advisor**, *Rocky Mountain Pathways Ranch, Allenspark, Colorado*		        **August 2014-December 2014**
+
+* Advised and led at risk high school students from Los Angeles and surrounding regions in 2 week trips to the mountains of Colorado, where they participated in a unique curriculum working with farm animals in the remote rocky mountains.  
+* Provided social, emotional, and academic support to high school students in an alternative outdoor education setting.  
+* Led students on community service work projects providing valuable work experience, and applicable skills that can be used upon return to California.  
+* Provided leadership, direction, and local ecological information while on weekly hikes with students.  
+    
+  **Lifeguard**, *Trimble Hot Springs, Durango, Colorado*						   **May 2014-August 2014**  
+* Provide patron surveillance and safety  
+* Be ready to and actively perform water saves, and first aid in emergencies  
+* Perform daily cleaning and maintenance of facility
+
+**Service/Desk Agent**, *Budget Rent a Car, Durango, Colorado*					    **March 2014-May 2014**	
+
+* Drive company vehicles daily to service, and perform exchanges with other budget locations.  
+* Provide complete customer service for customers upon rental and return.  
+* Clean interior and exterior of vehicles and check fluids prior to customer rentals.  
+* Check vehicles in and out to customers using (Rent Works) point of sale application.
+
+**Online Team Lead**, *Fort Lewis College Bookstore, Durango, Colorado*			**August 2013-March 2014**
+
+* Key holder responsible for opening, and closing the store regularly.  
+* One of several employees responsible for preparing, and delivering bank deposits.  
+* Conduct inventory, including adjustments, loss prevention, markdowns and troubleshooting.  
+* Responsible for recording all transactions at the end of the day using Backoffice point of sale application.  
+* Train new hires in a wide range of tasks.  
+* Manage tasks and employees on the online order team.  
+* Provide quality customer service as a primary duty daily.  
+* Communicate with associates and managers to ensure customer needs are met.  
+* Process web orders, using JWALK order fulfillment application.   
+* Complete rental contracts for customers.  
+* Use problem solving to resolve technical and customer service issues as they occur.  
+* Ship, receive, invoice and stock store regularly.
+
+  **Lifeguard**, *Fort Lewis College, Durango, Colorado*						**October 2012-May 2013**
+
+* Enforced pool rules while providing water safety.  
+* Maintained daily pool operations.  
+* Performed daily cleaning.
+
+
+  **Warehouse Associate**, *Rocky Mountain Chocolate Factory, Durango, CO*			  **June 2012- August 2012**
+
+* Stacked, and shipped pallets of chocolate to stores around the world  
+* Picked boxes of chocolates to ship based on orders made  
+* Filed invoices for all incoming, and outgoing shipments
+
+**Resident Assistant**, *Fort Lewis College, Durango, Colorado*					 **August 2010 \- May 2011**
+
+* Organized and implemented programs focusing on issues such as diversity, academic preparation, career training, civic engagement, and campus safety.  
+* Responsible for the educational and social development of 34 residents.  
+* Served on a 24/7 on-call duty rotation for area consisting of six buildings and 210 residents.  
+* Performed hourly rounds when on duty.  
+* Created strong community through regular programming, community building, counseling, departmental referrals, 24/7 on call duty, and crisis response.  
+* Awarded the “Community Builder of the Year Award.”  
+* Awarded “Advertising of the Month Award” twice.  
+* Involved in planning and implementation of annual Student Housing triathlon, Tri the Rim.
+
+**Warehouse Associate**, *Durango and Silverton Railroad, Durango, Colorado*		           **May 2011- September 2011**
+
+* Made orders with distribution companies based on inventory.  
+* Received and filed invoices for incoming orders.  
+* Stocked train cars, gift shop, and museum daily.  
+* Unloaded pallets of new inventory daily.  
+* Drove company vehicle for deliveries.
+
+  **Fundraising Officer**, *Engineers Without Borders*, *Durango, CO*			          **September 2008 \- May 2010**
+
+* Assisted in designing and testing water systems and assessed third world construction techniques.  
+* Worked on a water system in Laos during  the summer of 2009 which entailed working with a small community of locals in building a gravity fed water system.  
+* Fundraising Committee member from 2008 to 2010\. Planned events, advertised donations, and raised money for travel and project costs.  
+* Served as Fundraising Officer from September 2009 to May 2010\.  
+* Worked on an education team to teach locals about health, and illnesses associated with malaria.
+
+**Lifeguard & Maintenance**, *Touchstone Property Management, Fort Collins, Colorado*		        **Summers 2008-2010**
+
+* Worked pool pump room including some repairs.  
+* Tested for and administered pool chemicals as needed.  
+* Patron surveillance, and enforced pool rules.  
+* Completed homeowners association work orders to maintain grounds.  
+* Repaired common home and apartment issues.
+
+# 
+
+# **LEADERSHIP & VOLUNTEER EXPERIENCE**
+
+	**Communications Director,** *WUULF Summer Camp*						           **June 2019-Present**
+
+* Designed and developed an attractive, and easily maintained website for a 501C non-profit responsible for a week long annual event in New Mexico.  
+* Responsible for managing event registrations, payments, and refunds totaling around $60,000 in transactions each year.  
+* Provided an administrative portal for board members and directors to use to perform administrative duties.  
+* Managed organization’s marketing campaigns and social media accounts including posts, promotions and events.  
+* Designed and distributed marketing documents to generate interest and encourage event registration.  
+* Responsible for communications with event planners, board members and registered attendees.
+
+	**High School Program Leader,**  *WUULF Summer Camp*						           **2017-2019**
+
+* Designed and implemented a schedule for high school appropriate summer camp activities including ropes courses, hikes, and camp games.  
+* Organized and provided support and guidance for youth to take leadership roles in camp wide activities.  
+* Identified and responded to camper needs, and strengths while encouraging youth empowerment and leadership.
+
+**Food Pantry Intern/Coordinator**, *Fort Lewis College, Durango, Colorado*		  **September 2012-December 2012**
+
+* Worked in partnership with non-profit organizations including Cooking Matters, Manna Soup Kitchen, the Native American Center, and the Center for Civic Engagement to organize and implement a class to teach students, families, and community members with low incomes to cook healthy affordable meals.  
+* Organized the renovation of the organization's space, including a 4 wall mural.  
+* Planned a major fundraiser which included live music and food for over 100 attendees  
+* Wrote two grant requests.  
+* Spoke before administrative committees on behalf of the food bank in a presentation format.  
+* Conducted weekly meetings discussing goals and objectives with faculty and students involved in operations.  
+* Maintained budget.  
+* Documented all outgoing food totaling 1,000 to 2,000 pounds weekly.  
+* An article can be viewed here: [http://bit.ly/durango\_telegraph\_article](http://bit.ly/durango_telegraph_article)
+
+  

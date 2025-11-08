@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Vue.js",
+    "category": "frontend",
+    "proficiency": "advanced",
+    "yearsExperience": 6,
+    "verified": true
+  },
+  {
+    "name": "React",
+    "category": "frontend",
+    "proficiency": "advanced",
+    "yearsExperience": 5,
+    "verified": true
+  },
+  {
+    "name": "JavaScript",
+    "category": "frontend",
+    "proficiency": "expert",
+    "yearsExperience": 8,
+    "verified": true
+  },
+  {
+    "name": "HTML5",
+    "category": "frontend",
+    "proficiency": "expert",
+    "yearsExperience": 8,
+    "verified": true
+  },
+  {
+    "name": "CSS3",
+    "category": "frontend",
+    "proficiency": "expert",
+    "yearsExperience": 8,
+    "verified": true
+  },
+  {
+    "name": "SASS/SCSS",
+    "category": "frontend",
+    "proficiency": "advanced",
+    "yearsExperience": 6,
+    "verified": true
+  },
+  {
+    "name": "Material Design",
+    "category": "frontend",
+    "proficiency": "advanced",
+    "yearsExperience": 2,
+    "verified": true
+  },
+  {
+    "name": "Bootstrap",
+    "category": "frontend",
+    "proficiency": "advanced",
+    "yearsExperience": 6,
+    "verified": true
+  },
+  {
+    "name": "Responsive Design",
+    "category": "frontend",
+    "proficiency": "expert",
+    "yearsExperience": 8,
+    "verified": true
+  },
+  {
+    "name": "PHP",
+    "category": "backend",
+    "proficiency": "advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "Python",
+    "category": "backend",
+    "proficiency": "expert",
+    "yearsExperience": 6,
+    "verified": true
+  },
+  {
+    "name": "C#",
+    "category": "backend",
+    "proficiency": "advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "Django",
+    "category": "backend",
+    "proficiency": "advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": ".NET Framework",
+    "category": "backend",
+    "proficiency": "advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "RESTful APIs",
+    "category": "backend",
+    "proficiency": "expert",
+    "yearsExperience": 6,
+    "verified": true
+  },
+  {
+    "name": "Entity Framework",
+    "category": "backend",
+    "proficiency": "intermediate",
+    "yearsExperience": 4,
+    "verified": true
+  }
+]

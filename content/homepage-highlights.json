@@ -1,0 +1,82 @@
+{
+  "heroHighlights": [
+    "8+ years building scalable web applications for universities and enterprises",
+    "Currently serving as Scrum Master for 7-person development team", 
+    "Improved database performance by up to 50x through optimization techniques",
+    "Led complete frontend overhaul implementing Material Design across entire platform"
+  ],
+  "keyAchievements": [
+    {
+      "title": "Database Performance Optimization",
+      "metric": "50x improvement",
+      "description": "Optimized database queries through analysis, indexing, and implementation strategies"
+    },
+    {
+      "title": "Team Leadership",
+      "metric": "7-person team",
+      "description": "Scrum Master facilitating 2-week sprints with strategic 30/60/90 day planning"
+    },
+    {
+      "title": "Enterprise Design System",
+      "metric": "Complete platform overhaul", 
+      "description": "Led Material Design implementation across components, navigation, and user flows"
+    },
+    {
+      "title": "Big Data Analysis",
+      "metric": "1B+ record datasets",
+      "description": "Applied statistical modeling and machine learning to census and weather data"
+    }
+  ],
+  "recentWork": [
+    {
+      "company": "MeasuringU",
+      "role": "Senior Full Stack Developer & Scrum Master",
+      "period": "2021-Present",
+      "highlight": "Leading development team and architecting scalable Vue.js/PHP solutions"
+    },
+    {
+      "company": "Mountain Data Group", 
+      "role": "Full Stack Developer",
+      "period": "2019-2021",
+      "highlight": "Database optimization specialist achieving 50x performance improvements"
+    }
+  ],
+  "topSkills": [
+    {
+      "name": "Team Leadership",
+      "category": "Leadership",
+      "years": 4,
+      "verified": true
+    },
+    {
+      "name": "Vue.js",
+      "category": "Frontend",
+      "years": 6,
+      "verified": true
+    },
+    {
+      "name": "Python", 
+      "category": "Backend",
+      "years": 6,
+      "verified": true
+    },
+    {
+      "name": "Database Optimization",
+      "category": "Data",
+      "years": 6,
+      "verified": true
+    },
+    {
+      "name": "Scrum Master",
+      "category": "Process",
+      "years": 1,
+      "verified": true
+    },
+    {
+      "name": "AI-Assisted Development",
+      "category": "Modern Practices",
+      "years": 1,
+      "verified": true
+    }
+  ]
+}

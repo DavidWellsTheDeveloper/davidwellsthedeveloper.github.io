@@ -1,0 +1,85 @@
+[
+  {
+    "id": "measuringu-senior",
+    "company": "MeasuringU",
+    "position": "Senior Full Stack Developer & Scrum Master",
+    "startDate": "2021-03-01",
+    "endDate": null,
+    "location": "Remote",
+    "description": "Lead full-stack development and serve as Scrum Master for a 7-person development team. Architect scalable solutions, conduct technical interviews, and drive agile transformation initiatives.",
+    "achievements": [
+      "Serve as Scrum Master for 7-person development team since February 2025, facilitating 2-week sprints with 30/60/90 day strategic planning",
+      "Led complete frontend overhaul implementing Material Design methodology across entire platform",
+      "Redesigned components, navigation, and information architecture improving user experience",
+      "Implemented AI-assisted development workflows with comprehensive team code review processes ensuring all merged code meets quality standards",
+      "Adopted spec-driven development methodologies using Spec Kit for project planning and execution",
+      "Conducted technical interviews and onboarded new developers, establishing team growth processes", 
+      "Architected full-stack solutions with focus on scalability and minimal technical debt",
+      "Built comprehensive data visualization dashboard with advanced statistics and interactive charts",
+      "Mentored junior developers and established code quality standards across the team",
+      "Implemented Behavior Driven Design practices for loosely coupled, scalable systems"
+    ],
+    "technologies": ["Vue.js", "PHP", "Material Design", "JavaScript", "CSS3", "RESTful APIs", "Database Design", "GitHub Copilot", "Spec Kit"],
+    "type": "work",
+    "verified": true
+  },
+  {
+    "id": "mountain-data-fullstack",
+    "company": "Mountain Data Group",
+    "position": "Full Stack Web Application Developer",
+    "startDate": "2020-03-01",
+    "endDate": "2021-03-01",
+    "location": "Colorado",
+    "description": "Transitioned from internship to full-time role, focusing on database optimization and full-stack web application development for primary client integrations.",
+    "achievements": [
+      "Improved database query performance by up to 50x through query analysis, indexing, and optimization",
+      "Integrated full-stack web application solutions with primary client systems",
+      "Conducted database benchmarking to track optimizations and performance improvements",
+      "Developed Django APIs for secure and efficient data delivery",
+      "Automated monthly data updates, eliminating downtime and improving speeds by orders of magnitude",
+      "Participated in weekly scrum meetings to share project developments and progress"
+    ],
+    "technologies": ["Python", "Django", "SQL", "Database Optimization", "RESTful APIs", "Data Analytics"],
+    "type": "work",
+    "verified": true
+  },
+  {
+    "id": "mountain-data-intern",
+    "company": "Mountain Data Group",
+    "position": "Data Science Intern",
+    "startDate": "2019-05-01",
+    "endDate": "2020-03-01",
+    "location": "Colorado",
+    "description": "Applied data science techniques to large-scale datasets while developing full-stack web applications and learning database optimization practices.",
+    "achievements": [
+      "Analyzed census and weather datasets containing over 1 billion records each using Python data analytics libraries",
+      "Developed big data solutions utilizing time series modeling for data forecasting",
+      "Gained expertise in GIS and census data for statistical analysis and data-driven decision making",
+      "Researched and integrated UK demographic and weather datasets to improve forecasting models",
+      "Built statistical models and data visualizations for large-scale data analysis"
+    ],
+    "technologies": ["Python", "Data Analytics", "Statistical Modeling", "GIS", "Time Series Analysis", "Big Data"],
+    "type": "work",
+    "verified": true
+  },
+  {
+    "id": "csu-web-developer",
+    "company": "Environmental Health Services at Colorado State University",
+    "position": "Web Application Developer",
+    "startDate": "2017-05-01",
+    "endDate": "2019-05-01",
+    "location": "Fort Collins, CO",
+    "description": "Led development of data-driven .NET applications for university administrators while providing technical support and database design services.",
+    "achievements": [
+      "Led development of .NET data-driven applications for tracking university drones, managing international traveler insurance, and generating annual fiscal reports",
+      "Designed and implemented relational databases ensuring data integrity and accurate relational models",
+      "Worked directly with clients to develop custom administrative tools addressing specific departmental needs",
+      "Collaborated in agile teams utilizing pair programming practices",
+      "Wrote well-documented code following SOLID development principles and object-oriented design",
+      "Created and maintained Microsoft Access forms for administrative data manipulation"
+    ],
+    "technologies": [".NET", "C#", "SQL Server", "Microsoft Access", "Relational Database Design", "Object-Oriented Programming"],
+    "type": "work",
+    "verified": true
+  }
+]

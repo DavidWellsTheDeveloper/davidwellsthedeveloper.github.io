@@ -1,0 +1,62 @@
+# Line endings
+* text=auto eol=lf
+*.{cmd,[cC][mM][dD]} text eol=crlf
+*.{bat,[bB][aA][tT]} text eol=crlf
+
+# Web files
+*.html text diff=html
+*.css text diff=css
+*.js text
+*.ts text
+*.vue text
+*.json text
+*.md text diff=markdown
+*.yml text
+*.yaml text
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+*.webp binary
+
+# Fonts
+*.woff binary
+*.woff2 binary
+*.eot binary
+*.ttf binary
+*.otf binary
+
+# Documents
+*.pdf binary
+*.doc binary
+*.docx binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+*.7z binary
+
+# Node.js files
+package.json text eol=lf
+package-lock.json text eol=lf linguist-generated=true
+yarn.lock text eol=lf linguist-generated=true
+pnpm-lock.yaml text eol=lf linguist-generated=true
+
+# Configuration files
+*.config.js text
+*.config.ts text
+.eslintrc* text
+.prettierrc* text
+tsconfig.json text
+.gitignore text
+.gitattributes text
+
+# Prevent massive diffs in lockfiles
+package-lock.json diff=nodiff merge=union
+yarn.lock diff=nodiff merge=union
+pnpm-lock.yaml diff=nodiff merge=union

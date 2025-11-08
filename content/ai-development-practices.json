@@ -1,0 +1,39 @@
+{
+  "aiDevelopmentWorkflow": {
+    "title": "AI-Assisted Development with GitHub Copilot",
+    "description": "Leveraging GitHub Copilot to enhance development velocity while maintaining code quality through rigorous team review processes",
+    "implementation": "All AI-generated code undergoes comprehensive team review before merging, ensuring quality and knowledge sharing across the development team",
+    "primaryTool": {
+      "name": "GitHub Copilot",
+      "usage": "Primary AI coding assistant for code completion, suggestions, and rapid prototyping",
+      "proficiency": "Advanced",
+      "yearsUsed": 1,
+      "benefits": [
+        "Accelerated code writing and completion",
+        "Improved code consistency and patterns",
+        "Enhanced problem-solving speed",
+        "Better exploration of alternative solutions"
+      ]
+    },
+    "supportingTools": {
+      "name": "AI Code Assistants",
+      "usage": "Supplementary AI tools for specific use cases and problem-solving",
+      "proficiency": "Intermediate",
+      "yearsUsed": 1
+    },
+    "processes": [
+      "AI-assisted code generation with GitHub Copilot as primary tool",
+      "Mandatory team code review process ensuring quality and knowledge transfer",
+      "Integration of AI suggestions into existing development workflows",
+      "Spec-driven development approach for structured project planning",
+      "Continuous evaluation of AI tool effectiveness and best practices"
+    ],
+    "teamImpact": [
+      "Increased development velocity while maintaining code standards",
+      "Enhanced problem-solving capabilities through AI collaboration", 
+      "Improved code documentation and consistency",
+      "Faster prototyping and iteration cycles",
+      "Better team knowledge sharing through structured review processes"
+    ]
+  }
+}

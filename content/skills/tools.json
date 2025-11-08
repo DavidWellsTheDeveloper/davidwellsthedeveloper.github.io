@@ -1,0 +1,120 @@
+[
+  {
+    "name": "Database Design",
+    "category": "data",
+    "proficiency": "expert",
+    "yearsExperience": 8,
+    "verified": true
+  },
+  {
+    "name": "Database Optimization",
+    "category": "data",
+    "proficiency": "expert",
+    "yearsExperience": 6,
+    "verified": true
+  },
+  {
+    "name": "SQL",
+    "category": "data",
+    "proficiency": "expert",
+    "yearsExperience": 8,
+    "verified": true
+  },
+  {
+    "name": "MySQL",
+    "category": "data",
+    "proficiency": "advanced",
+    "yearsExperience": 6,
+    "verified": true
+  },
+  {
+    "name": "SQL Server",
+    "category": "data",
+    "proficiency": "advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "Data Analytics",
+    "category": "data",
+    "proficiency": "advanced",
+    "yearsExperience": 5,
+    "verified": true
+  },
+  {
+    "name": "Statistical Modeling",
+    "category": "data",
+    "proficiency": "intermediate",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "Big Data Analysis",
+    "category": "data",
+    "proficiency": "intermediate",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "Git/GitHub",
+    "category": "tools",
+    "proficiency": "expert",
+    "yearsExperience": 8,
+    "verified": true
+  },
+  {
+    "name": "GitLab",
+    "category": "tools",
+    "proficiency": "advanced",
+    "yearsExperience": 5,
+    "verified": true
+  },
+  {
+    "name": "Docker",
+    "category": "tools",
+    "proficiency": "intermediate",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "Linux/Unix",
+    "category": "tools",
+    "proficiency": "advanced",
+    "yearsExperience": 6,
+    "verified": true
+  },
+  {
+    "name": "Google Cloud Platform",
+    "category": "tools",
+    "proficiency": "intermediate",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "Nginx",
+    "category": "tools",
+    "proficiency": "intermediate",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "GitHub Copilot",
+    "category": "tools",
+    "proficiency": "advanced",
+    "yearsExperience": 1,
+    "verified": true
+  },
+  {
+    "name": "AI Code Assistants",
+    "category": "tools",
+    "proficiency": "intermediate",
+    "yearsExperience": 1,
+    "verified": true
+  },
+  {
+    "name": "Spec Kit",
+    "category": "tools",
+    "proficiency": "beginner",
+    "verified": true
+  }
+]

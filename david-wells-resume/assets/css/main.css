@@ -1,0 +1,269 @@
+/* CSS Custom Properties for Material Design 3 Color System */
+:root {
+  /* Primary colors */
+  --primary: 100 116 139; /* slate-500 */
+  --primary-container: 241 245 249; /* slate-100 */
+  --on-primary: 255 255 255;
+  --on-primary-container: 15 23 42; /* slate-900 */
+
+  /* Secondary colors */
+  --secondary: 238 111 30; /* orange-500 */
+  --secondary-container: 253 236 214; /* orange-100 */
+  --on-secondary: 255 255 255;
+  --on-secondary-container: 118 66 18; /* orange-800 */
+
+  /* Surface colors */
+  --surface: 255 255 255;
+  --surface-container: 250 250 250; /* neutral-50 */
+  --surface-container-low: 245 245 245; /* neutral-100 */
+  --surface-container-high: 229 229 229; /* neutral-200 */
+  --on-surface: 23 23 23; /* neutral-900 */
+  --on-surface-variant: 115 115 115; /* neutral-500 */
+
+  /* Background */
+  --background: 255 255 255;
+  --on-background: 23 23 23;
+
+  /* Outline */
+  --outline: 212 212 212; /* neutral-300 */
+  --outline-variant: 229 229 229; /* neutral-200 */
+
+  /* State colors */
+  --success: 34 197 94; /* green-500 */
+  --error: 239 68 68; /* red-500 */
+  --warning: 245 158 11; /* amber-500 */
+  --info: 59 130 246; /* blue-500 */
+
+  /* Shadow colors */
+  --shadow: 0 0 0;
+  --scrim: 0 0 0;
+}
+
+/* Dark theme support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Primary colors (dark) */
+    --primary: 148 163 184; /* slate-400 */
+    --primary-container: 51 65 85; /* slate-700 */
+    --on-primary: 15 23 42; /* slate-900 */
+    --on-primary-container: 241 245 249; /* slate-100 */
+
+    /* Secondary colors (dark) */
+    --secondary: 251 146 60; /* orange-400 */
+    --secondary-container: 154 52 18; /* orange-800 */
+    --on-secondary: 15 23 42; /* slate-900 */
+    --on-secondary-container: 253 236 214; /* orange-100 */
+
+    /* Surface colors (dark) */
+    --surface: 2 6 23; /* slate-950 */
+    --surface-container: 15 23 42; /* slate-900 */
+    --surface-container-low: 30 41 59; /* slate-800 */
+    --surface-container-high: 51 65 85; /* slate-700 */
+    --on-surface: 248 250 252; /* slate-50 */
+    --on-surface-variant: 148 163 184; /* slate-400 */
+
+    /* Background (dark) */
+    --background: 2 6 23; /* slate-950 */
+    --on-background: 248 250 252; /* slate-50 */
+
+    /* Outline (dark) */
+    --outline: 71 85 105; /* slate-600 */
+    --outline-variant: 51 65 85; /* slate-700 */
+  }
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  color: rgb(var(--on-background));
+  background-color: rgb(var(--background));
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography utilities */
+.headline-large {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.headline-medium {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.headline-small {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.title-large {
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.title-medium {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.0094rem;
+}
+
+.title-small {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.0071rem;
+}
+
+.body-large {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.0094rem;
+}
+
+.body-medium {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.0178rem;
+}
+
+.body-small {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.025rem;
+}
+
+.label-large {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.0071rem;
+}
+
+.label-medium {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.0313rem;
+}
+
+.label-small {
+  font-size: 0.6875rem;
+  line-height: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.0313rem;
+}
+
+/* Resume-specific utilities */
+.resume-section {
+  @apply mb-8 last:mb-0;
+}
+
+.resume-section-title {
+  @apply text-2xl font-medium text-primary-700 mb-4 border-b border-surface-300 pb-2;
+}
+
+.resume-card {
+  @apply bg-surface-100 rounded-xl p-6 shadow-lg transition-shadow duration-200;
+}
+
+.resume-card:hover {
+  @apply shadow-xl;
+}
+
+.skill-tag {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  @apply bg-primary-100 text-primary-800;
+}
+
+.timeline-item {
+  @apply relative pl-8 pb-8 last:pb-0;
+}
+
+.timeline-item::before {
+  content: "";
+  @apply absolute left-0 top-2 w-3 h-3 bg-primary-500 rounded-full;
+}
+
+.timeline-item::after {
+  content: "";
+  @apply absolute left-1.5 top-5 w-0.5 bg-surface-300;
+  height: calc(100% - 1rem);
+}
+
+.timeline-item:last-child::after {
+  display: none;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Focus and accessibility */
+.focus-ring:focus-visible {
+  outline: 2px solid rgb(var(--primary));
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .print-break-inside-avoid {
+    break-inside: avoid;
+  }
+
+  .print-break-before {
+    break-before: page;
+  }
+}
+
+/* Responsive utilities */
+@media (max-width: 640px) {
+  .headline-large {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+
+  .headline-medium {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}

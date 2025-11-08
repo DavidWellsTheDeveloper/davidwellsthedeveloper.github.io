@@ -1,50 +1,53 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change: initial → 1.0.0
+Added principles:
+- I. Authentic Representation - No invented skills or false claims
+- II. Clean Design - Minimalist, sleek aesthetic with clear hierarchy
+- III. User-Centric Experience - Intuitive navigation and fast loading
+- IV. Content-First - Well-organized, readable content structure
+- V. Deployment Ready - Automated builds and deployment via Makefile
+Added sections:
+- Content Standards - Quality and accuracy requirements
+- Technical Standards - Performance and compatibility requirements
+Templates requiring updates:
+- .specify/templates/plan-template.md ✅ compatible
+- .specify/templates/spec-template.md ✅ compatible
+- .specify/templates/tasks-template.md ✅ compatible
+Follow-up TODOs: None
+-->
+
+# David Wells Digital Resume Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Authentic Representation
+All skills, experience, and achievements MUST be factually accurate. No skills may be added to the resume without explicit confirmation from Dave. When suggesting new skills or technologies, always ask for verification before including them. This principle is NON-NEGOTIABLE and ensures professional integrity.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Clean Design 
+The website MUST maintain a minimalist, sleek aesthetic with clear visual hierarchy. Design choices should emphasize readability and elegance over complexity. Use whitespace effectively, maintain consistent typography, and ensure the design enhances rather than distracts from the content.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. User-Centric Experience
+The site MUST provide intuitive navigation and fast loading times. Users should be able to quickly find relevant information through logical organization and clear section divisions. Mobile responsiveness is mandatory, and the interface should work seamlessly across all devices.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Content-First Structure
+Content MUST be well-organized with intelligent section divisions including: work history with attractive timeline component, about me page with photo and personal information, technical skills organized by category, and clear presentation of career passions. When reorganizing existing resume content, preserve accuracy while improving presentation.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Deployment Ready
+The project MUST include automated deployment scripts triggered by a Makefile. Build processes should be reliable, repeatable, and well-documented. The deployment pipeline should support easy updates and maintenance of the live site.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Content Standards
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+Content accuracy is paramount. All work history, skills, and personal information must be verified before publication. When processing Dave's Google document resume, reorganize for better presentation but maintain factual accuracy. Skills sections should be categorized intelligently (e.g., programming languages, frameworks, tools, soft skills) but never expanded beyond Dave's actual capabilities.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Technical Standards
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+The static website must load quickly (target: <3 seconds initial load), work across modern browsers, and be fully responsive. The codebase should be maintainable and well-documented. Performance optimization is required, including image compression, CSS/JS minification, and efficient asset loading.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes all development decisions. Before adding any technical skills or professional claims, explicit approval must be obtained from Dave. Design decisions should align with the minimalist aesthetic principle. All features must enhance rather than complicate the user experience.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+Version control and deployment practices must follow the established Makefile-driven approach. Changes to content or design should be reviewable and reversible.
+
+**Version**: 1.0.0 | **Ratified**: 2025-10-05 | **Last Amended**: 2025-10-05

@@ -1,0 +1,31 @@
+# Project-specific Git attributes for Nuxt.js resume
+
+# Text files with LF line endings
+*.vue text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.json text eol=lf
+*.md text eol=lf diff=markdown
+
+# Configuration files
+nuxt.config.* text eol=lf
+tailwind.config.* text eol=lf
+eslint.config.* text eol=lf
+.prettierrc text eol=lf
+tsconfig.json text eol=lf
+
+# Generated files (prevent large diffs)
+package-lock.json linguist-generated=true diff=nodiff
+.nuxt/** linguist-generated=true
+dist/** linguist-generated=true
+
+# Exclude generated files from language statistics
+.nuxt/** linguist-vendored
+node_modules/** linguist-vendored
+dist/** linguist-vendored
+coverage/** linguist-vendored
+
+# Vue.js specific
+*.vue linguist-language=Vue

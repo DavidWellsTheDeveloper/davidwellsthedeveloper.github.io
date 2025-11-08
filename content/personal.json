@@ -1,0 +1,23 @@
+{
+  "bio": "Passionate full-stack developer with a unique journey from sociology to software engineering. I discovered my love for programming while working at Colorado State University, where I built data-driven applications that directly improved administrative workflows. This experience taught me that the best software solutions come from truly understanding user needs and translating them into elegant, scalable code.",
+  "careerPassions": [
+    "Building scalable web applications that solve real-world problems",
+    "Leading and mentoring development teams through agile transformations", 
+    "Database optimization and performance engineering",
+    "Creating intuitive user experiences through thoughtful design systems",
+    "Bridging the gap between technical complexity and business value"
+  ],
+  "personalInterests": [
+    "Outdoor adventure and wilderness exploration",
+    "Rock climbing and mountaineering", 
+    "Photography and travel",
+    "Hockey enthusiast, playing games 2-3 times weekly",
+    "Environmental conservation and sustainability"
+  ],
+  "philosophy": "I believe the best software is built by teams that communicate openly, iterate quickly, and never lose sight of the humans who will ultimately use what we create. My unique background gives me a unique perspective on user behavior and team dynamics, which I bring to every project and leadership role.",
+  "funFacts": [
+    "I've led ATV and hiking tours in the Colorado canyons professionally before becoming a developer",
+    "I've worked on water system projects in Laos with Engineers Without Borders",
+    "I've been on the board of directors for a non-profit"
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "institution": "Colorado State University",
+    "degree": "Bachelor of Science",
+    "field": "Computer Science",
+    "startDate": "2016-08-01",
+    "endDate": "2019-12-01",
+    "location": "Fort Collins, CO",
+    "gpa": null,
+    "honors": [],
+    "relevantCoursework": [
+      "Database Systems and Architecture (3 upper-level courses)",
+      "Relational Algebra and Data Modeling", 
+      "Advanced SQL and Database Normalization",
+      "Algorithm Analysis and Optimization",
+      "Systems Security and Hardening",
+      "Big Data Analysis with Machine Learning",
+      "Web Application Development with React"
+    ],
+    "achievements": [
+      "Worked as professional web developer for CSU while attending classes",
+      "Collaborated on big data team analyzing PM2.5 & PM10 air quality data across the United States using Random Forest algorithms",
+      "Built production-ready web application in Scrum environment using React, SASS, JavaScript, and RESTful APIs"
+    ]
+  },
+  {
+    "institution": "Fort Lewis College", 
+    "degree": "Bachelor of Arts",
+    "field": "Sociology",
+    "startDate": "2008-08-01",
+    "endDate": "2013-05-01",
+    "location": "Durango, CO",
+    "gpa": null,
+    "honors": [
+      "Community Builder of the Year Award (Resident Assistant program)",
+      "Advertising of the Month Award (twice)"
+    ],
+    "relevantCoursework": [
+      "Research Methods and Data Analysis",
+      "Statistical Analysis",
+      "Human Behavior and Social Systems", 
+      "Community Development and Leadership"
+    ],
+    "achievements": [
+      "Served as Resident Assistant managing 34 residents and 210-person area",
+      "Fundraising Officer for Engineers Without Borders (2 years)",
+      "Coordinated international water system project in Laos"
+    ]
+  }
+]

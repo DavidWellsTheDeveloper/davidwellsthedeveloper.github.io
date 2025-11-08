@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Scrum Master",
+    "category": "leadership",
+    "proficiency": "intermediate",
+    "yearsExperience": 1,
+    "verified": true
+  },
+  {
+    "name": "Technical Leadership",
+    "category": "leadership",
+    "proficiency": "advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "Team Management",
+    "category": "leadership",
+    "proficiency": "advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "Technical Interviewing",
+    "category": "leadership",
+    "proficiency": "advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "Agile Methodologies",
+    "category": "methodologies",
+    "proficiency": "advanced",
+    "yearsExperience": 6,
+    "verified": true
+  },
+  {
+    "name": "Sprint Planning",
+    "category": "methodologies",
+    "proficiency": "intermediate",
+    "yearsExperience": 1,
+    "verified": true
+  },
+  {
+    "name": "Retrospectives",
+    "category": "methodologies",
+    "proficiency": "intermediate",
+    "yearsExperience": 1,
+    "verified": true
+  },
+  {
+    "name": "Backlog Planning",
+    "category": "methodologies",
+    "proficiency": "intermediate",
+    "yearsExperience": 1,
+    "verified": true
+  },
+  {
+    "name": "Strategic Planning (30/60/90 day)",
+    "category": "methodologies",
+    "proficiency": "intermediate",
+    "yearsExperience": 1,
+    "verified": true
+  },
+  {
+    "name": "Code Review",
+    "category": "methodologies",
+    "proficiency": "advanced",
+    "yearsExperience": 6,
+    "verified": true
+  },
+  {
+    "name": "Test Driven Development",
+    "category": "methodologies",
+    "proficiency": "advanced",
+    "yearsExperience": 5,
+    "verified": true
+  },
+  {
+    "name": "AI-Assisted Development",
+    "category": "methodologies",
+    "proficiency": "intermediate",
+    "yearsExperience": 1,
+    "verified": true
+  },
+  {
+    "name": "Spec-Driven Development",
+    "category": "methodologies", 
+    "proficiency": "beginner",
+    "verified": true
+  },
+  {
+    "name": "Enhanced Code Review",
+    "category": "methodologies",
+    "proficiency": "advanced",
+    "yearsExperience": 6,
+    "verified": true
+  },
+  {
+    "name": "Team Code Review Process",
+    "category": "methodologies",
+    "proficiency": "advanced",
+    "yearsExperience": 4,
+    "verified": true
+  }
+]
