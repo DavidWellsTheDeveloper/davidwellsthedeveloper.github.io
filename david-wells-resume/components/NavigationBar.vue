@@ -96,40 +96,28 @@
         <a
           href="#about"
           class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
-          @click="
-            scrollToSection('about', $event)
-            closeMobileMenu()
-          "
+          @click="onMobileNavClick('about', $event)"
         >
           About
         </a>
         <a
           href="#experience"
           class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
-          @click="
-            scrollToSection('experience', $event)
-            closeMobileMenu()
-          "
+          @click="onMobileNavClick('experience', $event)"
         >
           Experience
         </a>
         <a
           href="#skills"
           class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
-          @click="
-            scrollToSection('skills', $event)
-            closeMobileMenu()
-          "
+          @click="onMobileNavClick('skills', $event)"
         >
           Skills
         </a>
         <a
           href="#contact"
           class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
-          @click="
-            scrollToSection('contact', $event)
-            closeMobileMenu()
-          "
+          @click="onMobileNavClick('contact', $event)"
         >
           Contact
         </a>
@@ -191,6 +179,11 @@ const scrollToSection = (sectionId: string, event: Event) => {
       behavior: 'smooth',
     })
   }
+}
+
+const onMobileNavClick = (sectionId: string, event: Event) => {
+  scrollToSection(sectionId, event)
+  closeMobileMenu()
 }
 
 // Close mobile menu when clicking outside
