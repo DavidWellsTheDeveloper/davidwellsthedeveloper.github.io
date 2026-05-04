@@ -1,81 +1,81 @@
 {
   "heroHighlights": [
-    "8+ years building scalable web applications for universities and enterprises",
-    "Currently serving as Scrum Master for 7-person development team", 
-    "Improved database performance by up to 50x through optimization techniques",
-    "Led complete frontend overhaul implementing Material Design across entire platform"
+    "Eight years building data-driven applications and analytics platforms",
+    "Scrum Master for a seven-person engineering team",
+    "Analytics dashboards at 1M+ points; relational design and queries delivering 3-5x faster loads",
+    "Large-scale Python analytics on billion-record datasets; pipeline work improving queries up to 100x"
   ],
   "keyAchievements": [
     {
-      "title": "Database Performance Optimization",
-      "metric": "50x improvement",
-      "description": "Optimized database queries through analysis, indexing, and implementation strategies"
+      "title": "Data platforms & analytics",
+      "metric": "8 years",
+      "description": "Full-stack delivery for SaaS analytics, research-scale data, and university administrative systems"
     },
     {
-      "title": "Team Leadership",
+      "title": "Engineering leadership",
       "metric": "7-person team",
-      "description": "Scrum Master facilitating 2-week sprints with strategic 30/60/90 day planning"
+      "description": "Scrum Master—sprint planning, refinement, retrospectives, and sustainable delivery"
     },
     {
-      "title": "Enterprise Design System",
-      "metric": "Complete platform overhaul", 
-      "description": "Led Material Design implementation across components, navigation, and user flows"
+      "title": "Performance & modeling",
+      "metric": "3-5x / 100x",
+      "description": "Normalized schemas and tuned queries; automated pipelines and faster slow queries at scale"
     },
     {
-      "title": "Big Data Analysis",
-      "metric": "1B+ record datasets",
-      "description": "Applied statistical modeling and machine learning to census and weather data"
+      "title": "Frontend & design systems",
+      "metric": "Platform redesign",
+      "description": "Vue.js, Sass, Pinia, and Material Design across the product surface"
     }
   ],
   "recentWork": [
     {
       "company": "MeasuringU",
-      "role": "Senior Full Stack Developer & Scrum Master",
+      "role": "Full Stack Developer",
       "period": "2021-Present",
-      "highlight": "Leading development team and architecting scalable Vue.js/PHP solutions"
+      "highlight": "Data-driven SaaS analytics platform; Scrum Master; charts and relational performance at scale"
     },
     {
-      "company": "Mountain Data Group", 
-      "role": "Full Stack Developer",
+      "company": "Mountain Data Group",
+      "role": "Data Science Developer",
       "period": "2019-2021",
-      "highlight": "Database optimization specialist achieving 50x performance improvements"
+      "highlight": "Billion-record Python analytics, pipelines, GIS/D3 visualization, and statistical modeling"
     }
   ],
   "topSkills": [
     {
-      "name": "Team Leadership",
-      "category": "Leadership",
-      "years": 4,
-      "verified": true
-    },
-    {
-      "name": "Vue.js",
+      "name": "Vue.js / full-stack delivery",
       "category": "Frontend",
       "years": 6,
       "verified": true
     },
     {
-      "name": "Python", 
-      "category": "Backend",
-      "years": 6,
+      "name": "SQL & relational design",
+      "category": "Database",
+      "years": 8,
       "verified": true
     },
     {
-      "name": "Database Optimization",
+      "name": "Python & data analytics",
       "category": "Data",
-      "years": 6,
+      "years": 5,
+      "verified": true
+    },
+    {
+      "name": "PHP & REST APIs",
+      "category": "Backend",
+      "years": 5,
       "verified": true
     },
     {
       "name": "Scrum Master",
-      "category": "Process",
-      "years": 1,
+      "category": "Leadership",
+      "years": 4,
       "verified": true
     },
     {
-      "name": "AI-Assisted Development",
-      "category": "Modern Practices",
-      "years": 1,
+      "name": "AWS & GCP",
+      "category": "Cloud",
+      "years": 4,
       "verified": true
     }
   ]

@@ -29,7 +29,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'Professional digital resume and portfolio for David T. Wells - Senior Full Stack Developer & Scrum Master',
+            'Professional digital resume for David T. Wells — data platforms, analytics, and full-stack software engineering',
         },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ],

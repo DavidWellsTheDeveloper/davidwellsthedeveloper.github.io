@@ -128,9 +128,9 @@ const highlights: Highlight[] = getKeyHighlights ? getKeyHighlights() : [
     description: "8+ years of experience with modern web technologies"
   },
   {
-    title: "Team Leadership", 
-    description: "Scrum Master and technical team lead"
-  }
+    title: "Team Leadership",
+    description: "Scrum Master for a seven-person engineering team",
+  },
 ]
 </script>
 

@@ -23,8 +23,9 @@
 <script setup lang="ts">
 // Page configuration
 definePageMeta({
-  title: 'Dave Wells - Professional Digital Resume',
-  description: 'Minimalist digital resume showcasing authentic professional experience and verified skills.'
+  title: 'David T. Wells — Digital Resume',
+  description:
+    'Senior software engineer focused on data platforms, analytics, and full-stack systems—with Scrum Master experience.',
 })
 
 // Constitutional compliance monitoring
@@ -33,8 +34,9 @@ const isCompliant = computed(() => config.isConstitutionallyCompliant)
 
 // Page-specific SEO
 useSeoMeta({
-  title: 'Dave Wells - Professional Digital Resume',
-  description: 'Minimalist digital resume showcasing authentic professional experience and verified skills.',
+  title: 'David T. Wells — Digital Resume',
+  description:
+    'Senior software engineer focused on data platforms, analytics, and full-stack systems—with Scrum Master experience.',
   ogImage: '/og-image.jpg',
   twitterCard: 'summary_large_image'
 })

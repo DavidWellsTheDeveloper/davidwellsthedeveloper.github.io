@@ -1,0 +1,85 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Flowing wave gradients -->
+    <linearGradient id="wave-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#155e75;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.2" />
+      <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.2" />
+    </linearGradient>
+    
+    <linearGradient id="wave2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.15" />
+      <stop offset="50%" style="stop-color:#a855f7;stop-opacity:0.25" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.15" />
+    </linearGradient>
+    
+    <linearGradient id="wave3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.1" />
+    </linearGradient>
+    
+    <!-- Particle effects -->
+    <radialGradient id="particle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Base background -->
+  <rect width="1920" height="1080" fill="url(#wave-bg)"/>
+  
+  <!-- Flowing wave layers for parallax effect -->
+  <!-- Layer 1: Bottom waves (slowest) -->
+  <g class="parallax-wave-1" opacity="0.8">
+    <path d="M0,800 C480,700 960,900 1440,800 C1680,750 1800,780 1920,800 L1920,1080 L0,1080 Z" 
+          fill="url(#wave1)"/>
+  </g>
+  
+  <!-- Layer 2: Middle waves -->
+  <g class="parallax-wave-2" opacity="0.6">
+    <path d="M0,600 C320,500 640,700 960,600 C1280,500 1600,650 1920,600 L1920,1080 L0,1080 Z" 
+          fill="url(#wave2)"/>
+  </g>
+  
+  <!-- Layer 3: Top waves (fastest) -->
+  <g class="parallax-wave-3" opacity="0.4">
+    <path d="M0,400 C240,350 480,450 720,400 C960,350 1200,420 1440,400 C1680,380 1800,390 1920,400 L1920,1080 L0,1080 Z" 
+          fill="url(#wave3)"/>
+  </g>
+  
+  <!-- Floating particles for depth -->
+  <g class="parallax-particles" opacity="0.3">
+    <circle cx="200" cy="200" r="3" fill="url(#particle)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 20,-10; 0,0" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="300" r="2" fill="url(#particle)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; -15,15; 0,0" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1400" cy="150" r="4" fill="url(#particle)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 10,20; 0,0" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1600" cy="400" r="3" fill="url(#particle)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; -20,-5; 0,0" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="500" r="2" fill="url(#particle)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 25,10; 0,0" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Subtle gradient overlay for depth -->
+  <rect width="1920" height="1080" fill="url(#wave-bg)" opacity="0.1"/>
+</svg>

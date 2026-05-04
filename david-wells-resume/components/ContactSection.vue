@@ -17,7 +17,7 @@
           Get In Touch
         </h2>
         <p class="text-lg text-slate-200 max-w-2xl mx-auto">
-          I'm always interested in discussing new opportunities and collaborative projects. Whether you're looking for a senior developer, team lead, or technical consultant, I'd love to hear about your challenges and see how I can help your team succeed.
+          Interested in roles spanning data platforms, analytics engineering, and full-stack delivery—especially where Scrum leadership and hands-on architecture both matter. Let's talk about your roadmap and how we can ship reliable, measurable improvements together.
         </p>
       </div>
       
@@ -81,21 +81,7 @@
         </div>
       </div>
       
-      <!-- Constitutional Compliance Indicator (Development Only) -->
-      <div
-        v-if="isDevelopment"
-        class="mt-12 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg"
-      >
-        <h4 class="text-sm font-medium text-blue-800 dark:text-blue-200 mb-2">
-          Contact Section - Constitutional Compliance
-        </h4>
-        <div class="text-xs text-blue-600 dark:text-blue-300">
-          ✅ Authentic representation with TODO markers<br>
-          ✅ Clean design with organized contact layout<br>
-          ✅ Fast loading with optimized icons and minimal JavaScript<br>
-          ✅ Deployment ready with accessible markup
-        </div>
-      </div>
+      
     </div>
   </section>
 </template>
@@ -109,7 +95,7 @@ const resumeConfig = useResumeConfig()
 
 // Use Dave's verified contact information
 const contact = computed(() => ({
-  email: profile.email
+  email: profile.email,
 }))
 
 // Get social media links (to be updated when Dave provides verified links)

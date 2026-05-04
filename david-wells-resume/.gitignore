@@ -93,7 +93,9 @@ dist
 
 # Gatsby files
 .cache/
-public
+
+# Nuxt 3 static assets must live in `public/` and be tracked (favicon, hero backgrounds).
+# Do not ignore this folder — it is not Gatsby's build output.
 
 # Vuepress build output
 .vuepress/dist

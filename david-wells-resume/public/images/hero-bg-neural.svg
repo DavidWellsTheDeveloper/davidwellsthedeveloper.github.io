@@ -1,0 +1,125 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Neural network inspired gradients -->
+    <linearGradient id="neural-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c1426;stop-opacity:1" />
+      <stop offset="20%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#164e63;stop-opacity:1" />
+      <stop offset="80%" style="stop-color:#581c87;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0c1426;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Node gradients -->
+    <radialGradient id="node1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0.8" />
+      <stop offset="70%" style="stop-color:#3b82f6;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:0" />
+    </radialGradient>
+    
+    <radialGradient id="node2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#22d3ee;stop-opacity:0.7" />
+      <stop offset="70%" style="stop-color:#06b6d4;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:0" />
+    </radialGradient>
+    
+    <radialGradient id="node3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:0.6" />
+      <stop offset="70%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Connection line gradient -->
+    <linearGradient id="connection" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.3" />
+    </linearGradient>
+    
+    <!-- Glow effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Base background -->
+  <rect width="1920" height="1080" fill="url(#neural-bg)"/>
+  
+  <!-- Neural network connections (background layer - slowest parallax) -->
+  <g class="parallax-connections" opacity="0.4">
+    <!-- Horizontal connections -->
+    <line x1="0" y1="200" x2="400" y2="300" stroke="url(#connection)" stroke-width="1"/>
+    <line x1="400" y1="300" x2="800" y2="250" stroke="url(#connection)" stroke-width="1"/>
+    <line x1="800" y1="250" x2="1200" y2="350" stroke="url(#connection)" stroke-width="1"/>
+    <line x1="1200" y1="350" x2="1600" y2="280" stroke="url(#connection)" stroke-width="1"/>
+    <line x1="1600" y1="280" x2="1920" y2="320" stroke="url(#connection)" stroke-width="1"/>
+    
+    <!-- Vertical connections -->
+    <line x1="200" y1="0" x2="300" y2="400" stroke="url(#connection)" stroke-width="1"/>
+    <line x1="600" y1="100" x2="700" y2="500" stroke="url(#connection)" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1100" y2="600" stroke="url(#connection)" stroke-width="1"/>
+    <line x1="1400" y1="200" x2="1500" y2="800" stroke="url(#connection)" stroke-width="1"/>
+    
+    <!-- Diagonal connections -->
+    <line x1="0" y1="600" x2="600" y2="200" stroke="url(#connection)" stroke-width="1"/>
+    <line x1="800" y1="800" x2="1400" y2="400" stroke="url(#connection)" stroke-width="1"/>
+    <line x1="1200" y1="1080" x2="1800" y2="600" stroke="url(#connection)" stroke-width="1"/>
+  </g>
+  
+  <!-- Neural nodes layer 1 (medium parallax) -->
+  <g class="parallax-nodes-1" opacity="0.8">
+    <circle cx="150" cy="180" r="8" fill="url(#node1)" filter="url(#glow)"/>
+    <circle cx="450" cy="320" r="6" fill="url(#node2)" filter="url(#glow)"/>
+    <circle cx="750" cy="220" r="10" fill="url(#node1)" filter="url(#glow)"/>
+    <circle cx="1050" cy="380" r="7" fill="url(#node3)" filter="url(#glow)"/>
+    <circle cx="1350" cy="250" r="9" fill="url(#node2)" filter="url(#glow)"/>
+    <circle cx="1650" cy="300" r="8" fill="url(#node1)" filter="url(#glow)"/>
+  </g>
+  
+  <!-- Neural nodes layer 2 (faster parallax) -->
+  <g class="parallax-nodes-2" opacity="0.6">
+    <circle cx="300" cy="500" r="5" fill="url(#node2)" filter="url(#glow)"/>
+    <circle cx="600" cy="400" r="7" fill="url(#node3)" filter="url(#glow)"/>
+    <circle cx="900" cy="600" r="6" fill="url(#node1)" filter="url(#glow)"/>
+    <circle cx="1200" cy="450" r="8" fill="url(#node2)" filter="url(#glow)"/>
+    <circle cx="1500" cy="550" r="5" fill="url(#node3)" filter="url(#glow)"/>
+  </g>
+  
+  <!-- Floating data particles (fastest parallax) -->
+  <g class="parallax-particles" opacity="0.5">
+    <circle cx="100" cy="100" r="2" fill="#60a5fa">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 30,20; 0,0" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="150" r="1.5" fill="#22d3ee">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; -20,25; 0,0" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="100" r="2.5" fill="#a78bfa">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 15,-15; 0,0" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1300" cy="120" r="2" fill="#60a5fa">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; -25,30; 0,0" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1700" cy="180" r="1.5" fill="#22d3ee">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 20,-20; 0,0" dur="9s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Code-like matrix overlay -->
+  <defs>
+    <pattern id="matrix" width="100" height="100" patternUnits="userSpaceOnUse">
+      <text x="10" y="20" font-family="monospace" font-size="12" fill="#3b82f6" opacity="0.1">01</text>
+      <text x="40" y="50" font-family="monospace" font-size="10" fill="#06b6d4" opacity="0.08">11</text>
+      <text x="70" y="80" font-family="monospace" font-size="14" fill="#8b5cf6" opacity="0.06">10</text>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#matrix)"/>
+</svg>

@@ -90,7 +90,8 @@ const generateResumeContent = () => {
       name: profile.name,
       title: profile.title,
       email: profile.email,
-      summary: profile.summary
+      phone: profile.phone,
+      summary: profile.summary,
     },
     highlights: getKeyHighlights(),
     experience: workExperience.map(job => ({
@@ -108,7 +109,8 @@ const generateResumeContent = () => {
       dataScience: technicalSkills.filter(s => s.category === 'Data Science'),
       leadership: technicalSkills.filter(s => s.category === 'Leadership'),
       tools: technicalSkills.filter(s => s.category === 'Tools'),
-      modern: technicalSkills.filter(s => s.category === 'Modern Development')
+      cloud: technicalSkills.filter(s => s.category === 'Cloud'),
+      modern: technicalSkills.filter(s => s.category === 'Modern Development'),
     },
     about: {
       bio: personal.bio,
@@ -343,7 +345,7 @@ const generateResumeHTML = (content: any) => {
           <div class="name">${content.profile.name}</div>
           <div class="title">${content.profile.title}</div>
           <div class="contact">
-            ${content.profile.email}
+            ${[content.profile.email, content.profile.phone].filter(Boolean).join(' · ')}
           </div>
         </div>
         
@@ -451,6 +453,15 @@ const generateResumeHTML = (content: any) => {
           <div class="skill-category">
             <div class="skill-category-title">Leadership</div>
             ${content.skills.leadership.map((skill: any) => `
+              <div class="skill-item">
+                <span class="skill-name">${skill.name}</span>
+                <span class="skill-level">${skill.proficiency}</span>
+              </div>
+            `).join('')}
+          </div>
+          <div class="skill-category">
+            <div class="skill-category-title">Cloud</div>
+            ${content.skills.cloud.map((skill: any) => `
               <div class="skill-item">
                 <span class="skill-name">${skill.name}</span>
                 <span class="skill-level">${skill.proficiency}</span>

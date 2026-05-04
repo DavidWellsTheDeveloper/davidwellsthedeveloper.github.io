@@ -1,6 +1,6 @@
 <template>
   <section 
-    class="hero-parallax relative min-h-screen flex items-center justify-center overflow-hidden"
+    class="hero-parallax relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-950"
     role="banner"
     aria-labelledby="hero-heading"
   >
@@ -76,7 +76,7 @@
             opacity: contentOpacity
           }"
         >
-          {{ profile?.title || 'Senior Full Stack Developer & Scrum Master' }}
+          {{ profile?.title || 'Data Platforms & Analytics Software Engineer' }}
         </h2>
 
         <!-- Value Proposition with enhanced readability -->
@@ -87,7 +87,7 @@
             opacity: contentOpacity
           }"
         >
-          {{ profile?.summary || 'Building scalable solutions and leading high-performing development teams with 8+ years of full-stack expertise' }}
+          {{ profile?.summary || 'Senior Software Engineer focused on data platforms, analytics, and full-stack systems—with experience as a Scrum Master and a track record of performance and clean architecture.' }}
         </p>
 
         <!-- Enhanced CTA Buttons with parallax hover effects -->
@@ -145,19 +145,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Background selector for development/demo -->
-    <div v-if="isDev" class="absolute top-4 right-4 z-20 bg-slate-900/80 backdrop-blur-sm rounded-lg p-4 text-sm">
-      <label class="text-slate-300 mb-2 block">Background:</label>
-      <select 
-        v-model="selectedBackground" 
-        class="bg-slate-700 text-white rounded px-2 py-1 text-xs"
-      >
-        <option value="/images/hero-bg-geometric.svg">Geometric</option>
-        <option value="/images/hero-bg-waves.svg">Waves</option>
-        <option value="/images/hero-bg-neural.svg">Neural</option>
-      </select>
-    </div>
   </section>
 </template>
 
@@ -170,7 +157,7 @@ interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  backgroundType: 'geometric'
+  backgroundType: 'neural',
 })
 
 // Constitutional compliance flags
@@ -183,11 +170,9 @@ const CONSTITUTIONAL = {
 // Resume data
 const { profile } = useResumeData()
 
-// Development mode
-const isDev = process.env.NODE_ENV === 'development'
-
-// Background selection
-const selectedBackground = ref(`/images/hero-bg-${props.backgroundType}.svg`)
+const selectedBackground = computed(
+  () => `/images/hero-bg-${props.backgroundType}.svg`,
+)
 
 // Parallax state
 const scrollY = ref(0)

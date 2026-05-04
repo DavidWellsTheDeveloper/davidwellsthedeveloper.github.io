@@ -110,7 +110,7 @@ jobs:
           # Use custom domain if configured, otherwise use GitHub Pages URL
           NUXT_PUBLIC_APP_URL: ${{ vars.CUSTOM_DOMAIN && format('https://{0}', vars.CUSTOM_DOMAIN) || steps.deployment.outputs.page_url }}
           NUXT_PUBLIC_APP_NAME: 'David T. Wells - Digital Resume'
-          NUXT_PUBLIC_APP_DESCRIPTION: 'Professional digital resume and portfolio for David T. Wells - Senior Full Stack Developer & Scrum Master'
+          NUXT_PUBLIC_APP_DESCRIPTION: 'Professional digital resume for David T. Wells — data platforms, analytics, and full-stack software engineering'
 
           # Constitutional principles (enforced)
           NUXT_PUBLIC_AUTHENTIC_REPRESENTATION: true
