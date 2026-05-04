@@ -88,11 +88,11 @@ deploy-preview: build ## Preview deployment locally
 	@echo "$(YELLOW)Starting preview server...$(NC)"
 	cd david-wells-resume && npm run preview
 
-deploy-aws: constitutional build ## Deploy to AWS S3 (requires AWS credentials)
+deploy-aws: constitutional ## Deploy to AWS S3 (requires AWS CLI + .env.production)
 	@echo "$(YELLOW)Deploying to AWS S3...$(NC)"
 	@if [ ! -f david-wells-resume/.env.production ]; then \
-		echo "$(RED)❌ .env.production file required for AWS deployment$(NC)"; \
-		echo "Copy .env.example to .env.production and configure AWS settings"; \
+		echo "$(RED)❌ david-wells-resume/.env.production is required$(NC)"; \
+		echo "Create it from .env.example (set AWS_S3_BUCKET, AWS_REGION, credentials)."; \
 		exit 1; \
 	fi
 	cd david-wells-resume && npm run deploy:aws
