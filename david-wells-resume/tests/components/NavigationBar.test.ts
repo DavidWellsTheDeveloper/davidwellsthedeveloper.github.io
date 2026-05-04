@@ -80,9 +80,9 @@ const NavigationBarComponent = {
   setup() {
     return {
       // Mock navigation state
-      isMobileMenuOpen: false
+      isMobileMenuOpen: false,
     }
-  }
+  },
 }
 
 describe('NavigationBar Component', () => {
@@ -93,8 +93,8 @@ describe('NavigationBar Component', () => {
       global: {
         stubs: {
           // Stub any Nuxt composables if needed
-        }
-      }
+        },
+      },
     })
   })
 
@@ -103,7 +103,7 @@ describe('NavigationBar Component', () => {
       // Should only display verified information
       const navElement = wrapper.find('[data-testid="navigation-bar"]')
       expect(navElement.exists()).toBe(true)
-      
+
       // Should include TODO markers for unverified content
       const logoText = wrapper.find('[data-testid="nav-logo"]').text()
       expect(logoText).toContain('TODO: Verify with Dave')
@@ -114,7 +114,7 @@ describe('NavigationBar Component', () => {
       expect(wrapper.find('nav').exists()).toBe(true)
       expect(wrapper.find('nav').attributes('role')).toBe('navigation')
       expect(wrapper.find('nav').attributes('aria-label')).toBeTruthy()
-      
+
       // Should have clean, organized layout
       const navContainer = wrapper.find('.flex.justify-between')
       expect(navContainer.exists()).toBe(true)
@@ -123,7 +123,7 @@ describe('NavigationBar Component', () => {
     it('optimizes for fast loading', () => {
       // Should use minimal JavaScript
       expect(wrapper.find('script').exists()).toBe(false)
-      
+
       // Should use efficient CSS classes - check the container div
       const containerDiv = wrapper.find('.max-w-4xl')
       expect(containerDiv.exists()).toBe(true)
@@ -132,7 +132,7 @@ describe('NavigationBar Component', () => {
     it('ensures deployment readiness', () => {
       // Should render without errors
       expect(wrapper.vm).toBeTruthy()
-      
+
       // Should have proper structure for static generation
       expect(wrapper.find('[data-testid="navigation-bar"]').exists()).toBe(true)
     })
@@ -209,7 +209,7 @@ describe('NavigationBar Component', () => {
   describe('Performance', () => {
     it('renders efficiently without heavy operations', () => {
       expect(wrapper.vm).toBeTruthy()
-      
+
       // Should have minimal DOM elements
       const allElements = wrapper.findAll('*')
       expect(allElements.length).toBeLessThan(25)

@@ -1,12 +1,14 @@
 <template>
-  <section 
+  <section
     class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 px-4 py-16 md:py-24"
     role="banner"
     aria-labelledby="hero-heading"
   >
     <!-- Background gradient overlay -->
-    <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10"></div>
-    
+    <div
+      class="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10"
+    ></div>
+
     <div class="relative z-10 max-w-6xl mx-auto text-center">
       <div class="space-y-8">
         <!-- Professional Name -->
@@ -18,28 +20,46 @@
         </h1>
 
         <!-- Professional Title -->
-        <h2 class="text-xl md:text-2xl lg:text-3xl font-medium text-slate-200 max-w-4xl mx-auto">
+        <h2
+          class="text-xl md:text-2xl lg:text-3xl font-medium text-slate-200 max-w-4xl mx-auto"
+        >
           {{ profile?.title || 'TODO: Verify with Dave - Professional Title' }}
         </h2>
 
         <!-- Value Proposition -->
-        <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-          {{ profile?.summary || 'TODO: Verify with Dave - Professional Summary' }}
+        <p
+          class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed"
+        >
+          {{
+            profile?.summary || 'TODO: Verify with Dave - Professional Summary'
+          }}
         </p>
 
         <!-- CTA Buttons -->
-        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8"
+        >
           <NuxtLink
             to="#contact"
             class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
             aria-describedby="hero-contact-desc"
           >
             Get In Touch
-            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            <svg
+              class="ml-2 w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
           </NuxtLink>
-          
+
           <NuxtLink
             to="#experience"
             class="inline-flex items-center px-8 py-4 border-2 border-slate-300 text-slate-200 hover:bg-slate-300 hover:text-slate-900 font-semibold rounded-lg transform hover:-translate-y-1 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-slate-300/50"
@@ -51,14 +71,26 @@
 
         <!-- Accessibility descriptions -->
         <div class="sr-only">
-          <p id="hero-contact-desc">Navigate to contact section to get in touch</p>
+          <p id="hero-contact-desc">
+            Navigate to contact section to get in touch
+          </p>
           <p id="hero-work-desc">Navigate to work experience section</p>
         </div>
 
         <!-- Scroll indicator -->
         <div class="pt-16 animate-bounce">
-          <svg class="w-6 h-6 mx-auto text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          <svg
+            class="w-6 h-6 mx-auto text-slate-400"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
           </svg>
         </div>
       </div>
@@ -71,7 +103,7 @@
 const CONSTITUTIONAL = {
   authenticRepresentation: process.env.NODE_ENV === 'production',
   cleanDesign: process.env.NODE_ENV === 'production',
-  fastLoading: process.env.NODE_ENV === 'production'
+  fastLoading: process.env.NODE_ENV === 'production',
 }
 
 // Constitutional validation
@@ -111,7 +143,8 @@ const { profile } = useResumeData()
 <style scoped>
 /* Enhanced gradient animations */
 @keyframes gradient-shift {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   50% {

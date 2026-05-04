@@ -91,19 +91,21 @@ const ExperienceTimelineComponent = {
           position: 'TODO: Verify with Dave - Position Title',
           company: 'TODO: Verify with Dave - Company Name',
           duration: 'TODO: Verify with Dave - Duration',
-          description: 'TODO: Verify with Dave - Authentic job responsibilities and achievements. Only verified accomplishments should be listed.',
-          technologies: ['TODO: Verify', 'Technologies', 'Used']
+          description:
+            'TODO: Verify with Dave - Authentic job responsibilities and achievements. Only verified accomplishments should be listed.',
+          technologies: ['TODO: Verify', 'Technologies', 'Used'],
         },
         {
           position: 'TODO: Verify with Dave - Previous Position',
           company: 'TODO: Verify with Dave - Previous Company',
           duration: 'TODO: Verify with Dave - Duration',
-          description: 'TODO: Verify with Dave - Previous role responsibilities. All content must be authentic and verified.',
-          technologies: ['TODO: Verify', 'Previous', 'Tech Stack']
-        }
-      ]
+          description:
+            'TODO: Verify with Dave - Previous role responsibilities. All content must be authentic and verified.',
+          technologies: ['TODO: Verify', 'Previous', 'Tech Stack'],
+        },
+      ],
     }
-  }
+  },
 }
 
 describe('ExperienceTimeline Component', () => {
@@ -117,7 +119,7 @@ describe('ExperienceTimeline Component', () => {
     it('enforces authentic representation', () => {
       const section = wrapper.find('[data-testid="experience-timeline"]')
       expect(section.exists()).toBe(true)
-      
+
       // Should include TODO markers for unverified content
       const content = wrapper.text()
       expect(content).toContain('TODO: Verify with Dave')
@@ -127,7 +129,7 @@ describe('ExperienceTimeline Component', () => {
       expect(wrapper.find('section').exists()).toBe(true)
       expect(wrapper.find('section').attributes('role')).toBe('region')
       expect(wrapper.find('h2').exists()).toBe(true)
-      
+
       // Should have clean timeline layout
       expect(wrapper.find('.relative').exists()).toBe(true)
       expect(wrapper.find('.space-y-8').exists()).toBe(true)
@@ -135,7 +137,7 @@ describe('ExperienceTimeline Component', () => {
 
     it('optimizes for fast loading', () => {
       expect(wrapper.find('script').exists()).toBe(false)
-      
+
       // Should use efficient CSS classes
       const container = wrapper.find('.max-w-4xl')
       expect(container.exists()).toBe(true)
@@ -143,7 +145,9 @@ describe('ExperienceTimeline Component', () => {
 
     it('ensures deployment readiness', () => {
       expect(wrapper.vm).toBeTruthy()
-      expect(wrapper.find('[data-testid="experience-timeline"]').exists()).toBe(true)
+      expect(wrapper.find('[data-testid="experience-timeline"]').exists()).toBe(
+        true
+      )
     })
   })
 
@@ -151,7 +155,7 @@ describe('ExperienceTimeline Component', () => {
     it('displays timeline with visual elements', () => {
       // Timeline line
       expect(wrapper.find('.absolute.left-8').exists()).toBe(true)
-      
+
       // Timeline dots for each experience
       const timelineDots = wrapper.findAll('.bg-blue-600.rounded-full')
       expect(timelineDots.length).toBeGreaterThan(0)
@@ -163,10 +167,18 @@ describe('ExperienceTimeline Component', () => {
     })
 
     it('shows all experience details', () => {
-      expect(wrapper.find('[data-testid="experience-position"]').exists()).toBe(true)
-      expect(wrapper.find('[data-testid="experience-company"]').exists()).toBe(true)
-      expect(wrapper.find('[data-testid="experience-duration"]').exists()).toBe(true)
-      expect(wrapper.find('[data-testid="experience-description"]').exists()).toBe(true)
+      expect(wrapper.find('[data-testid="experience-position"]').exists()).toBe(
+        true
+      )
+      expect(wrapper.find('[data-testid="experience-company"]').exists()).toBe(
+        true
+      )
+      expect(wrapper.find('[data-testid="experience-duration"]').exists()).toBe(
+        true
+      )
+      expect(
+        wrapper.find('[data-testid="experience-description"]').exists()
+      ).toBe(true)
     })
   })
 
@@ -178,7 +190,7 @@ describe('ExperienceTimeline Component', () => {
 
     it('shows TODO verification for technologies', () => {
       const techTags = wrapper.findAll('[data-testid="experience-tech"]')
-      const hasVerificationMarkers = techTags.some((tag: any) => 
+      const hasVerificationMarkers = techTags.some((tag: any) =>
         tag.text().includes('TODO')
       )
       expect(hasVerificationMarkers).toBe(true)
@@ -207,7 +219,9 @@ describe('ExperienceTimeline Component', () => {
   describe('Accessibility', () => {
     it('has proper semantic structure', () => {
       expect(wrapper.find('section').attributes('role')).toBe('region')
-      expect(wrapper.find('section').attributes('aria-labelledby')).toBe('experience-heading')
+      expect(wrapper.find('section').attributes('aria-labelledby')).toBe(
+        'experience-heading'
+      )
     })
 
     it('includes proper heading hierarchy', () => {
@@ -224,7 +238,7 @@ describe('ExperienceTimeline Component', () => {
   describe('Performance', () => {
     it('renders efficiently without heavy operations', () => {
       expect(wrapper.vm).toBeTruthy()
-      
+
       // Should have reasonable DOM structure
       const allElements = wrapper.findAll('*')
       expect(allElements.length).toBeLessThan(100)

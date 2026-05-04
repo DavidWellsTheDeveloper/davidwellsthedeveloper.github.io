@@ -1,8 +1,8 @@
 /**
  * Resume Configuration Tests
- * 
+ *
  * Tests the environment configuration logic for constitutional compliance.
- * 
+ *
  * Note: Full composable testing requires a more complex mock setup.
  * These tests focus on the core logic and principles.
  */

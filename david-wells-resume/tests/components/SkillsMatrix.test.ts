@@ -82,11 +82,16 @@ const SkillsMatrixComponent = {
   setup() {
     const getProgressWidth = (level: string): string => {
       switch (level.toLowerCase()) {
-        case 'expert': return '90%'
-        case 'advanced': return '75%'
-        case 'intermediate': return '60%'
-        case 'beginner': return '30%'
-        default: return '50%'
+        case 'expert':
+          return '90%'
+        case 'advanced':
+          return '75%'
+        case 'intermediate':
+          return '60%'
+        case 'beginner':
+          return '30%'
+        default:
+          return '50%'
       }
     }
 
@@ -97,21 +102,21 @@ const SkillsMatrixComponent = {
           icon: '💻',
           skills: [
             { name: 'TODO: Verify Skill', level: 'TODO: Verify Level' },
-            { name: 'TODO: Verify Another Skill', level: 'TODO: Verify Level' }
-          ]
+            { name: 'TODO: Verify Another Skill', level: 'TODO: Verify Level' },
+          ],
         },
         {
           title: 'TODO: Verify Second Category',
           icon: '🚀',
           skills: [
             { name: 'TODO: Verify Framework', level: 'TODO: Verify Level' },
-            { name: 'TODO: Verify Tool', level: 'TODO: Verify Level' }
-          ]
-        }
+            { name: 'TODO: Verify Tool', level: 'TODO: Verify Level' },
+          ],
+        },
       ],
-      getProgressWidth
+      getProgressWidth,
     }
-  }
+  },
 }
 
 describe('SkillsMatrix Component', () => {
@@ -125,7 +130,7 @@ describe('SkillsMatrix Component', () => {
     it('enforces authentic representation', () => {
       const section = wrapper.find('[data-testid="skills-matrix"]')
       expect(section.exists()).toBe(true)
-      
+
       // Should include TODO markers for unverified skills
       const content = wrapper.text()
       expect(content).toContain('TODO: Verify')
@@ -135,7 +140,7 @@ describe('SkillsMatrix Component', () => {
     it('follows clean design principles', () => {
       expect(wrapper.find('section').exists()).toBe(true)
       expect(wrapper.find('section').attributes('role')).toBe('region')
-      
+
       // Should have clean grid layout
       expect(wrapper.find('.grid').exists()).toBe(true)
       expect(wrapper.find('.grid-cols-1').exists()).toBe(true)
@@ -170,7 +175,7 @@ describe('SkillsMatrix Component', () => {
     it('displays category titles with icons', () => {
       const titles = wrapper.findAll('[data-testid="category-title"]')
       expect(titles.length).toBeGreaterThan(0)
-      
+
       // Should contain icons
       const firstTitle = titles[0]
       expect(firstTitle.text()).toMatch(/[💻🚀]/)
@@ -195,7 +200,7 @@ describe('SkillsMatrix Component', () => {
 
     it('shows TODO verification markers', () => {
       const skillNames = wrapper.findAll('[data-testid="skill-name"]')
-      const hasVerificationMarkers = skillNames.some((skill: any) => 
+      const hasVerificationMarkers = skillNames.some((skill: any) =>
         skill.text().includes('TODO')
       )
       expect(hasVerificationMarkers).toBe(true)
@@ -206,7 +211,7 @@ describe('SkillsMatrix Component', () => {
     it('renders progress bars with appropriate widths', () => {
       const progressBars = wrapper.findAll('[data-testid="skill-progress"]')
       expect(progressBars.length).toBeGreaterThan(0)
-      
+
       // Progress bars should have width styles
       progressBars.forEach((bar: any) => {
         expect(bar.attributes('style')).toBeTruthy()
@@ -243,7 +248,9 @@ describe('SkillsMatrix Component', () => {
   describe('Accessibility', () => {
     it('has proper semantic structure', () => {
       expect(wrapper.find('section').attributes('role')).toBe('region')
-      expect(wrapper.find('section').attributes('aria-labelledby')).toBe('skills-heading')
+      expect(wrapper.find('section').attributes('aria-labelledby')).toBe(
+        'skills-heading'
+      )
     })
 
     it('includes proper heading hierarchy', () => {
@@ -260,7 +267,7 @@ describe('SkillsMatrix Component', () => {
   describe('Performance', () => {
     it('renders efficiently', () => {
       expect(wrapper.vm).toBeTruthy()
-      
+
       // Should have reasonable DOM structure
       const allElements = wrapper.findAll('*')
       expect(allElements.length).toBeLessThan(150)
@@ -282,7 +289,7 @@ describe('SkillsMatrix Component', () => {
     it('includes dark mode classes', () => {
       const section = wrapper.find('section')
       expect(section.classes()).toContain('dark:bg-gray-800')
-      
+
       const cards = wrapper.findAll('.bg-white')
       cards.forEach((card: any) => {
         expect(card.classes()).toContain('dark:bg-gray-900')

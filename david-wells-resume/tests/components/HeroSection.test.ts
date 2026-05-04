@@ -44,14 +44,14 @@ const HeroSectionComponent = {
           constitutional: {
             authenticRepresentation: true,
             cleanDesign: true,
-            fastLoading: true
-          }
+            fastLoading: true,
+          },
         },
         isDevelopment: true,
-        isConstitutionallyCompliant: true
-      }
+        isConstitutionallyCompliant: true,
+      },
     }
-  }
+  },
 }
 
 describe('HeroSection Component', () => {
@@ -65,9 +65,9 @@ describe('HeroSection Component', () => {
           // Stub any Nuxt composables
           useSeoMeta: vi.fn(),
           watchEffect: vi.fn(),
-          computed: vi.fn((fn) => ({ value: fn() }))
-        }
-      }
+          computed: vi.fn(fn => ({ value: fn() })),
+        },
+      },
     })
   })
 
@@ -76,7 +76,7 @@ describe('HeroSection Component', () => {
       // Should only display verified information
       const element = wrapper.find('[data-testid="hero-section"]')
       expect(element.exists()).toBe(true)
-      
+
       // Should include TODO markers for unverified content
       const content = wrapper.text()
       expect(content).toContain('TODO: Verify with Dave')
@@ -86,7 +86,7 @@ describe('HeroSection Component', () => {
       // Should use semantic HTML structure
       expect(wrapper.find('section').exists()).toBe(true)
       expect(wrapper.find('h1').exists()).toBe(true)
-      
+
       // Should have proper accessibility attributes
       expect(wrapper.find('section').attributes('role')).toBe('banner')
       expect(wrapper.find('section').attributes('aria-labelledby')).toBeTruthy()
@@ -96,16 +96,18 @@ describe('HeroSection Component', () => {
       // Should not have heavy JavaScript or large images
       expect(wrapper.find('img').exists()).toBe(false) // No images until optimized
       expect(wrapper.find('script').exists()).toBe(false) // No inline scripts
-      
+
       // Should use efficient CSS classes - check the container div
       const containerClasses = wrapper.find('div').classes()
-      expect(containerClasses.some((cls: string) => cls.includes('max-w'))).toBe(true) // Container sizing
+      expect(
+        containerClasses.some((cls: string) => cls.includes('max-w'))
+      ).toBe(true) // Container sizing
     })
 
     it('ensures deployment readiness', () => {
       // Should render without errors
       expect(wrapper.vm).toBeTruthy()
-      
+
       // Should have proper structure for static generation
       expect(wrapper.find('[data-testid="hero-section"]').exists()).toBe(true)
     })
@@ -125,7 +127,9 @@ describe('HeroSection Component', () => {
     })
 
     it('displays professional summary', () => {
-      const summaryElement = wrapper.find('[data-testid="professional-summary"]')
+      const summaryElement = wrapper.find(
+        '[data-testid="professional-summary"]'
+      )
       expect(summaryElement.exists()).toBe(true)
       expect(summaryElement.text()).toContain('TODO: Verify with Dave')
     })
@@ -135,16 +139,20 @@ describe('HeroSection Component', () => {
     it('applies mobile-first responsive classes', () => {
       const containerDiv = wrapper.find('div')
       const classes = containerDiv.classes()
-      
+
       // Should have container and responsive padding
       expect(classes).toContain('px-4')
-      expect(classes.some((cls: string) => cls.includes('md:') || cls.includes('sm:'))).toBe(true)
+      expect(
+        classes.some(
+          (cls: string) => cls.includes('md:') || cls.includes('sm:')
+        )
+      ).toBe(true)
     })
 
     it('uses proper typography scaling', () => {
       const heading = wrapper.find('h1')
       const classes = heading.classes()
-      
+
       // Should have responsive text sizing
       expect(classes.some((cls: string) => cls.includes('text-'))).toBe(true)
       expect(classes.some((cls: string) => cls.includes('sm:text-'))).toBe(true)
@@ -175,7 +183,7 @@ describe('HeroSection Component', () => {
     it('renders efficiently without heavy operations', () => {
       // Component should render quickly
       expect(wrapper.vm).toBeTruthy()
-      
+
       // Should have minimal DOM structure
       const allElements = wrapper.findAll('*')
       expect(allElements.length).toBeLessThan(20) // Keep DOM lightweight

@@ -2,19 +2,19 @@
   <div class="min-h-screen bg-white dark:bg-gray-900">
     <!-- Navigation -->
     <NavigationBar />
-    
+
     <!-- Hero Section with Neural Network Background -->
     <HeroSectionParallax background-type="neural" />
-    
+
     <!-- About Section -->
     <AboutSection />
-    
+
     <!-- Experience Timeline -->
     <ExperienceTimeline />
-    
+
     <!-- Skills Matrix -->
     <SkillsMatrix />
-    
+
     <!-- Contact Section -->
     <ContactSection />
   </div>
@@ -38,7 +38,7 @@ useSeoMeta({
   description:
     'Senior software engineer focused on data platforms, analytics, and full-stack systems—with Scrum Master experience.',
   ogImage: '/og-image.jpg',
-  twitterCard: 'summary_large_image'
+  twitterCard: 'summary_large_image',
 })
 </script>
 

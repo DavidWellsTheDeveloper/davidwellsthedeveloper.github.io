@@ -18,26 +18,27 @@
             {{ profile.name }}
           </a>
         </div>
-        
+
         <!-- Desktop Navigation Links -->
-          <!-- Desktop Navigation -->
-          <div class="hidden md:block">
-            <div class="ml-10 flex items-baseline space-x-4">
-              <a
-                v-for="item in navigation"
-                :key="item.name"
-                :href="item.href"
-                @click="scrollToSection(item.href.substring(1), $event)"
-                class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
-              >
-                {{ item.name }}
-              </a>
-              <!-- Download Resume Button -->
-              <div class="ml-4">
-                <ResumeDownload />
-              </div>
+        <!-- Desktop Navigation -->
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a
+              v-for="item in navigation"
+              :key="item.name"
+              :href="item.href"
+              @click="scrollToSection(item.href.substring(1), $event)"
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
+            >
+              {{ item.name }}
+            </a>
+            <!-- Download Resume Button -->
+            <div class="ml-4">
+              <ResumeDownload />
             </div>
-          </div>        <!-- Mobile menu button -->
+          </div>
+        </div>
+        <!-- Mobile menu button -->
         <div class="md:hidden">
           <button
             type="button"
@@ -47,26 +48,38 @@
             aria-controls="mobile-menu"
             @click="toggleMobileMenu"
           >
-            <span class="sr-only">{{ isMobileMenuOpen ? 'Close main menu' : 'Open main menu' }}</span>
+            <span class="sr-only">{{
+              isMobileMenuOpen ? 'Close main menu' : 'Open main menu'
+            }}</span>
             <!-- Menu icon -->
-            <svg 
+            <svg
               v-if="!isMobileMenuOpen"
-              class="h-6 w-6" 
-              fill="none" 
-              viewBox="0 0 24 24" 
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
             <!-- Close icon -->
-            <svg 
+            <svg
               v-else
-              class="h-6 w-6" 
-              fill="none" 
-              viewBox="0 0 24 24" 
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
         </div>
@@ -74,7 +87,7 @@
     </div>
 
     <!-- Mobile menu -->
-    <div 
+    <div
       v-show="isMobileMenuOpen"
       id="mobile-menu"
       class="md:hidden border-t border-gray-200 dark:border-gray-700"
@@ -83,28 +96,40 @@
         <a
           href="#about"
           class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
-          @click="scrollToSection('about', $event); closeMobileMenu()"
+          @click="
+            scrollToSection('about', $event)
+            closeMobileMenu()
+          "
         >
           About
         </a>
         <a
           href="#experience"
           class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
-          @click="scrollToSection('experience', $event); closeMobileMenu()"
+          @click="
+            scrollToSection('experience', $event)
+            closeMobileMenu()
+          "
         >
           Experience
         </a>
         <a
           href="#skills"
           class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
-          @click="scrollToSection('skills', $event); closeMobileMenu()"
+          @click="
+            scrollToSection('skills', $event)
+            closeMobileMenu()
+          "
         >
           Skills
         </a>
         <a
           href="#contact"
           class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
-          @click="scrollToSection('contact', $event); closeMobileMenu()"
+          @click="
+            scrollToSection('contact', $event)
+            closeMobileMenu()
+          "
         >
           Contact
         </a>
@@ -126,7 +151,7 @@ const { profile } = useResumeData()
 const contact = computed(() => {
   const publicContact = resumeConfig.getPublicContact()
   return {
-    name: publicContact.name || profile.name
+    name: publicContact.name || profile.name,
   }
 })
 
@@ -138,7 +163,7 @@ const navigation = ref([
   { name: 'About', href: '#about' },
   { name: 'Experience', href: '#experience' },
   { name: 'Skills', href: '#skills' },
-  { name: 'Contact', href: '#contact' }
+  { name: 'Contact', href: '#contact' },
 ])
 
 // Navigation methods
@@ -153,7 +178,7 @@ const closeMobileMenu = () => {
 // Smooth scrolling to sections
 const scrollToSection = (sectionId: string, event: Event) => {
   event.preventDefault()
-  
+
   const element = document.getElementById(sectionId)
   if (element) {
     // Smooth scroll with offset for sticky header
@@ -163,7 +188,7 @@ const scrollToSection = (sectionId: string, event: Event) => {
 
     window.scrollTo({
       top: offsetPosition,
-      behavior: 'smooth'
+      behavior: 'smooth',
     })
   }
 }
@@ -178,7 +203,7 @@ onMounted(() => {
   }
 
   document.addEventListener('click', handleClickOutside)
-  
+
   // Cleanup
   onUnmounted(() => {
     document.removeEventListener('click', handleClickOutside)

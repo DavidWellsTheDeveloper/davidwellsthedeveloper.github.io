@@ -14,7 +14,7 @@
       >
         About Me
       </h2>
-      
+
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <!-- Content Column -->
         <div class="space-y-6">
@@ -25,9 +25,9 @@
             >
               {{ aboutContent.introduction }}
             </p>
-            
+
             <div class="space-y-4 mt-6">
-              <h3 
+              <h3
                 data-testid="approach-heading"
                 class="text-xl font-semibold text-gray-900 dark:text-white"
               >
@@ -40,7 +40,7 @@
                 {{ aboutContent.approach }}
               </p>
             </div>
-            
+
             <div class="space-y-4 mt-6">
               <h3
                 data-testid="passion-heading"
@@ -57,7 +57,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Highlights Column -->
         <div class="bg-white dark:bg-gray-900 rounded-lg p-8 shadow-sm">
           <h3
@@ -66,7 +66,7 @@
           >
             Key Highlights
           </h3>
-          
+
           <div class="space-y-4">
             <div
               v-for="(highlight, index) in highlights"
@@ -74,7 +74,9 @@
               data-testid="highlight-item"
               class="flex items-start"
             >
-              <div class="flex-shrink-0 w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mt-1">
+              <div
+                class="flex-shrink-0 w-6 h-6 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mt-1"
+              >
                 <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
               </div>
               <div class="ml-4">
@@ -116,22 +118,30 @@ const { personal, getKeyHighlights, isContentVerified } = useResumeData()
 
 // Constitutional Requirement III: User-Centric Experience - Safe SSR handling
 const aboutContent: AboutContent = {
-  introduction: personal?.bio || "Experienced full-stack developer with a unique background in sociology and computer science, bringing both technical expertise and human-centered perspective to software development.",
-  approach: personal?.philosophy || "I believe the best software solutions come from understanding both the technical requirements and the human needs behind them.",
-  passion: personal?.careerPassions?.join('. ') || "Building scalable, maintainable systems and leading high-performing development teams."
+  introduction:
+    personal?.bio ||
+    'Experienced full-stack developer with a unique background in sociology and computer science, bringing both technical expertise and human-centered perspective to software development.',
+  approach:
+    personal?.philosophy ||
+    'I believe the best software solutions come from understanding both the technical requirements and the human needs behind them.',
+  passion:
+    personal?.careerPassions?.join('. ') ||
+    'Building scalable, maintainable systems and leading high-performing development teams.',
 }
 
 // Use Dave's verified key highlights with safe fallback
-const highlights: Highlight[] = getKeyHighlights ? getKeyHighlights() : [
-  {
-    title: "Full-Stack Development",
-    description: "8+ years of experience with modern web technologies"
-  },
-  {
-    title: "Team Leadership",
-    description: "Scrum Master for a seven-person engineering team",
-  },
-]
+const highlights: Highlight[] = getKeyHighlights
+  ? getKeyHighlights()
+  : [
+      {
+        title: 'Full-Stack Development',
+        description: '8+ years of experience with modern web technologies',
+      },
+      {
+        title: 'Team Leadership',
+        description: 'Scrum Master for a seven-person engineering team',
+      },
+    ]
 </script>
 
 <style scoped>

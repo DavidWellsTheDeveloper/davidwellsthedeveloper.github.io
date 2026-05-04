@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     prerender: {
       routes: ['/'],
       crawlLinks: true,
-      failOnError: false
+      failOnError: false,
     },
   },
   app: {
@@ -35,7 +35,12 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-        { rel: 'icon', type: 'image/svg+xml', sizes: '16x16', href: '/favicon-16x16.svg' },
+        {
+          rel: 'icon',
+          type: 'image/svg+xml',
+          sizes: '16x16',
+          href: '/favicon-16x16.svg',
+        },
         { rel: 'apple-touch-icon', href: '/favicon.svg' },
       ],
     },

@@ -14,7 +14,7 @@
       >
         Skills & Expertise
       </h2>
-      
+
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
           v-for="(category, index) in skillCategories"
@@ -29,7 +29,7 @@
             <span class="text-2xl mr-3">{{ category.icon }}</span>
             {{ category.title }}
           </h3>
-          
+
           <div class="space-y-3">
             <div
               v-for="skill in category.skills"
@@ -51,7 +51,7 @@
                   {{ skill.level }}
                 </span>
               </div>
-              
+
               <!-- Progress bar -->
               <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                 <div
@@ -86,14 +86,14 @@ interface SkillCategory {
 const { getSkillCategories, isContentVerified } = useResumeData()
 
 // Transform Dave's verified skills data for display
-const skillCategories = computed<SkillCategory[]>(() => 
+const skillCategories = computed<SkillCategory[]>(() =>
   getSkillCategories().map((category: any) => ({
     title: category.name,
     icon: category.icon || '💻',
     skills: category.skills.map((skill: any) => ({
       name: skill.name,
-      level: skill.proficiency
-    }))
+      level: skill.proficiency,
+    })),
   }))
 )
 

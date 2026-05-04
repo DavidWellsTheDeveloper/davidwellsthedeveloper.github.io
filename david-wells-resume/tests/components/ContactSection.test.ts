@@ -83,10 +83,10 @@ const ContactSectionComponent = {
       contactInfo: {
         email: 'TODO: Verify with Dave',
         phone: 'TODO: Verify with Dave',
-        location: 'TODO: Verify with Dave'
-      }
+        location: 'TODO: Verify with Dave',
+      },
     }
-  }
+  },
 }
 
 describe('ContactSection Component', () => {
@@ -100,7 +100,7 @@ describe('ContactSection Component', () => {
     it('enforces authentic representation', () => {
       const section = wrapper.find('[data-testid="contact-section"]')
       expect(section.exists()).toBe(true)
-      
+
       // Should include TODO markers for unverified content
       const content = wrapper.text()
       expect(content).toContain('TODO: Verify with Dave')
@@ -110,14 +110,14 @@ describe('ContactSection Component', () => {
       expect(wrapper.find('section').exists()).toBe(true)
       expect(wrapper.find('section').attributes('role')).toBe('region')
       expect(wrapper.find('h2').exists()).toBe(true)
-      
+
       // Should have organized grid layout
       expect(wrapper.find('.grid.md\\:grid-cols-2').exists()).toBe(true)
     })
 
     it('optimizes for fast loading', () => {
       expect(wrapper.find('script').exists()).toBe(false)
-      
+
       // Should use efficient layout classes
       const container = wrapper.find('.max-w-4xl')
       expect(container.exists()).toBe(true)
@@ -125,7 +125,9 @@ describe('ContactSection Component', () => {
 
     it('ensures deployment readiness', () => {
       expect(wrapper.vm).toBeTruthy()
-      expect(wrapper.find('[data-testid="contact-section"]').exists()).toBe(true)
+      expect(wrapper.find('[data-testid="contact-section"]').exists()).toBe(
+        true
+      )
     })
   })
 
@@ -146,7 +148,7 @@ describe('ContactSection Component', () => {
     it('displays social media links', () => {
       const socialLinks = wrapper.find('[data-testid="social-links"]')
       expect(socialLinks.exists()).toBe(true)
-      
+
       const linkedinLink = wrapper.find('[data-testid="linkedin-link"]')
       const githubLink = wrapper.find('[data-testid="github-link"]')
       expect(linkedinLink.exists()).toBe(true)
@@ -171,7 +173,9 @@ describe('ContactSection Component', () => {
   describe('Accessibility', () => {
     it('has proper semantic structure', () => {
       expect(wrapper.find('section').attributes('role')).toBe('region')
-      expect(wrapper.find('section').attributes('aria-labelledby')).toBe('contact-heading')
+      expect(wrapper.find('section').attributes('aria-labelledby')).toBe(
+        'contact-heading'
+      )
     })
 
     it('includes proper heading structure', () => {
@@ -191,7 +195,7 @@ describe('ContactSection Component', () => {
   describe('Performance', () => {
     it('renders efficiently', () => {
       expect(wrapper.vm).toBeTruthy()
-      
+
       const allElements = wrapper.findAll('*')
       expect(allElements.length).toBeLessThan(30)
     })

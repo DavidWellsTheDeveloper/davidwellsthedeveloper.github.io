@@ -113,30 +113,36 @@ const AboutSectionComponent = {
   setup() {
     return {
       aboutContent: {
-        introduction: 'TODO: Verify with Dave - Professional introduction and background summary. This should authentically represent Dave\'s professional journey and current focus.',
-        approach: 'TODO: Verify with Dave - Description of professional approach, methodology, and work philosophy. Must reflect Dave\'s actual working style.',
-        passion: 'TODO: Verify with Dave - What motivates and drives Dave professionally. Should be authentic and personally meaningful.'
+        introduction:
+          "TODO: Verify with Dave - Professional introduction and background summary. This should authentically represent Dave's professional journey and current focus.",
+        approach:
+          "TODO: Verify with Dave - Description of professional approach, methodology, and work philosophy. Must reflect Dave's actual working style.",
+        passion:
+          'TODO: Verify with Dave - What motivates and drives Dave professionally. Should be authentic and personally meaningful.',
       },
       highlights: [
         {
           title: 'TODO: Verify - Professional Achievement',
-          description: 'TODO: Verify with Dave - Specific achievement or accomplishment'
+          description:
+            'TODO: Verify with Dave - Specific achievement or accomplishment',
         },
         {
           title: 'TODO: Verify - Technical Expertise',
-          description: 'TODO: Verify with Dave - Area of specialized knowledge'
+          description: 'TODO: Verify with Dave - Area of specialized knowledge',
         },
         {
           title: 'TODO: Verify - Leadership Experience',
-          description: 'TODO: Verify with Dave - Leadership or mentoring experience'
+          description:
+            'TODO: Verify with Dave - Leadership or mentoring experience',
         },
         {
           title: 'TODO: Verify - Innovation/Impact',
-          description: 'TODO: Verify with Dave - Innovative solution or significant impact'
-        }
-      ]
+          description:
+            'TODO: Verify with Dave - Innovative solution or significant impact',
+        },
+      ],
     }
-  }
+  },
 }
 
 describe('AboutSection Component', () => {
@@ -150,7 +156,7 @@ describe('AboutSection Component', () => {
     it('enforces authentic representation', () => {
       const section = wrapper.find('[data-testid="about-section"]')
       expect(section.exists()).toBe(true)
-      
+
       // Should include TODO markers for unverified content
       const content = wrapper.text()
       expect(content).toContain('TODO: Verify with Dave')
@@ -160,7 +166,7 @@ describe('AboutSection Component', () => {
     it('follows clean design principles', () => {
       expect(wrapper.find('section').exists()).toBe(true)
       expect(wrapper.find('section').attributes('role')).toBe('region')
-      
+
       // Should have clean grid layout
       expect(wrapper.find('.grid').exists()).toBe(true)
       expect(wrapper.find('.prose').exists()).toBe(true)
@@ -187,12 +193,18 @@ describe('AboutSection Component', () => {
 
     it('shows section headings', () => {
       expect(wrapper.find('[data-testid="about-title"]').exists()).toBe(true)
-      expect(wrapper.find('[data-testid="approach-heading"]').exists()).toBe(true)
-      expect(wrapper.find('[data-testid="passion-heading"]').exists()).toBe(true)
+      expect(wrapper.find('[data-testid="approach-heading"]').exists()).toBe(
+        true
+      )
+      expect(wrapper.find('[data-testid="passion-heading"]').exists()).toBe(
+        true
+      )
     })
 
     it('displays highlights section', () => {
-      expect(wrapper.find('[data-testid="highlights-heading"]').exists()).toBe(true)
+      expect(wrapper.find('[data-testid="highlights-heading"]').exists()).toBe(
+        true
+      )
       const highlights = wrapper.findAll('[data-testid="highlight-item"]')
       expect(highlights.length).toBe(4) // Mock has 4 highlights
     })
@@ -206,15 +218,17 @@ describe('AboutSection Component', () => {
   describe('Highlights Display', () => {
     it('displays highlight items with titles and descriptions', () => {
       const titles = wrapper.findAll('[data-testid="highlight-title"]')
-      const descriptions = wrapper.findAll('[data-testid="highlight-description"]')
-      
+      const descriptions = wrapper.findAll(
+        '[data-testid="highlight-description"]'
+      )
+
       expect(titles.length).toBe(4)
       expect(descriptions.length).toBe(4)
     })
 
     it('includes verification markers in highlights', () => {
       const titles = wrapper.findAll('[data-testid="highlight-title"]')
-      const hasVerificationMarkers = titles.some((title: any) => 
+      const hasVerificationMarkers = titles.some((title: any) =>
         title.text().includes('TODO: Verify')
       )
       expect(hasVerificationMarkers).toBe(true)
@@ -250,7 +264,9 @@ describe('AboutSection Component', () => {
   describe('Accessibility', () => {
     it('has proper semantic structure', () => {
       expect(wrapper.find('section').attributes('role')).toBe('region')
-      expect(wrapper.find('section').attributes('aria-labelledby')).toBe('about-heading')
+      expect(wrapper.find('section').attributes('aria-labelledby')).toBe(
+        'about-heading'
+      )
     })
 
     it('includes proper heading hierarchy', () => {
@@ -273,7 +289,7 @@ describe('AboutSection Component', () => {
   describe('Performance', () => {
     it('renders efficiently', () => {
       expect(wrapper.vm).toBeTruthy()
-      
+
       // Should have reasonable DOM structure
       const allElements = wrapper.findAll('*')
       expect(allElements.length).toBeLessThan(100)
@@ -294,7 +310,7 @@ describe('AboutSection Component', () => {
     it('includes dark mode classes', () => {
       const section = wrapper.find('section')
       expect(section.classes()).toContain('dark:bg-gray-800')
-      
+
       const card = wrapper.find('.bg-white')
       expect(card.classes()).toContain('dark:bg-gray-900')
     })
@@ -328,7 +344,7 @@ describe('AboutSection Component', () => {
       const mainHeading = wrapper.find('h2')
       const subHeadings = wrapper.findAll('h3')
       const highlightTitles = wrapper.findAll('h4')
-      
+
       expect(mainHeading.exists()).toBe(true)
       expect(subHeadings.length).toBeGreaterThan(0)
       expect(highlightTitles.length).toBeGreaterThan(0)

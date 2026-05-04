@@ -14,15 +14,17 @@
       >
         Professional Experience
       </h2>
-      
+
       <div class="relative">
         <!-- Enhanced timeline line with gradient -->
-        <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-200 via-blue-300 to-blue-200 dark:from-blue-800 dark:via-blue-700 dark:to-blue-800"></div>
-        
+        <div
+          class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-200 via-blue-300 to-blue-200 dark:from-blue-800 dark:via-blue-700 dark:to-blue-800"
+        ></div>
+
         <!-- Experience Cards -->
         <div class="space-y-8">
-          <div 
-            v-for="(exp, index) in experiences" 
+          <div
+            v-for="(exp, index) in experiences"
             :key="exp.id || index"
             class="relative flex items-start"
           >
@@ -54,10 +56,11 @@ interface Experience {
 }
 
 // Constitutional compliance: Using verified authentic data from Dave
-const { workExperience, getExperienceDuration, isContentVerified } = useResumeData()
+const { workExperience, getExperienceDuration, isContentVerified } =
+  useResumeData()
 
 // Transform Dave's verified work experience data for display with full details
-const experiences = computed<Experience[]>(() => 
+const experiences = computed<Experience[]>(() =>
   workExperience.map((job: any) => ({
     id: job.id,
     position: job.position,
@@ -68,7 +71,7 @@ const experiences = computed<Experience[]>(() =>
     duration: getExperienceDuration(job.startDate, job.endDate),
     description: job.description,
     achievements: job.achievements,
-    technologies: job.technologies
+    technologies: job.technologies,
   }))
 )
 </script>
