@@ -148,6 +148,20 @@ definePageMeta({
   layout: 'default'
 })
 
+useSeoMeta({
+  title: 'Contact',
+  description:
+    'Get in touch with David Wells — Senior Software Engineer and Scrum Master available for new opportunities and challenging projects.',
+  ogTitle: 'Contact | David Wells',
+  ogDescription:
+    'Get in touch with David Wells — Senior Software Engineer and Scrum Master available for new opportunities and challenging projects.',
+  ogUrl: 'https://davidwellsthedeveloper.github.io/contact'
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: 'https://davidwellsthedeveloper.github.io/contact' }]
+})
+
 const form = ref({
   name: '',
   email: '',

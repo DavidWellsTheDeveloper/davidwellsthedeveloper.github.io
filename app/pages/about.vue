@@ -58,12 +58,47 @@
             In my most recent role at MeasuringU, I architected a multi-service, event-driven AI orchestration platform (Go API, Python workers, Redis Streams, WebSockets, DynamoDB/PostgreSQL on AWS) and led a platform-wide frontend redesign with Vue.js, Sass, Pinia, and Material Design — all while maintaining high standards for clean, maintainable, scalable, and readable code.
           </p>
         </div>
+
+        <div class="space-y-4">
+          <h2 class="text-xl font-semibold text-teal-700 dark:text-teal-300">Freelance Web Development</h2>
+          <p class="leading-relaxed">
+            Outside of full-time roles I run
+            <a
+              href="https://focowebsites.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="font-semibold text-teal-700 dark:text-teal-300 hover:underline"
+            >FoCo Websites</a>
+            — a solo freelance practice in Northern Colorado where I design, build, launch, and maintain custom websites for local businesses: custom website design, redesigns, development support, and ongoing maintenance &amp; care plans.
+          </p>
+          <p class="leading-relaxed">
+            Freelancing means owning the whole job — and the skills that come with it:
+          </p>
+          <ul class="list-disc list-inside space-y-2 ml-4">
+            <li><strong>End-to-end delivery:</strong> discovery → proposal → design → build → launch → ongoing support, with plain-talk communication at every step</li>
+            <li><strong>Performance-first builds:</strong> static-first architecture with sub-second mobile load times, SEO from day one, and hosting that costs pennies per month</li>
+            <li><strong>Client empowerment:</strong> headless CMS setups so clients update their own content — tracked, reversible, no developer required</li>
+            <li><strong>Modern stack:</strong> Nuxt/TypeScript, Vue, Astro, and Laravel, deployed on AWS (S3, CloudFront, Route 53) with GitHub Actions CI/CD</li>
+            <li><strong>Shipped client work:</strong> <a href="https://andrewsaccountingllc.com" target="_blank" rel="noopener noreferrer" class="hover:underline">Andrews Accounting</a> (static site + self-serve CMS) and <a href="https://pantrytostore.com" target="_blank" rel="noopener noreferrer" class="hover:underline">Pantry To Store</a> (custom storefront that eliminated platform fees)</li>
+          </ul>
+        </div>
       </div>
 
       <template #footer>
         <div class="flex flex-wrap gap-3 pt-4 border-t border-gray-200 dark:border-gray-700">
           <UButton to="/experience" color="primary" size="lg">View Experience</UButton>
           <UButton to="/contact" color="secondary" variant="outline" size="lg">Get In Touch</UButton>
+          <UButton
+            href="https://focowebsites.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            color="success"
+            variant="outline"
+            size="lg"
+            trailing-icon="i-lucide-external-link"
+          >
+            Visit FoCo Websites
+          </UButton>
           <UButton
             :href="RESUME_URL"
             :download="RESUME_FILENAME"
@@ -86,5 +121,19 @@ import { RESUME_URL, RESUME_FILENAME } from '~/constants'
 
 definePageMeta({
   layout: 'default'
+})
+
+useSeoMeta({
+  title: 'About',
+  description:
+    'About David Wells — Senior Software Engineer and Scrum Master with 9 years of experience in scalable applications, data platforms, team leadership, and freelance web development.',
+  ogTitle: 'About | David Wells',
+  ogDescription:
+    'Senior Software Engineer and Scrum Master with 9 years of experience in scalable applications, data platforms, team leadership, and freelance web development.',
+  ogUrl: 'https://davidwellsthedeveloper.github.io/about'
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: 'https://davidwellsthedeveloper.github.io/about' }]
 })
 </script> 

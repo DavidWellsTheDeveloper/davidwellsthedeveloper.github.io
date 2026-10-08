@@ -198,4 +198,18 @@ import { RESUME_URL, RESUME_FILENAME } from '~/constants'
 definePageMeta({
   layout: 'default'
 })
+
+useSeoMeta({
+  title: 'Experience',
+  description:
+    '9 years of software development experience — from intern to Scrum Master — across AI platforms, big data analytics, and fullstack development.',
+  ogTitle: 'Experience | David Wells',
+  ogDescription:
+    '9 years of software development experience — from intern to Scrum Master — across AI platforms, big data analytics, and fullstack development.',
+  ogUrl: 'https://davidwellsthedeveloper.github.io/experience'
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: 'https://davidwellsthedeveloper.github.io/experience' }]
+})
 </script> 

@@ -43,6 +43,11 @@ export const SOCIAL_LINKS = [
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/davidwellsdeveloper/',
     icon: 'i-simple-icons-linkedin'
+  },
+  {
+    name: 'FoCo Websites',
+    url: 'https://focowebsites.com',
+    icon: 'i-lucide-globe'
   }
 ] as const
 
@@ -67,6 +72,7 @@ export const SKILLS = {
     'Nuxt', 
     'PHP',
     'Python',
+    'Go',
     'HTML5/CSS3',
     'Tailwind CSS'
   ],
@@ -78,6 +84,9 @@ export const SKILLS = {
     'Database Design',
     'Django',
     'Laravel',
+    'Redis Streams',
+    'DynamoDB',
+    'WebSockets',
     'Big Data Analytics',
     'Data Modeling'
   ],

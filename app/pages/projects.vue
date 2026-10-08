@@ -258,4 +258,18 @@
 definePageMeta({
   layout: 'default'
 })
+
+useSeoMeta({
+  title: 'Projects',
+  description:
+    'Technical projects and achievements — AI orchestration platforms, billion-record data optimization, analytics dashboards, and agile team leadership.',
+  ogTitle: 'Projects | David Wells',
+  ogDescription:
+    'Technical projects and achievements — AI orchestration platforms, billion-record data optimization, analytics dashboards, and agile team leadership.',
+  ogUrl: 'https://davidwellsthedeveloper.github.io/projects'
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: 'https://davidwellsthedeveloper.github.io/projects' }]
+})
 </script> 

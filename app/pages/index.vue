@@ -102,4 +102,12 @@ import { SKILLS, PROFESSIONAL_HIGHLIGHTS, RESUME_URL, RESUME_FILENAME } from '~/
 definePageMeta({
   layout: 'default'
 })
+
+useSeoMeta({
+  ogUrl: 'https://davidwellsthedeveloper.github.io/'
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: 'https://davidwellsthedeveloper.github.io/' }]
+})
 </script>
