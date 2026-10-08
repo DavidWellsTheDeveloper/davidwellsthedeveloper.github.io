@@ -53,10 +53,15 @@ export const CONTACT_INFO = {
   location: 'Fort Collins, CO'
 } as const
 
+// Resume download
+export const RESUME_URL = '/David-Wells-Software-Engineer-Resume.pdf'
+export const RESUME_FILENAME = 'David Wells Software Engineer Resume.pdf'
+
 // Skills data
 export const SKILLS = {
   core: [
     'JavaScript', 
+    'TypeScript',
     'Vue.js', 
     'React', 
     'Nuxt', 
@@ -66,8 +71,9 @@ export const SKILLS = {
     'Tailwind CSS'
   ],
   backendData: [
-    'RESTful APIs',
+    'REST APIs',
     'MySQL',
+    'PostgreSQL',
     'SQL Server',
     'Database Design',
     'Django',
@@ -78,10 +84,11 @@ export const SKILLS = {
   leadership: [
     'Scrum Master',
     'Agile Practices',
+    'AI-Assisted Development',
+    'AWS & GCP',
     'Team Mentoring',
     'Code Reviews',
-    'Sprint Planning',
-    'Technical Documentation',
+    'CI/CD',
     'Process Improvement'
   ]
 } as const
@@ -89,21 +96,21 @@ export const SKILLS = {
 // Professional highlights
 export const PROFESSIONAL_HIGHLIGHTS = [
   {
+    title: 'AI Orchestration Platform',
+    category: 'Architecture',
+    type: 'Technical',
+    description: 'Architected a multi-service, event-driven AI orchestration platform at MeasuringU (Go API, Python workers, Redis Streams, WebSockets, DynamoDB/PostgreSQL on AWS) with human approval checkpoints, cutting planning from ~4 days to ~1 day.'
+  },
+  {
     title: 'Scrum Master & Team Leadership',
     category: 'Leadership',
     type: 'Leadership',
-    description: 'Leading scrum ceremonies, sprint planning, and retrospectives at MeasuringU. Mentoring developers and contributing to organizational direction through backlog and roadmap meetings.'
+    description: 'Served as Scrum Master for a 7-person engineering team at MeasuringU, partnering with product stakeholders to clarify requirements and scope work realistically, raising team velocity by 50%.'
   },
   {
-    title: 'Big Data Performance Optimization',
+    title: 'Performance & Data at Scale',
     category: 'Performance',
     type: 'Performance',
-    description: 'Optimized queries on datasets with 1+ billion records, improving performance by orders of magnitude. Automated monthly updates to eliminate downtime and save development time.'
-  },
-  {
-    title: 'Scalable Analytics Solutions',
-    category: 'Architecture',
-    type: 'Technical',
-    description: 'Designed and developed scalable data analytics solutions using PHP and Vue.js at MeasuringU, built to last and continue growing with normalized relational database systems.'
+    description: 'Designed normalized relational schemas and optimizations that improved load times 3–5x, and built interactive analytics dashboards processing 1M+ data points with PHP and Vue.js.'
   }
-] as const 
+] as const

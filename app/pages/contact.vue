@@ -4,7 +4,7 @@
       <div class="space-y-8">
         <div class="space-y-4">
           <p class="text-lg leading-relaxed">I'd love to hear from you! Whether you're looking for a <strong>Scrum Master</strong>, need a <strong>fullstack developer</strong> for your team, or want to discuss data analytics solutions, feel free to reach out.</p>
-          <p class="leading-relaxed">With 8+ years of experience in scalable application development and team leadership, I'm always interested in new opportunities and challenging projects.</p>
+          <p class="leading-relaxed">With 9 years of experience in scalable application development and team leadership, I'm always interested in new opportunities and challenging projects.</p>
         </div>
 
         <!-- Contact Information Cards -->
@@ -124,6 +124,17 @@
             button-class=""
             icon-class="mr-2"
           />
+          <UButton
+            :href="RESUME_URL"
+            :download="RESUME_FILENAME"
+            target="_blank"
+            color="primary"
+            variant="outline"
+            size="lg"
+            trailing-icon="i-lucide-download"
+          >
+            Download Resume
+          </UButton>
         </div>
       </div>
     </PageCard>
@@ -131,7 +142,7 @@
 </template>
 
 <script setup>
-import { CONTACT_INFO } from '~/constants'
+import { CONTACT_INFO, RESUME_URL, RESUME_FILENAME } from '~/constants'
 
 definePageMeta({
   layout: 'default'

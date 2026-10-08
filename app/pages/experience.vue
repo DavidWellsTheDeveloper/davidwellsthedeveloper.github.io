@@ -4,13 +4,27 @@
     <PageCard variant="hero" title="Professional Experience" icon="i-lucide-briefcase">
       <div class="space-y-4">
         <p class="text-lg leading-relaxed">
-          <strong>8+ years</strong> of professional software development experience, progressing from intern to <strong>Scrum Master</strong> and team leader. Specialized in fullstack development, data analytics, and agile team leadership.
+          <strong>9 years</strong> of professional software development experience, progressing from intern to <strong>Scrum Master</strong> and team leader. Specialized in fullstack development, data platforms, AI-assisted systems, and agile team leadership.
         </p>
         <div class="flex flex-wrap gap-4">
           <UBadge color="primary" variant="soft" size="lg">Scrum Master</UBadge>
           <UBadge color="secondary" variant="soft" size="lg">Team Leadership</UBadge>
           <UBadge color="success" variant="soft" size="lg">Big Data Analytics</UBadge>
           <UBadge color="info" variant="soft" size="lg">Performance Optimization</UBadge>
+          <UBadge color="warning" variant="soft" size="lg">AI Platforms</UBadge>
+        </div>
+        <div class="pt-2">
+          <UButton
+            :href="RESUME_URL"
+            :download="RESUME_FILENAME"
+            target="_blank"
+            color="primary"
+            variant="outline"
+            size="lg"
+            trailing-icon="i-lucide-download"
+          >
+            Download Resume
+          </UButton>
         </div>
       </div>
     </PageCard>
@@ -28,26 +42,28 @@
                 <p class="text-lg font-semibold text-gray-700 dark:text-gray-300">MeasuringU</p>
               </div>
               <div class="text-sm text-gray-600 dark:text-gray-400 md:text-right">
-                <p class="font-semibold">March 2021 - Present</p>
-                <p>4+ years</p>
+                <p class="font-semibold">March 2021 - August 2026</p>
+                <p>5 years 5 months</p>
               </div>
             </div>
             
             <div class="space-y-3">
               <h4 class="font-semibold text-gray-800 dark:text-gray-200">Leadership & Agile Practices:</h4>
               <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 ml-4">
-                <li>Lead scrum ceremonies including daily stand-ups, sprint planning, and retrospectives as <strong>Scrum Master</strong></li>
-                <li>Contribute to organizational direction by engaging as a leader in backlog and roadmap meetings</li>
-                <li>Mentor new and experienced developers to ensure high quality coding practices and conduct code reviews</li>
-                <li>Deliver consistent results in an agile team environment using standard SCRUM practices</li>
+                <li>Served as <strong>Scrum Master</strong> for a 7-person engineering team, partnering with product stakeholders to clarify requirements and scope work realistically</li>
+                <li>Raised team velocity by 50% while improving requirements clarity and AI workflows</li>
+                <li>Mentored new and experienced developers to ensure high quality coding practices and conduct code reviews</li>
+                <li>Led organizational planning through backlog and roadmap discussions</li>
               </ul>
               
               <h4 class="font-semibold text-gray-800 dark:text-gray-200 mt-4">Technical Achievements:</h4>
               <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 ml-4">
-                <li>Lead design and development of scalable projects using <strong>PHP and Vue.js</strong> to deliver data analytics solutions</li>
-                <li>Design and implement normalized relational database systems to streamline performance and maintain data integrity</li>
-                <li>Maintain high standards for clean, maintainable, scalable and readable code</li>
-                <li>Outline functional requirements and share specialized technical skills across the team</li>
+                <li>Architected a multi-service, event-driven <strong>AI orchestration platform</strong> (Go API, Python workers, Redis Streams, WebSockets, DynamoDB/PostgreSQL on AWS), cutting planning from ~4 days to ~1 day</li>
+                <li>Designed an agentic development platform integrating <strong>LLMs, MCP integrations, and agent skills</strong> with the Cursor SDK, defining service contracts via OpenAPI and AsyncAPI</li>
+                <li>Recognized as team expert in database design; optimized normalized schemas to improve load times <strong>3–5x</strong></li>
+                <li>Built interactive analytics dashboards processing <strong>1M+ data points</strong> using ports &amp; adapters architecture in PHP and Vue.js</li>
+                <li>Led a platform-wide frontend redesign with Vue.js, Sass, Pinia, and Material Design</li>
+                <li>Maintained <strong>CI/CD pipelines with GitHub Actions</strong> for automated testing, builds, and deployments to AWS</li>
               </ul>
             </div>
           </div>
@@ -59,7 +75,7 @@
           <div class="space-y-4">
             <div class="flex flex-col md:flex-row md:items-center md:justify-between">
               <div>
-                <h3 class="text-xl font-bold text-cyan-700 dark:text-cyan-300">Software Developer Intern → Data Science Developer</h3>
+                <h3 class="text-xl font-bold text-cyan-700 dark:text-cyan-300">Data Science Developer <span class="text-sm font-medium">(promoted from Intern)</span></h3>
                 <p class="text-lg font-semibold text-gray-700 dark:text-gray-300">Mountain Data Group</p>
               </div>
               <div class="text-sm text-gray-600 dark:text-gray-400 md:text-right">
@@ -71,17 +87,19 @@
             <div class="space-y-3">
               <h4 class="font-semibold text-gray-800 dark:text-gray-200">Big Data & Analytics:</h4>
               <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 ml-4">
-                <li>Enhanced statistical models by incorporating external datasets including <strong>census data, weather data, and crime data</strong></li>
-                <li>Utilized Python's data analytics libraries and statistical modeling to gain insights into datasets with <strong>over 1 billion records</strong></li>
-                <li>Developed big data solutions utilizing <strong>time series modeling</strong> to assist in data forecasting performance</li>
-                <li>Analyzed and searched for datasets to improve forecasting models including demographic and weather data across the UK</li>
+                <li>Integrated large external datasets (<strong>census, weather, and violent crime data</strong>) into statistical models to improve predictive accuracy</li>
+                <li>Leveraged Python's data analytics stack to process scientific datasets <strong>exceeding 1 billion records</strong></li>
+                <li>Developed time-series and big-data models supporting academic research in travel risk analysis, lead exposure, and public trust</li>
+                <li>Conducted exploratory research on dataset reliability, correlation, and completeness including GIS and demographic data</li>
+                <li>Performed data visualization with <strong>GIS tools, D3, and Python</strong> libraries supporting spatial analysis and visual reporting</li>
+                <li>Worked with the <strong>Azure ecosystem</strong> to integrate third-party client microservice systems</li>
               </ul>
 
               <h4 class="font-semibold text-gray-800 dark:text-gray-200 mt-4">Performance & Automation:</h4>
               <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 ml-4">
-                <li>Automated monthly updates to eliminate downtime and save development time</li>
-                <li>Improved speeds of slow queries by <strong>an order of magnitude</strong></li>
-                <li>Gained experience working with <strong>GIS and data visualization</strong> software</li>
+                <li>Automated data ingestion and update pipelines, reducing downtime to near zero</li>
+                <li>Improved slow query performance by <strong>up to 100X</strong></li>
+                <li>Built performant dashboards relying on extensive aggregations and time series data with rock-solid data integrity</li>
               </ul>
             </div>
           </div>
@@ -105,16 +123,16 @@
             <div class="space-y-3">
               <h4 class="font-semibold text-gray-800 dark:text-gray-200">Full Stack Development:</h4>
               <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 ml-4">
-                <li>Provided programming solutions and technical support for Environmental Health, Public Health, and Risk Management departments</li>
-                <li>Designed full stack systems including databases, models, and attractive informative dashboards ensuring data integrity and reliability</li>
-                <li>Acted as <strong>lead developer</strong> for select .NET data-driven solutions for tracking university drones, logging public health complaints, and performing risk management for international travel</li>
+                <li>Created custom web applications for Environmental Health, Public Health, and Risk Management departments supporting internal administrative data workflows</li>
+                <li>Planned and implemented APIs, databases, and interactive dashboards supporting <strong>10–15 CSU department administrators</strong></li>
+                <li>Led development of data-driven applications for drone tracking, public health logging, ergonomics assessments, and international travel risk management</li>
               </ul>
 
               <h4 class="font-semibold text-gray-800 dark:text-gray-200 mt-4">Client Collaboration & Best Practices:</h4>
               <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 ml-4">
-                <li>Worked directly with clients to develop custom pages and tools for administrative problems and needs</li>
-                <li>Worked as a team on projects utilizing <strong>agile and pair programming</strong> practices</li>
-                <li>Wrote well documented code using <strong>SOLID development principles</strong> of object oriented design</li>
+                <li>Translated non-technical stakeholder requirements into <strong>scalable technical solutions</strong> and workflows</li>
+                <li>Collaborated on team projects using <strong>pair programming and Agile practices</strong></li>
+                <li>Applied <strong>SOLID principles</strong> and object-oriented design patterns to produce extensible, maintainable systems</li>
               </ul>
             </div>
           </div>
@@ -157,7 +175,7 @@
           <ul class="space-y-2">
             <li class="flex items-start space-x-3">
               <UIcon name="i-lucide-check-circle" class="text-green-600 mt-1 flex-shrink-0" />
-              <span>Optimized billion-record datasets by orders of magnitude</span>
+              <span>Optimized billion-record datasets, improving query performance up to 100x</span>
             </li>
             <li class="flex items-start space-x-3">
               <UIcon name="i-lucide-check-circle" class="text-green-600 mt-1 flex-shrink-0" />
@@ -175,6 +193,8 @@
 </template>
 
 <script setup>
+import { RESUME_URL, RESUME_FILENAME } from '~/constants'
+
 definePageMeta({
   layout: 'default'
 })

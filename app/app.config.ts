@@ -1,8 +1,8 @@
 export default defineAppConfig({
   // Site configuration
   site: {
-    name: 'David Wells - Fullstack Developer & Scrum Master',
-    description: 'Portfolio of David Wells, a Fullstack Developer and Scrum Master with 8+ years of experience in scalable application development and team leadership.',
+    name: 'David Wells - Senior Software Engineer & Scrum Master',
+    description: 'Portfolio of David Wells, a Senior Software Engineer and Scrum Master with 9 years of experience in scalable application development, data platforms, and team leadership.',
   },
   
   // https://ui.nuxt.com/getting-started/theme#design-system

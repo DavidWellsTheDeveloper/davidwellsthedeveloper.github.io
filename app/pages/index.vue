@@ -9,7 +9,7 @@
         <div class="flex items-center justify-between w-full">
           <div class="flex flex-col">
             <h1 class="text-3xl font-bold bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">David T. Wells</h1>
-            <p class="text-lg text-gray-600 dark:text-gray-300 mt-1">Fullstack Developer & Scrum Master</p>
+            <p class="text-lg text-gray-600 dark:text-gray-300 mt-1">Senior Software Engineer & Scrum Master</p>
           </div>
           <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-500 rounded-full flex items-center justify-center">
             <UIcon name="i-lucide-code" class="text-white text-2xl" />
@@ -18,8 +18,8 @@
       </template>
 
       <div class="space-y-6">
-        <p class="text-lg leading-relaxed">Highly skilled Fullstack Developer with <strong>8+ years of experience</strong> designing, developing, and maintaining scalable, data-driven applications. Currently serving as <strong>Scrum Master</strong> at MeasuringU, leading agile teams and delivering cutting-edge analytics solutions.</p>
-        <p class="leading-relaxed">Proven expertise in Vue.js, React, PHP, and Python with a track record of working with <strong>billion-record datasets</strong>, optimizing performance by orders of magnitude, and mentoring development teams to maintain high coding standards.</p>
+        <p class="text-lg leading-relaxed">Senior Software Engineer with <strong>9 years of experience</strong> owning and scaling data-driven applications and analytics platforms. Most recently served as <strong>Scrum Master</strong> at MeasuringU, leading agile teams and delivering cutting-edge analytics solutions.</p>
+        <p class="leading-relaxed">Proven expertise in Vue.js, React, TypeScript, PHP, Python, and AWS with a track record of working with <strong>billion-record datasets</strong>, improving system speed by 3–5x, and raising team velocity by 50%.</p>
       </div>
       <template #footer>
         <div class="flex flex-wrap gap-3 pt-2">
@@ -27,6 +27,17 @@
           <UButton to="/experience" color="secondary" variant="outline" size="lg">Experience</UButton>
           <UButton to="/projects" color="success" variant="outline" size="lg">Projects</UButton>
           <UButton to="/contact" color="orange" variant="outline" size="lg">Contact</UButton>
+          <UButton
+            :href="RESUME_URL"
+            :download="RESUME_FILENAME"
+            target="_blank"
+            color="info"
+            variant="subtle"
+            size="lg"
+            trailing-icon="i-lucide-download"
+          >
+            Download Resume
+          </UButton>
         </div>
       </template>
     </PageCard>
@@ -86,7 +97,7 @@
 </template>
 
 <script setup>
-import { SKILLS, PROFESSIONAL_HIGHLIGHTS } from '~/constants'
+import { SKILLS, PROFESSIONAL_HIGHLIGHTS, RESUME_URL, RESUME_FILENAME } from '~/constants'
 
 definePageMeta({
   layout: 'default'

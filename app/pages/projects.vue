@@ -4,7 +4,7 @@
     <PageCard variant="hero" title="Technical Projects & Achievements" icon="i-lucide-code">
       <div class="space-y-4">
         <p class="text-lg leading-relaxed">
-          A showcase of key technical projects and achievements from my 8+ years of professional development experience. From <strong>billion-record data optimization</strong> to <strong>scalable analytics platforms</strong>, these projects demonstrate expertise in fullstack development, database architecture, and performance engineering.
+          A showcase of key technical projects and achievements from my 9 years of professional development experience. From <strong>billion-record data optimization</strong> to <strong>AI orchestration platforms</strong>, these projects demonstrate expertise in fullstack development, database architecture, and performance engineering.
         </p>
         <div class="flex flex-wrap gap-4">
           <UBadge color="success" variant="soft" size="lg">Data Analytics</UBadge>
@@ -15,43 +15,94 @@
       </div>
     </PageCard>
 
-    <!-- Current Projects at MeasuringU -->
-    <PageCard variant="skills" title="Current Projects - MeasuringU" icon="i-lucide-trending-up">
+    <!-- Selected Projects at MeasuringU -->
+    <PageCard variant="skills" title="Selected Projects - MeasuringU" icon="i-lucide-trending-up">
       <div class="space-y-6">
         <div class="grid md:grid-cols-2 gap-6">
           <div class="space-y-4 p-6 bg-teal-50 dark:bg-teal-950 rounded-lg border border-teal-200 dark:border-teal-800">
             <div class="flex items-center space-x-3">
               <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center">
-                <UIcon name="i-lucide-database" class="text-white" />
+                <UIcon name="i-lucide-bot" class="text-white" />
               </div>
-              <h3 class="text-lg font-semibold text-teal-700 dark:text-teal-300">Scalable Analytics Platform</h3>
+              <h3 class="text-lg font-semibold text-teal-700 dark:text-teal-300">AI Orchestration Platform</h3>
             </div>
             <p class="text-gray-700 dark:text-gray-300">
-              Leading design and development of data analytics solutions using <strong>PHP and Vue.js</strong>. Built to scale and grow with normalized relational database systems ensuring data integrity and performance.
+              Architected a multi-service, event-driven platform (<strong>Go API, Python workers, Redis Streams, WebSockets, DynamoDB/PostgreSQL on AWS</strong>) with a three-gate workflow and human approval checkpoints — cutting planning from ~4 days to ~1 day.
             </p>
             <div class="flex flex-wrap gap-2">
-              <UBadge color="success" variant="soft">PHP</UBadge>
-              <UBadge color="primary" variant="soft">Vue.js</UBadge>
-              <UBadge color="secondary" variant="soft">MySQL</UBadge>
-              <UBadge color="info" variant="soft">Database Design</UBadge>
+              <UBadge color="success" variant="soft">Go</UBadge>
+              <UBadge color="primary" variant="soft">Python</UBadge>
+              <UBadge color="secondary" variant="soft">Redis Streams</UBadge>
+              <UBadge color="info" variant="soft">AWS</UBadge>
+            </div>
+            <div class="mt-4 p-3 bg-green-50 dark:bg-green-950 rounded border border-green-200 dark:border-green-800">
+              <p class="text-sm text-green-700 dark:text-green-300 font-semibold">
+                🚀 Achievement: Planning time reduced from ~4 days to ~1 day
+              </p>
             </div>
           </div>
 
           <div class="space-y-4 p-6 bg-cyan-50 dark:bg-cyan-950 rounded-lg border border-cyan-200 dark:border-cyan-800">
             <div class="flex items-center space-x-3">
               <div class="w-10 h-10 bg-cyan-600 rounded-full flex items-center justify-center">
-                <UIcon name="i-lucide-users" class="text-white" />
+                <UIcon name="i-lucide-brain" class="text-white" />
               </div>
-              <h3 class="text-lg font-semibold text-cyan-700 dark:text-cyan-300">Agile Team Leadership</h3>
+              <h3 class="text-lg font-semibold text-cyan-700 dark:text-cyan-300">Agentic Development Platform</h3>
             </div>
             <p class="text-gray-700 dark:text-gray-300">
-              Serving as <strong>Scrum Master</strong>, leading ceremonies, sprint planning, and retrospectives. Contributing to organizational direction through backlog and roadmap meetings while mentoring development teams.
+              Designed an extensible platform integrating <strong>LLMs, MCP integrations, and agent skills</strong> with the Cursor SDK, defining service contracts across Python microservices using OpenAPI and AsyncAPI.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <UBadge color="success" variant="soft">LLMs</UBadge>
+              <UBadge color="primary" variant="soft">MCP</UBadge>
+              <UBadge color="secondary" variant="soft">OpenAPI</UBadge>
+              <UBadge color="info" variant="soft">Cursor SDK</UBadge>
+            </div>
+          </div>
+
+          <div class="space-y-4 p-6 bg-indigo-50 dark:bg-indigo-950 rounded-lg border border-indigo-200 dark:border-indigo-800">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center">
+                <UIcon name="i-lucide-database" class="text-white" />
+              </div>
+              <h3 class="text-lg font-semibold text-indigo-700 dark:text-indigo-300">Scalable Analytics Platform</h3>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300">
+              Built interactive analytics dashboards processing <strong>1M+ data points</strong> using an object-oriented, ports and adapters architecture in <strong>PHP and Vue.js</strong>, backed by normalized relational schemas.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <UBadge color="success" variant="soft">PHP</UBadge>
+              <UBadge color="primary" variant="soft">Vue.js</UBadge>
+              <UBadge color="secondary" variant="soft">PostgreSQL</UBadge>
+              <UBadge color="info" variant="soft">Ports &amp; Adapters</UBadge>
+            </div>
+            <div class="mt-4 p-3 bg-green-50 dark:bg-green-950 rounded border border-green-200 dark:border-green-800">
+              <p class="text-sm text-green-700 dark:text-green-300 font-semibold">
+                🚀 Achievement: Load times improved 3–5x through schema optimization
+              </p>
+            </div>
+          </div>
+
+          <div class="space-y-4 p-6 bg-teal-50 dark:bg-teal-950 rounded-lg border border-teal-200 dark:border-teal-800">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center">
+                <UIcon name="i-lucide-users" class="text-white" />
+              </div>
+              <h3 class="text-lg font-semibold text-teal-700 dark:text-teal-300">Agile Team Leadership</h3>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300">
+              Served as <strong>Scrum Master</strong> for a 7-person engineering team, leading ceremonies, sprint planning, and retrospectives while partnering with stakeholders on requirements and realistic scoping.
             </p>
             <div class="flex flex-wrap gap-2">
               <UBadge color="success" variant="soft">Scrum Master</UBadge>
               <UBadge color="primary" variant="soft">Team Leadership</UBadge>
               <UBadge color="secondary" variant="soft">Mentoring</UBadge>
               <UBadge color="info" variant="soft">Code Reviews</UBadge>
+            </div>
+            <div class="mt-4 p-3 bg-green-50 dark:bg-green-950 rounded border border-green-200 dark:border-green-800">
+              <p class="text-sm text-green-700 dark:text-green-300 font-semibold">
+                🚀 Achievement: Team velocity raised by 50%
+              </p>
             </div>
           </div>
         </div>
@@ -70,7 +121,7 @@
               <h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300">Performance Optimization</h3>
             </div>
             <p class="text-gray-700 dark:text-gray-300">
-              Optimized queries on datasets with <strong>over 1 billion records</strong>, improving performance by orders of magnitude. Automated monthly updates to eliminate downtime and save development time.
+              Leveraged Python's analytics stack on datasets with <strong>over 1 billion records</strong>, automating ingestion pipelines to reduce downtime to near zero and improving slow query performance by <strong>up to 100X</strong>.
             </p>
             <div class="flex flex-wrap gap-2">
               <UBadge color="success" variant="soft">Python</UBadge>
@@ -93,7 +144,7 @@
               <h3 class="text-lg font-semibold text-indigo-700 dark:text-indigo-300">Statistical Modeling & Forecasting</h3>
             </div>
             <p class="text-gray-700 dark:text-gray-300">
-              Enhanced statistical models by incorporating external datasets including <strong>census, weather, and crime data</strong>. Developed time series modeling for data forecasting across UK demographics.
+              Integrated large external datasets including <strong>census, weather, and violent crime data</strong> into statistical models, supporting time-series research on travel risk, lead exposure, and public trust.
             </p>
             <div class="flex flex-wrap gap-2">
               <UBadge color="success" variant="soft">Statistical Modeling</UBadge>
@@ -179,8 +230,8 @@
           <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto">
             <UIcon name="i-lucide-zap" class="text-white text-xl" />
           </div>
-          <h3 class="font-semibold text-blue-700 dark:text-blue-300">10x Performance</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Improved query speeds by orders of magnitude</p>
+          <h3 class="font-semibold text-blue-700 dark:text-blue-300">Up to 100x</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Slow query performance improvement</p>
         </div>
 
         <div class="text-center space-y-3 p-6 bg-gradient-to-br from-emerald-50 to-green-50 dark:from-emerald-950 dark:to-green-950 rounded-lg border border-emerald-200 dark:border-emerald-800">
@@ -188,15 +239,15 @@
             <UIcon name="i-lucide-users" class="text-white text-xl" />
           </div>
           <h3 class="font-semibold text-emerald-700 dark:text-emerald-300">Team Leadership</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Scrum Master leading agile development teams</p>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Scrum Master for a 7-person agile team</p>
         </div>
 
         <div class="text-center space-y-3 p-6 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950 dark:to-pink-950 rounded-lg border border-purple-200 dark:border-purple-800">
           <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mx-auto">
             <UIcon name="i-lucide-code" class="text-white text-xl" />
           </div>
-          <h3 class="font-semibold text-purple-700 dark:text-purple-300">8+ Years</h3>
-          <p class="text-sm text-gray-600 dark:text-gray-400">Professional fullstack development experience</p>
+          <h3 class="font-semibold text-purple-700 dark:text-purple-300">9 Years</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400">Professional software development experience</p>
         </div>
       </div>
     </PageCard>
