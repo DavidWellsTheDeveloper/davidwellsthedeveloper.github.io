@@ -1,23 +1,39 @@
-# GitHub Pages Deployment Configuration
+# Deploy the David T. Wells digital resume.
 #
-# This workflow automatically deploys the resume to GitHub Pages
-# Constitutional Principle: Free hosting with optimal performance
+# Triggered on pushes to `main` (and manual runs), this workflow deploys to BOTH:
+#   1. GitHub Pages      -> https://davidwellsthedeveloper.github.io
+#   2. AWS S3 + CloudFront -> https://davidwellsthedeveloper.com
+#
+# AWS auth uses GitHub OIDC (no long-lived keys). The role is scoped, via its
+# trust policy, to this repository's `main` branch only.
+#
+# Required repository variables (Settings -> Secrets and variables -> Actions -> Variables):
+#   SITE_URL                        e.g. https://davidwellsthedeveloper.com
+#   AWS_S3_BUCKET                   e.g. david-wells-portfolio
+#   AWS_REGION                      e.g. us-east-1
+#   AWS_CLOUDFRONT_DISTRIBUTION_ID  e.g. E2NTRDLIQ8P40E
+#   AWS_DEPLOY_ROLE_ARN             e.g. arn:aws:iam::490004655825:role/ResumePortfolioDeployRole
 
-name: Deploy to GitHub Pages
+name: Deploy
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
-# Allow only one concurrent deployment
+# Only one deployment at a time; never cancel an in-flight Pages deploy.
 concurrency:
   group: 'pages'
   cancel-in-progress: false
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  # Constitutional compliance check
-  constitutional-audit:
+  # Build once; both deploy jobs consume the same static output.
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -34,81 +50,18 @@ jobs:
         working-directory: ./david-wells-resume
         run: npm ci
 
-      - name: Run constitutional compliance tests
+      - name: Quality checks
         working-directory: ./david-wells-resume
         run: |
           npm run test:run
           npm run lint
           npm run format:check
 
-      - name: Build site
-        working-directory: ./david-wells-resume
-        env:
-          # Constitutional compliance environment
-          NUXT_PUBLIC_AUTHENTIC_REPRESENTATION: true
-          NUXT_PUBLIC_CLEAN_DESIGN: true
-          NUXT_PUBLIC_FAST_LOADING: true
-          NUXT_PUBLIC_TARGET_LOAD_TIME: 3000
-          NUXT_PUBLIC_TARGET_FCP: 1500
-          NUXT_PUBLIC_TARGET_LCP: 2500
-          NUXT_PUBLIC_CSP_ENABLED: true
-          NODE_ENV: production
-        run: npm run generate
-
-      - name: Validate build size (Constitutional requirement - minimal)
-        working-directory: ./david-wells-resume
-        run: |
-          BUILD_SIZE=$(du -sh .output/public | cut -f1)
-          echo "📊 Build size: $BUILD_SIZE"
-
-          # Warn if build is larger than 10MB (constitutional principle: clean design)
-          BUILD_SIZE_BYTES=$(du -sb .output/public | cut -f1)
-          if [ $BUILD_SIZE_BYTES -gt 10485760 ]; then
-            echo "⚠️ Warning: Build size exceeds 10MB - consider optimization"
-          else
-            echo "✅ Build size meets constitutional requirements"
-          fi
-
-  # Build and deploy
-  deploy:
-    needs: constitutional-audit
-    runs-on: ubuntu-latest
-
-    # Grant GITHUB_TOKEN permissions for GitHub Pages
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: 'david-wells-resume/package-lock.json'
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Install dependencies
-        working-directory: ./david-wells-resume
-        run: npm ci
-
       - name: Generate static site
         working-directory: ./david-wells-resume
         env:
-          # Production environment with constitutional compliance
           NODE_ENV: production
-          # Use custom domain if configured, otherwise use GitHub Pages URL
-          NUXT_PUBLIC_APP_URL: ${{ vars.CUSTOM_DOMAIN && format('https://{0}', vars.CUSTOM_DOMAIN) || steps.deployment.outputs.page_url }}
+          NUXT_PUBLIC_APP_URL: ${{ vars.SITE_URL || 'https://davidwellsthedeveloper.com' }}
           NUXT_PUBLIC_APP_NAME: 'David T. Wells - Digital Resume'
           NUXT_PUBLIC_APP_DESCRIPTION: 'Professional digital resume for David T. Wells — data platforms, analytics, and full-stack software engineering'
 
@@ -117,50 +70,81 @@ jobs:
           NUXT_PUBLIC_CLEAN_DESIGN: true
           NUXT_PUBLIC_FAST_LOADING: true
 
-          # Performance targets (constitutional limits)
+          # Performance targets
           NUXT_PUBLIC_TARGET_LOAD_TIME: 3000
           NUXT_PUBLIC_TARGET_FCP: 1500
           NUXT_PUBLIC_TARGET_LCP: 2500
 
           # Security
           NUXT_PUBLIC_CSP_ENABLED: true
-
-          # TODO: Add actual contact and social media info after verification with Dave
-          # NUXT_PUBLIC_EMAIL: ${{ secrets.CONTACT_EMAIL }}
-          # NUXT_PUBLIC_LINKEDIN: ${{ secrets.LINKEDIN_URL }}
-          # NUXT_PUBLIC_GITHUB: ${{ secrets.GITHUB_URL }}
         run: npm run generate
 
-      - name: Add CNAME file for custom domain
-        if: vars.CUSTOM_DOMAIN
+      - name: Report build size
         working-directory: ./david-wells-resume
-        run: echo "${{ vars.CUSTOM_DOMAIN }}" > .output/public/CNAME
+        run: du -sh .output/public
 
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './david-wells-resume/.output/public'
 
+      - name: Upload site artifact (for AWS)
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: './david-wells-resume/.output/public'
+          retention-days: 1
+
+  deploy-pages:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Performance audit (post-deployment)
-        if: success()
+  deploy-aws:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure AWS credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Download site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: site
+
+      - name: Sync hashed assets (long cache)
         run: |
-          echo "🚀 Deployment successful!"
-          if [ -n "${{ vars.CUSTOM_DOMAIN }}" ]; then
-            echo "🌍 Custom Domain: https://${{ vars.CUSTOM_DOMAIN }}"
-            echo "📝 CNAME configured for GitHub Pages"
-          else
-            echo "🌍 GitHub Pages URL: ${{ steps.deployment.outputs.page_url }}"
-            echo "💡 Add CUSTOM_DOMAIN repository variable for custom domain"
-          fi
-          echo "💰 Hosting cost: $0 (GitHub Pages + Cloudflare)"
-          echo "🎯 Constitutional compliance: Enforced via environment variables"
-          echo ""
-          echo "📋 Next steps for custom domain:"
-          echo "  1. Set CUSTOM_DOMAIN repository variable (Settings → Secrets and variables → Actions)"
-          echo "  2. Configure Cloudflare DNS to point to GitHub Pages"
-          echo "  3. Enable HTTPS in GitHub Pages settings"
-          echo "  4. Test site performance and constitutional compliance"
+          aws s3 sync site/ "s3://${{ vars.AWS_S3_BUCKET }}/" \
+            --delete \
+            --cache-control "max-age=31536000,public" \
+            --exclude "*.html"
+
+      - name: Sync HTML (short cache)
+        run: |
+          aws s3 sync site/ "s3://${{ vars.AWS_S3_BUCKET }}/" \
+            --cache-control "max-age=3600,public" \
+            --exclude "*" --include "*.html" \
+            --content-type "text/html; charset=utf-8"
+
+      - name: Configure S3 website hosting
+        run: |
+          aws s3 website "s3://${{ vars.AWS_S3_BUCKET }}" \
+            --index-document index.html \
+            --error-document 404.html
+
+      - name: Invalidate CloudFront cache
+        if: vars.AWS_CLOUDFRONT_DISTRIBUTION_ID != ''
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id "${{ vars.AWS_CLOUDFRONT_DISTRIBUTION_ID }}" \
+            --paths "/*"
