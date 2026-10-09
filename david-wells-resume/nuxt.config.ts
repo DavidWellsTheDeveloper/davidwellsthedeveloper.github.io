@@ -44,8 +44,6 @@ export default defineNuxtConfig({
         { property: 'og:image', content: `${siteUrl}/og-image.png` },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
-        { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:image', content: `${siteUrl}/og-image.png` },
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },

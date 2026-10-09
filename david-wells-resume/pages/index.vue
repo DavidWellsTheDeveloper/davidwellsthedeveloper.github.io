@@ -62,10 +62,6 @@ useSeoMeta({
   ogImageWidth: 1200,
   ogImageHeight: 630,
   ogImageAlt: 'David T. Wells — Senior Software Engineer',
-  twitterCard: 'summary_large_image',
-  twitterTitle: pageTitle,
-  twitterDescription: pageDescription,
-  twitterImage: shareImage,
 })
 
 useHead({
