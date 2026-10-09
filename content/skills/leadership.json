@@ -2,105 +2,64 @@
   {
     "name": "Scrum Master",
     "category": "leadership",
-    "proficiency": "intermediate",
-    "yearsExperience": 1,
-    "verified": true
-  },
-  {
-    "name": "Technical Leadership",
-    "category": "leadership",
     "proficiency": "advanced",
     "yearsExperience": 4,
     "verified": true
   },
   {
-    "name": "Team Management",
+    "name": "Agile & Scrum",
     "category": "leadership",
-    "proficiency": "advanced",
-    "yearsExperience": 4,
+    "proficiency": "expert",
+    "yearsExperience": 9,
     "verified": true
   },
   {
-    "name": "Technical Interviewing",
+    "name": "Object-oriented design",
     "category": "leadership",
-    "proficiency": "advanced",
-    "yearsExperience": 4,
+    "proficiency": "expert",
+    "yearsExperience": 9,
     "verified": true
   },
   {
-    "name": "Agile Methodologies",
-    "category": "methodologies",
+    "name": "Design patterns",
+    "category": "leadership",
     "proficiency": "advanced",
     "yearsExperience": 6,
     "verified": true
   },
   {
-    "name": "Sprint Planning",
-    "category": "methodologies",
-    "proficiency": "intermediate",
-    "yearsExperience": 1,
-    "verified": true
-  },
-  {
-    "name": "Retrospectives",
-    "category": "methodologies",
-    "proficiency": "intermediate",
-    "yearsExperience": 1,
-    "verified": true
-  },
-  {
-    "name": "Backlog Planning",
-    "category": "methodologies",
-    "proficiency": "intermediate",
-    "yearsExperience": 1,
-    "verified": true
-  },
-  {
-    "name": "Strategic Planning (30/60/90 day)",
-    "category": "methodologies",
-    "proficiency": "intermediate",
-    "yearsExperience": 1,
-    "verified": true
-  },
-  {
-    "name": "Code Review",
-    "category": "methodologies",
-    "proficiency": "advanced",
-    "yearsExperience": 6,
-    "verified": true
-  },
-  {
-    "name": "Test Driven Development",
-    "category": "methodologies",
+    "name": "Behavior-driven development",
+    "category": "leadership",
     "proficiency": "advanced",
     "yearsExperience": 5,
     "verified": true
   },
   {
-    "name": "AI-Assisted Development",
-    "category": "methodologies",
-    "proficiency": "intermediate",
-    "yearsExperience": 1,
-    "verified": true
-  },
-  {
-    "name": "Spec-Driven Development",
-    "category": "methodologies", 
-    "proficiency": "beginner",
-    "verified": true
-  },
-  {
-    "name": "Enhanced Code Review",
-    "category": "methodologies",
+    "name": "Pair programming",
+    "category": "leadership",
     "proficiency": "advanced",
-    "yearsExperience": 6,
+    "yearsExperience": 3,
     "verified": true
   },
   {
-    "name": "Team Code Review Process",
+    "name": "AI-assisted development",
     "category": "methodologies",
     "proficiency": "advanced",
     "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "LLM & MCP integrations",
+    "category": "methodologies",
+    "proficiency": "advanced",
+    "yearsExperience": 2,
+    "verified": true
+  },
+  {
+    "name": "Agentic development workflows",
+    "category": "methodologies",
+    "proficiency": "advanced",
+    "yearsExperience": 2,
     "verified": true
   }
 ]

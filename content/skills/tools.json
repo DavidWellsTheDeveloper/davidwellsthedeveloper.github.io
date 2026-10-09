@@ -1,120 +1,177 @@
 [
   {
-    "name": "Database Design",
-    "category": "data",
-    "proficiency": "expert",
-    "yearsExperience": 8,
-    "verified": true
-  },
-  {
-    "name": "Database Optimization",
-    "category": "data",
-    "proficiency": "expert",
-    "yearsExperience": 6,
-    "verified": true
-  },
-  {
     "name": "SQL",
     "category": "data",
     "proficiency": "expert",
-    "yearsExperience": 8,
+    "yearsExperience": 9,
     "verified": true
   },
   {
     "name": "MySQL",
     "category": "data",
     "proficiency": "advanced",
-    "yearsExperience": 6,
+    "yearsExperience": 9,
     "verified": true
   },
   {
     "name": "SQL Server",
     "category": "data",
+    "proficiency": "intermediate",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "PostgreSQL",
+    "category": "data",
     "proficiency": "advanced",
     "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "Redis",
+    "category": "data",
+    "proficiency": "advanced",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "DynamoDB",
+    "category": "data",
+    "proficiency": "intermediate",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "Relational modeling & normalization",
+    "category": "data",
+    "proficiency": "expert",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "ORMs",
+    "category": "data",
+    "proficiency": "advanced",
+    "yearsExperience": 6,
     "verified": true
   },
   {
     "name": "Data Analytics",
     "category": "data",
     "proficiency": "advanced",
-    "yearsExperience": 5,
+    "yearsExperience": 6,
     "verified": true
   },
   {
-    "name": "Statistical Modeling",
+    "name": "Data Visualization",
     "category": "data",
-    "proficiency": "intermediate",
-    "yearsExperience": 3,
-    "verified": true
-  },
-  {
-    "name": "Big Data Analysis",
-    "category": "data",
-    "proficiency": "intermediate",
-    "yearsExperience": 3,
-    "verified": true
-  },
-  {
-    "name": "Git/GitHub",
-    "category": "tools",
-    "proficiency": "expert",
-    "yearsExperience": 8,
-    "verified": true
-  },
-  {
-    "name": "GitLab",
-    "category": "tools",
-    "proficiency": "advanced",
-    "yearsExperience": 5,
-    "verified": true
-  },
-  {
-    "name": "Docker",
-    "category": "tools",
-    "proficiency": "intermediate",
-    "yearsExperience": 3,
-    "verified": true
-  },
-  {
-    "name": "Linux/Unix",
-    "category": "tools",
     "proficiency": "advanced",
     "yearsExperience": 6,
     "verified": true
   },
   {
-    "name": "Google Cloud Platform",
-    "category": "tools",
-    "proficiency": "intermediate",
-    "yearsExperience": 3,
+    "name": "Statistical Modeling",
+    "category": "data",
+    "proficiency": "advanced",
+    "yearsExperience": 4,
     "verified": true
   },
   {
-    "name": "Nginx",
+    "name": "Big Data Analysis",
+    "category": "data",
+    "proficiency": "advanced",
+    "yearsExperience": 5,
+    "verified": true
+  },
+  {
+    "name": "Git",
+    "category": "tools",
+    "proficiency": "advanced",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "GitHub",
+    "category": "tools",
+    "proficiency": "advanced",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "GitLab",
     "category": "tools",
     "proficiency": "intermediate",
     "yearsExperience": 4,
     "verified": true
   },
   {
-    "name": "GitHub Copilot",
-    "category": "tools",
-    "proficiency": "advanced",
-    "yearsExperience": 1,
-    "verified": true
-  },
-  {
-    "name": "AI Code Assistants",
+    "name": "Docker",
     "category": "tools",
     "proficiency": "intermediate",
-    "yearsExperience": 1,
+    "yearsExperience": 4,
     "verified": true
   },
   {
-    "name": "Spec Kit",
+    "name": "Nginx",
     "category": "tools",
-    "proficiency": "beginner",
+    "proficiency": "intermediate",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "YAML / JSON",
+    "category": "tools",
+    "proficiency": "advanced",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "GitHub Actions (CI/CD)",
+    "category": "tools",
+    "proficiency": "advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "WebSockets",
+    "category": "tools",
+    "proficiency": "advanced",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "AWS",
+    "category": "cloud",
+    "proficiency": "advanced",
+    "yearsExperience": 5,
+    "verified": true
+  },
+  {
+    "name": "GCP",
+    "category": "cloud",
+    "proficiency": "intermediate",
+    "yearsExperience": 2,
+    "verified": true
+  },
+  {
+    "name": "AWS services (S3, EC2, IAM, Route 53, Lightsail)",
+    "category": "cloud",
+    "proficiency": "advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "OAuth integration",
+    "category": "cloud",
+    "proficiency": "advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "Cloud cost optimization",
+    "category": "cloud",
+    "proficiency": "advanced",
+    "yearsExperience": 3,
     "verified": true
   }
 ]

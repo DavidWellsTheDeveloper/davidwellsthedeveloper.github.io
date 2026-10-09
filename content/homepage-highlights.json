@@ -1,20 +1,21 @@
 {
   "heroHighlights": [
-    "Eight years building data-driven applications and analytics platforms",
-    "Scrum Master for a seven-person engineering team",
+    "Nine years building data-driven applications and analytics platforms",
+    "Scrum Master for a seven-person engineering team; raised velocity 50%",
+    "Architected an event-driven AI orchestration platform (Go, Python, Redis Streams, DynamoDB/PostgreSQL on AWS)",
     "Analytics dashboards at 1M+ points; relational design and queries delivering 3-5x faster loads",
     "Large-scale Python analytics on billion-record datasets; pipeline work improving queries up to 100x"
   ],
   "keyAchievements": [
     {
       "title": "Data platforms & analytics",
-      "metric": "8 years",
+      "metric": "9 years",
       "description": "Full-stack delivery for SaaS analytics, research-scale data, and university administrative systems"
     },
     {
       "title": "Engineering leadership",
       "metric": "7-person team",
-      "description": "Scrum Master—sprint planning, refinement, retrospectives, and sustainable delivery"
+      "description": "Scrum Master—raised velocity 50% with clearer requirements, refinement, and retrospectives"
     },
     {
       "title": "Performance & modeling",
@@ -25,14 +26,25 @@
       "title": "Frontend & design systems",
       "metric": "Platform redesign",
       "description": "Vue.js, Sass, Pinia, and Material Design across the product surface"
+    },
+    {
+      "title": "AI & agentic platforms",
+      "metric": "Planning 4d → 1d",
+      "description": "Event-driven AI orchestration with LLMs, MCP integrations, and the Cursor SDK"
     }
   ],
   "recentWork": [
     {
+      "company": "FoCo Websites",
+      "role": "Freelance Web Developer",
+      "period": "2026-Present",
+      "highlight": "Custom, high-performance sites for small and medium businesses—design, build, launch, and care"
+    },
+    {
       "company": "MeasuringU",
       "role": "Full Stack Developer",
-      "period": "2021-Present",
-      "highlight": "Data-driven SaaS analytics platform; Scrum Master; charts and relational performance at scale"
+      "period": "2021-2026",
+      "highlight": "AI orchestration and agentic dev platform; Scrum Master; charts and relational performance at scale"
     },
     {
       "company": "Mountain Data Group",
@@ -51,13 +63,13 @@
     {
       "name": "SQL & relational design",
       "category": "Database",
-      "years": 8,
+      "years": 9,
       "verified": true
     },
     {
       "name": "Python & data analytics",
       "category": "Data",
-      "years": 5,
+      "years": 6,
       "verified": true
     },
     {
@@ -69,13 +81,13 @@
     {
       "name": "Scrum Master",
       "category": "Leadership",
-      "years": 4,
+      "years": 5,
       "verified": true
     },
     {
       "name": "AWS & GCP",
       "category": "Cloud",
-      "years": 4,
+      "years": 5,
       "verified": true
     }
   ]

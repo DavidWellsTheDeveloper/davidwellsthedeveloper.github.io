@@ -4,8 +4,9 @@
     "Data platforms, analytics, and performance at scale",
     "Scrum Master practice and healthy agile ceremonies",
     "Normalized data models, APIs, and full-stack delivery",
-    "AI-assisted development with rigorous review and testing",
-    "Accessible, well-structured frontends"
+    "AI-assisted and agentic development with rigorous review and testing",
+    "Accessible, well-structured frontends",
+    "Freelance web development for small and medium businesses (FoCo Websites)"
   ],
   "personalInterests": [
     "Outdoor adventure and wilderness exploration",
@@ -17,6 +18,7 @@
   "philosophy": "The best systems pair solid relational design and performance discipline with clear communication. I care about measurable outcomes, maintainable code, and how teams work together to deliver.",
   "funFacts": [
     "Engineering Scrum Master for a seven-person team while staying hands-on in code",
+    "Architected an event-driven AI orchestration platform and an agentic development workflow",
     "Improved query and load performance from multi-fold gains up to ~100x on large pipelines",
     "Dual degree path: sociology (Fort Lewis) and computer science (CSU)"
   ]

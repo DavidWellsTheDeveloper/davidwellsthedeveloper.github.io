@@ -135,7 +135,7 @@ const highlights: Highlight[] = getKeyHighlights
   : [
       {
         title: 'Full-Stack Development',
-        description: '8+ years of experience with modern web technologies',
+        description: '9+ years of experience with modern web technologies',
       },
       {
         title: 'Team Leadership',

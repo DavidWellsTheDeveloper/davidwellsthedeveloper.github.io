@@ -7,108 +7,122 @@
     "verified": true
   },
   {
-    "name": "React",
-    "category": "frontend",
-    "proficiency": "advanced",
-    "yearsExperience": 5,
-    "verified": true
-  },
-  {
-    "name": "JavaScript",
-    "category": "frontend",
-    "proficiency": "expert",
-    "yearsExperience": 8,
-    "verified": true
-  },
-  {
-    "name": "HTML5",
-    "category": "frontend",
-    "proficiency": "expert",
-    "yearsExperience": 8,
-    "verified": true
-  },
-  {
-    "name": "CSS3",
-    "category": "frontend",
-    "proficiency": "expert",
-    "yearsExperience": 8,
-    "verified": true
-  },
-  {
-    "name": "SASS/SCSS",
-    "category": "frontend",
-    "proficiency": "advanced",
-    "yearsExperience": 6,
-    "verified": true
-  },
-  {
-    "name": "Material Design",
+    "name": "Nuxt",
     "category": "frontend",
     "proficiency": "advanced",
     "yearsExperience": 2,
     "verified": true
   },
   {
-    "name": "Bootstrap",
+    "name": "React",
     "category": "frontend",
-    "proficiency": "advanced",
-    "yearsExperience": 6,
+    "proficiency": "intermediate",
+    "yearsExperience": 2,
     "verified": true
   },
   {
-    "name": "Responsive Design",
+    "name": "Pinia",
+    "category": "frontend",
+    "proficiency": "advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "JavaScript",
     "category": "frontend",
     "proficiency": "expert",
-    "yearsExperience": 8,
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "TypeScript",
+    "category": "frontend",
+    "proficiency": "intermediate",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "HTML5",
+    "category": "frontend",
+    "proficiency": "expert",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "CSS3",
+    "category": "frontend",
+    "proficiency": "expert",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "Sass",
+    "category": "frontend",
+    "proficiency": "advanced",
+    "yearsExperience": 5,
+    "verified": true
+  },
+  {
+    "name": "Material Design",
+    "category": "frontend",
+    "proficiency": "advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "Tailwind CSS",
+    "category": "frontend",
+    "proficiency": "advanced",
+    "yearsExperience": 3,
     "verified": true
   },
   {
     "name": "PHP",
     "category": "backend",
-    "proficiency": "advanced",
-    "yearsExperience": 4,
+    "proficiency": "expert",
+    "yearsExperience": 5,
     "verified": true
   },
   {
     "name": "Python",
     "category": "backend",
-    "proficiency": "expert",
-    "yearsExperience": 6,
+    "proficiency": "advanced",
+    "yearsExperience": 5,
     "verified": true
   },
   {
-    "name": "C#",
+    "name": "Java",
+    "category": "backend",
+    "proficiency": "intermediate",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "Go",
     "category": "backend",
     "proficiency": "advanced",
-    "yearsExperience": 4,
+    "yearsExperience": 3,
     "verified": true
   },
   {
     "name": "Django",
     "category": "backend",
-    "proficiency": "advanced",
-    "yearsExperience": 4,
+    "proficiency": "intermediate",
+    "yearsExperience": 2,
     "verified": true
   },
   {
-    "name": ".NET Framework",
-    "category": "backend",
-    "proficiency": "advanced",
-    "yearsExperience": 4,
-    "verified": true
-  },
-  {
-    "name": "RESTful APIs",
-    "category": "backend",
-    "proficiency": "expert",
-    "yearsExperience": 6,
-    "verified": true
-  },
-  {
-    "name": "Entity Framework",
+    "name": "Laravel",
     "category": "backend",
     "proficiency": "intermediate",
-    "yearsExperience": 4,
+    "yearsExperience": 2,
+    "verified": true
+  },
+  {
+    "name": "REST APIs",
+    "category": "backend",
+    "proficiency": "expert",
+    "yearsExperience": 9,
     "verified": true
   }
 ]

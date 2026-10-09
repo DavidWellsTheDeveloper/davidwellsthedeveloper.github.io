@@ -15,6 +15,9 @@
     <!-- Skills Matrix -->
     <SkillsMatrix />
 
+    <!-- Freelance -->
+    <FreelanceSection />
+
     <!-- Contact Section -->
     <ContactSection />
   </div>

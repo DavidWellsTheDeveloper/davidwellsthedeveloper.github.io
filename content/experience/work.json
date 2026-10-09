@@ -1,33 +1,71 @@
 [
   {
+    "id": "focowebsites-freelance",
+    "company": "FoCo Websites",
+    "position": "Freelance Web Developer",
+    "startDate": "2026-01-01",
+    "endDate": null,
+    "location": "Northern Colorado (Fort Collins area)",
+    "description": "Solo freelance web developer designing, building, launching, and maintaining custom, high-performance websites for small and medium businesses.",
+    "achievements": [
+      "Designed and shipped a fast, secure custom site for a solo accounting practice, with a client-editable CMS and near-zero ongoing costs (Andrews Accounting LLC)",
+      "Migrated a specialty food retailer off a restrictive platform to a custom headless-commerce storefront, eliminating platform fees and improving organic traffic (Pantry To Store)",
+      "Delivered sub-second mobile page loads with low-cost static hosting, spam-protected contact forms, and reversible content changes",
+      "Own the full lifecycle—discovery, design, build, launch, and ongoing care—as the single point of contact"
+    ],
+    "technologies": [
+      "Nuxt",
+      "Vue.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Headless CMS",
+      "Static Site Generation",
+      "SEO",
+      "Netlify",
+      "AWS"
+    ],
+    "type": "work",
+    "verified": true
+  },
+  {
     "id": "measuringu-fullstack",
     "company": "MeasuringU",
     "position": "Full Stack Developer",
     "startDate": "2021-03-01",
-    "endDate": null,
+    "endDate": "2026-08-01",
     "location": "Remote",
     "description": "Led development of a data-driven SaaS analytics platform with a focus on backend performance and maintainable object-oriented systems. Recognized as the team's expert in database design and frontend implementation.",
     "achievements": [
-      "Served as Scrum Master for a seven-person engineering team, leading sprint planning, retrospectives, and backlog refinement",
-      "Architected and delivered scalable full-stack features using PHP, Vue.js, SQL, and REST APIs",
-      "Improved requirements documentation and ticket clarity, contributing to a team velocity increase of 25%+",
-      "Led a platform-wide frontend redesign using Vue.js, Sass, Pinia, and the Material Design system",
-      "Built interactive analytics dashboards processing 1M+ data points with Chart.js, PHP, and SQL",
-      "Designed normalized relational schemas and optimized queries, improving load times by 3-5x",
-      "Participated in designing and administering technical interviews and onboarding new engineers",
-      "Leveraged AI-assisted development tools while maintaining strong testing and code review practices",
-      "Developed AI-driven features including transcript generation, translations, and summarizations"
+      "Architected a multi-service, event-driven AI orchestration platform (Go API, Python workers, Redis Streams, WebSockets, DynamoDB/PostgreSQL on AWS) built around a three-gate workflow with human approval checkpoints and claim-check messaging, cutting planning from ~4 days to ~1 day",
+      "Served as Scrum Master for a seven-person engineering team, partnering with product stakeholders to clarify requirements and scope work realistically; raised velocity 50%",
+      "Designed an extensible, event-driven agentic development platform integrating LLMs, MCP integrations, and agent skills with the Cursor SDK; defined service contracts across Python microservices using OpenAPI and AsyncAPI",
+      "Recognized as team expert in database design; designed normalized relational schemas and executed optimizations, improving load times 3-5x while enforcing data integrity",
+      "Built interactive analytics dashboards processing 1M+ data points using an object-oriented, ports-and-adapters architecture in PHP and Vue.js",
+      "Led a platform-wide frontend redesign using Vue.js, Sass, Pinia, and Material Design, overhauling frontend architecture and UX",
+      "Maintained CI/CD pipelines with GitHub Actions to automate testing, linting, builds, and deployments to AWS, enabling low-risk, fast releases across multiple instances"
     ],
     "technologies": [
+      "Go",
+      "Python",
       "Vue.js",
       "PHP",
       "SQL",
+      "PostgreSQL",
+      "DynamoDB",
+      "Redis Streams",
+      "WebSockets",
       "REST APIs",
+      "OpenAPI",
+      "AsyncAPI",
+      "MCP",
+      "Cursor SDK",
+      "AWS",
+      "GitHub Actions",
       "Sass",
       "Pinia",
       "Material Design",
-      "Chart.js",
-      "JavaScript"
+      "JavaScript",
+      "TypeScript"
     ],
     "type": "work",
     "verified": true
@@ -47,7 +85,8 @@
       "Automated data ingestion and update pipelines; improved slow queries by up to 100x",
       "Developed time-series and big-data models supporting research in travel risk, lead exposure, and public trust",
       "Exploratory research on GIS, UK demographic, and violent crime data quality and correlation",
-      "Data visualization with GIS tools, D3, and Python visualization libraries"
+      "Data visualization with GIS tools, D3, and Python visualization libraries",
+      "Integrated with third-party client microservices using the Azure ecosystem"
     ],
     "technologies": [
       "Python",
@@ -57,7 +96,9 @@
       "Time series",
       "Big data",
       "SQL",
-      "Data pipelines"
+      "Data pipelines",
+      "Azure",
+      "Microservices"
     ],
     "type": "work",
     "verified": true

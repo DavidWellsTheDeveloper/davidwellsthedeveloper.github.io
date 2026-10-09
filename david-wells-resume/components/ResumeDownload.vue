@@ -1,7 +1,7 @@
 <template>
   <a
     :href="resumeHref"
-    download="David-Wells-Software-Developer-Resume.pdf"
+    download="David-Wells-Software-Engineer-Resume.pdf"
     class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
   >
     <svg
@@ -25,8 +25,8 @@
 <script setup lang="ts">
 import { joinURL } from 'ufo'
 
-/** Static resume PDF shipped from `public/` (same file as `supportingDocs/David Wells Software Developer Resume.pdf`). */
-const RESUME_FILE = 'David-Wells-Software-Developer-Resume.pdf'
+/** Static resume PDF shipped from `public/`. */
+const RESUME_FILE = 'David-Wells-Software-Engineer-Resume.pdf'
 
 const resumeHref = computed(() => {
   const base = useRuntimeConfig().app.baseURL || '/'

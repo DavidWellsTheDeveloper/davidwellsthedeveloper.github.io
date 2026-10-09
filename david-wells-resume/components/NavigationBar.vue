@@ -115,6 +115,13 @@
           Skills
         </a>
         <a
+          href="#freelance"
+          class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+          @click="onMobileNavClick('freelance', $event)"
+        >
+          Freelance
+        </a>
+        <a
           href="#contact"
           class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
           @click="onMobileNavClick('contact', $event)"
@@ -151,6 +158,7 @@ const navigation = ref([
   { name: 'About', href: '#about' },
   { name: 'Experience', href: '#experience' },
   { name: 'Skills', href: '#skills' },
+  { name: 'Freelance', href: '#freelance' },
   { name: 'Contact', href: '#contact' },
 ])
 
