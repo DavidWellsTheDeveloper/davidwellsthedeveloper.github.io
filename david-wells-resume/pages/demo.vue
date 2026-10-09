@@ -127,4 +127,9 @@ definePageMeta({
   title: 'Hero Background Demo - Dave Wells',
   description: 'Preview of parallax background options for the hero section',
 })
+
+// Internal preview page — keep it out of search results
+useSeoMeta({
+  robots: 'noindex, nofollow',
+})
 </script>

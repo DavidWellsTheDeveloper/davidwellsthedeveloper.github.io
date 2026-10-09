@@ -1,4 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+const siteUrl = (
+  process.env.NUXT_PUBLIC_APP_URL || 'https://davidwellsthedeveloper.com'
+).replace(/\/$/, '')
+const siteName = 'David T. Wells — Senior Software Engineer'
+const siteDescription =
+  'Senior software engineer with 9 years of experience building and scaling data platforms, analytics, and full-stack systems.'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-10-05',
   devtools: { enabled: true },
@@ -24,14 +31,21 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'David T. Wells - Digital Resume',
+      title: siteName,
       meta: [
-        {
-          name: 'description',
-          content:
-            'Professional digital resume for David T. Wells — data platforms, analytics, and full-stack software engineering',
-        },
+        { name: 'description', content: siteDescription },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'author', content: 'David T. Wells' },
+        { name: 'application-name', content: siteName },
+        { name: 'robots', content: 'index, follow' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:site_name', content: siteName },
+        { property: 'og:locale', content: 'en_US' },
+        { property: 'og:image', content: `${siteUrl}/og-image.png` },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:image', content: `${siteUrl}/og-image.png` },
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },

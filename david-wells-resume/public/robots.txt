@@ -1,0 +1,6 @@
+# https://davidwellsthedeveloper.com/robots.txt
+User-agent: *
+Allow: /
+Disallow: /demo
+
+Sitemap: https://davidwellsthedeveloper.com/sitemap.xml
