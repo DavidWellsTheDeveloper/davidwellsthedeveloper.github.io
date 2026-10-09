@@ -37,12 +37,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: '20'
+          node-version: '24'
           cache: 'npm'
           cache-dependency-path: 'david-wells-resume/package-lock.json'
 
@@ -89,7 +89,7 @@ jobs:
           path: './david-wells-resume/.output/public'
 
       - name: Upload site artifact (for AWS)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: site
           path: './david-wells-resume/.output/public'
@@ -117,7 +117,7 @@ jobs:
           aws-region: ${{ vars.AWS_REGION }}
 
       - name: Download site artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: site
           path: site
