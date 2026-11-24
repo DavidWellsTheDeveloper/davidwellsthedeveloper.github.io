@@ -89,4 +89,4 @@ playwright/.cache/
 **/node_modules/**
 **/.nuxt/**
 **/.cache/**
-**/coverage/**
+**/coverage/**dist
