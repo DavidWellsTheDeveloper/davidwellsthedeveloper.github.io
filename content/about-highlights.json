@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Data platforms & analytics",
+    "description": "Nine years building data-driven applications, large-scale processing, and analytics experiences end to end"
+  },
+  {
+    "title": "Engineering leadership",
+    "description": "Scrum Master for a seven-person team—raised velocity 50% through clearer requirements, refinement, and retrospectives"
+  },
+  {
+    "title": "Performance & data modeling",
+    "description": "Normalized relational design, query tuning, and dashboards at millions of points—with measured load and latency wins"
+  },
+  {
+    "title": "Modern full-stack craft",
+    "description": "Vue, Nuxt, Django, Go, SQL, REST, SCSS, Pinia, Tailwind, Material Design, CI/CD, and AI-assisted development with strong review habits"
+  },
+  {
+    "title": "Support & training",
+    "description": "Provided direct technical and application support to department administrators—trained end-users, resolved issues, and translated non-technical requirements"
+  },
+  {
+    "title": "Freelance web development",
+    "description": "Through FoCo Websites, I design, build, launch, and care for fast, custom sites for small and medium businesses"
+  }
+]

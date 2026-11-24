@@ -5,6 +5,7 @@ import projectsData from '../../content/projects.json'
 import skillsData from '../../content/skills/skills.json'
 import educationData from '../../content/education.json'
 import personalData from '../../content/personal.json'
+import aboutHighlightsData from '../../content/about-highlights.json'
 
 interface ProfileData {
   name: string
@@ -67,8 +68,8 @@ interface Education {
 }
 
 export const useResumeData = () => {
-  const contactMessage =
-    'Open to discussing roles in application development, data platforms, and full-stack delivery—especially where leadership and hands-on architecture both matter. Also available for freelance web projects through FoCo Websites.'
+  // Contact message sourced from content/profile.json
+  const contactMessage = profileData.contactMessage
 
   // Data sourced from content/*.json — the single source of record
   const profile: ProfileData = {
@@ -94,39 +95,12 @@ export const useResumeData = () => {
     verified: true,
   }
 
-  // Helper function for AboutSection
-  const getKeyHighlights = () => [
-    {
-      title: 'Data platforms & analytics',
-      description:
-        'Nine years building data-driven applications, large-scale processing, and analytics experiences end to end',
-    },
-    {
-      title: 'Engineering leadership',
-      description:
-        'Scrum Master for a seven-person team—raised velocity 50% through clearer requirements, refinement, and retrospectives',
-    },
-    {
-      title: 'Performance & data modeling',
-      description:
-        'Normalized relational design, query tuning, and dashboards at millions of points—with measured load and latency wins',
-    },
-    {
-      title: 'Modern full-stack craft',
-      description:
-        'Vue, Nuxt, Django, Go, SQL, REST, SCSS, Pinia, Tailwind, Material Design, CI/CD, and AI-assisted development with strong review habits',
-    },
-    {
-      title: 'Support & training',
-      description:
-        'Provided direct technical and application support to department administrators—trained end-users, resolved issues, and translated non-technical requirements',
-    },
-    {
-      title: 'Freelance web development',
-      description:
-        'Through FoCo Websites, I design, build, launch, and care for fast, custom sites for small and medium businesses',
-    },
-  ]
+  // Helper function for AboutSection — data sourced from content/about-highlights.json
+  const getKeyHighlights = () =>
+    aboutHighlightsData as {
+      title: string
+      description: string
+    }[]
 
   // Helper function for content verification
   const isContentVerified = () => true
