@@ -18,6 +18,9 @@
     <!-- Freelance -->
     <FreelanceSection />
 
+    <!-- Projects -->
+    <ProjectsSection />
+
     <!-- Contact Section -->
     <ContactSection />
   </div>
@@ -77,7 +80,7 @@ useHead({
         description: pageDescription,
         url: `${siteUrl}/`,
         image: shareImage,
-        email: 'mailto:dave1twells@gmail.com',
+        email: 'mailto:dave1.t.wells@gmail.com',
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Fort Collins',

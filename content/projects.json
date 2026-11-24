@@ -1,0 +1,48 @@
+[
+  {
+    "id": "nonprofit-event-platform",
+    "name": "Nonprofit Event Platform",
+    "period": "Recent",
+    "summary": "Custom Django platform replacing a failing Wix site for a Northern Colorado nonprofit—account-based event registration, atomic spot reservation to prevent overbooking, versioned waiver capture, volunteer-friendly admin tools with CSV roster export, and Stripe Checkout donations.",
+    "stack": [
+      "Django",
+      "Python",
+      "Stripe",
+      "Google Cloud Platform",
+      "GitHub Actions"
+    ],
+    "link": "https://focowebsites.com",
+    "type": "project",
+    "verified": true
+  },
+  {
+    "id": "pantry-to-store",
+    "name": "Pantry To Store",
+    "period": "Recent",
+    "summary": "Food waste reduction platform for a specialty food retailer—migrated off a restrictive platform to a custom headless-commerce storefront, eliminating platform fees and improving organic traffic.",
+    "stack": [
+      "Vue.js",
+      "Headless Commerce",
+      "Static Site Generation",
+      "SEO"
+    ],
+    "link": "https://pantrytostore.com",
+    "type": "project",
+    "verified": true
+  },
+  {
+    "id": "andrews-accounting",
+    "name": "Andrews Accounting",
+    "period": "Recent",
+    "summary": "Designed and shipped a custom site for a solo accounting practice, powered by a custom headless CMS with client-editable content and near-zero ongoing hosting costs.",
+    "stack": [
+      "Headless CMS",
+      "Static Site Generation",
+      "SEO",
+      "Netlify"
+    ],
+    "link": "https://andrewsaccountingllc.com",
+    "type": "project",
+    "verified": true
+  }
+]

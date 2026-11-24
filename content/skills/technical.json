@@ -77,24 +77,10 @@
     "verified": true
   },
   {
-    "name": "PHP",
-    "category": "backend",
-    "proficiency": "expert",
-    "yearsExperience": 5,
-    "verified": true
-  },
-  {
     "name": "Python",
     "category": "backend",
     "proficiency": "advanced",
     "yearsExperience": 5,
-    "verified": true
-  },
-  {
-    "name": "Java",
-    "category": "backend",
-    "proficiency": "intermediate",
-    "yearsExperience": 3,
     "verified": true
   },
   {
@@ -112,16 +98,30 @@
     "verified": true
   },
   {
-    "name": "Laravel",
+    "name": "REST APIs",
+    "category": "backend",
+    "proficiency": "expert",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "VB.NET",
     "category": "backend",
     "proficiency": "intermediate",
     "yearsExperience": 2,
     "verified": true
   },
   {
-    "name": "REST APIs",
+    "name": "Entity Framework",
     "category": "backend",
-    "proficiency": "expert",
+    "proficiency": "intermediate",
+    "yearsExperience": 2,
+    "verified": true
+  },
+  {
+    "name": "XML / JSON",
+    "category": "backend",
+    "proficiency": "advanced",
     "yearsExperience": 9,
     "verified": true
   }

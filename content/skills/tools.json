@@ -154,7 +154,7 @@
     "verified": true
   },
   {
-    "name": "AWS services (S3, EC2, IAM, Route 53, Lightsail)",
+    "name": "AWS services (S3, EC2, IAM)",
     "category": "cloud",
     "proficiency": "advanced",
     "yearsExperience": 4,
@@ -172,6 +172,13 @@
     "category": "cloud",
     "proficiency": "advanced",
     "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "T-SQL",
+    "category": "data",
+    "proficiency": "advanced",
+    "yearsExperience": 2,
     "verified": true
   }
 ]

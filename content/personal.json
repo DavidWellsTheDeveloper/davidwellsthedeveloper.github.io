@@ -1,11 +1,12 @@
 {
-  "bio": "Background in sociology and computer science—focused on data platforms, analytics, and shipping software that teams can rely on at scale.",
+  "bio": "Background in sociology and computer science—focused on building reliable full-stack applications, data platforms, and software that users are confident running.",
   "careerPassions": [
+    "Full-stack application development from design through deployment",
     "Data platforms, analytics, and performance at scale",
+    "Database design—normalized schemas, T-SQL, and query optimization",
+    "Training end-users and providing direct technical support",
     "Scrum Master practice and healthy agile ceremonies",
-    "Normalized data models, APIs, and full-stack delivery",
     "AI-assisted and agentic development with rigorous review and testing",
-    "Accessible, well-structured frontends",
     "Freelance web development for small and medium businesses (FoCo Websites)"
   ],
   "personalInterests": [
@@ -19,6 +20,7 @@
   "funFacts": [
     "Engineering Scrum Master for a seven-person team while staying hands-on in code",
     "Architected an event-driven AI orchestration platform and an agentic development workflow",
+    "Built custom VB.NET and Entity Framework applications for university departments at CSU",
     "Improved query and load performance from multi-fold gains up to ~100x on large pipelines",
     "Dual degree path: sociology (Fort Lewis) and computer science (CSU)"
   ]

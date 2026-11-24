@@ -1,10 +1,10 @@
 {
   "heroHighlights": [
-    "Nine years building data-driven applications and analytics platforms",
+    "Nine years building data-driven web applications and analytics platforms",
     "Scrum Master for a seven-person engineering team; raised velocity 50%",
     "Architected an event-driven AI orchestration platform (Go, Python, Redis Streams, DynamoDB/PostgreSQL on AWS)",
-    "Analytics dashboards at 1M+ points; relational design and queries delivering 3-5x faster loads",
-    "Large-scale Python analytics on billion-record datasets; pipeline work improving queries up to 100x"
+    "Built a Django event-registration platform for a Northern Colorado nonprofit, from discovery to launch",
+    "Relational database design and query tuning delivering 3-5x faster loads; pipelines up to 100x faster"
   ],
   "keyAchievements": [
     {
@@ -18,14 +18,14 @@
       "description": "Scrum Master—raised velocity 50% with clearer requirements, refinement, and retrospectives"
     },
     {
+      "title": "Full-lifecycle freelance delivery",
+      "metric": "Discovery → launch",
+      "description": "Django platforms, headless CMS, and e-commerce storefronts for Northern Colorado businesses and nonprofits"
+    },
+    {
       "title": "Performance & modeling",
       "metric": "3-5x / 100x",
       "description": "Normalized schemas and tuned queries; automated pipelines and faster slow queries at scale"
-    },
-    {
-      "title": "Frontend & design systems",
-      "metric": "Platform redesign",
-      "description": "Vue.js, Sass, Pinia, and Material Design across the product surface"
     },
     {
       "title": "AI & agentic platforms",

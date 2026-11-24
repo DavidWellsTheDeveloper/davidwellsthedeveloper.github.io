@@ -1,12 +1,12 @@
 {
   "name": "David T. Wells",
-  "title": "Data Platforms & Analytics Software Engineer",
-  "email": "dave1twells@gmail.com",
+  "title": "Software Engineer — Data Platforms & Full-Stack Applications",
+  "email": "dave1.t.wells@gmail.com",
   "location": "Fort Collins, CO",
-  "website": "",
+  "website": "https://davidwellsthedeveloper.com/",
   "linkedin": "https://www.linkedin.com/in/davidwellsdeveloper/",
   "github": "https://github.com/DavidWellsTheDeveloper",
   "photo": "/images/profile-photo.jpg",
-  "summary": "Senior Software Engineer with 9 years of experience owning and scaling data-driven applications and analytics platforms. Specialized in high-performance data-driven systems, large-scale data processing, and application architecture. Increased team velocity and accuracy while serving as Scrum Master. Proven track record of improving system speed, building clean frontend layouts, designing normalized and efficient relational architecture, and planning full-stack systems.",
-  "tagline": "Data platforms, analytics, and reliable full-stack delivery"
+  "summary": "Software Engineer with 9 years of experience owning and scaling data-driven web applications and analytics platforms. Specialized in high-performance data-driven systems, large-scale data processing, and application architecture. Experienced with VB.NET, Entity Framework, T-SQL, SQL Server, Python, and PHP. Increased team velocity and accuracy while serving as Scrum Master. Known for improving system speed, driving platform-wide design pattern improvements, optimizing at scale, and working effectively both independently and as part of a development team.",
+  "tagline": "Reliable full-stack applications, data platforms, and performance at scale"
 }

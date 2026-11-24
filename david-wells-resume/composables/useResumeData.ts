@@ -25,6 +25,17 @@ interface WorkExperience {
   verified: boolean
 }
 
+interface Project {
+  id: string
+  name: string
+  period: string
+  summary: string
+  stack: string[]
+  link: string | null
+  type: 'project'
+  verified: boolean
+}
+
 interface TechnicalSkill {
   name: string
   category: string
@@ -51,24 +62,25 @@ export const useResumeData = () => {
   // Personal profile - verified authentic data from Dave's provided information
   const profile: ProfileData = {
     name: 'David T. Wells',
-    title: 'Data Platforms & Analytics Software Engineer',
-    email: 'dave1twells@gmail.com',
+    title: 'Software Engineer — Data Platforms & Full-Stack Applications',
+    email: 'dave1.t.wells@gmail.com',
     // Shown on generated resume PDF only — not on the public contact section
     phone: '(970) 691-3143',
-    website: '',
+    website: 'https://davidwellsthedeveloper.com/',
     linkedin: 'https://www.linkedin.com/in/davidwellsdeveloper/',
     github: 'https://github.com/DavidWellsTheDeveloper',
     summary:
-      'Senior Software Engineer with 9 years of experience owning and scaling data-driven applications and analytics platforms. Specialized in high-performance data-driven systems, large-scale data processing, and application architecture. Increased team velocity and accuracy while serving as Scrum Master. Proven track record of improving system speed, building clean frontend layouts, designing normalized and efficient relational architecture, and planning full-stack systems. Known for driving platform-wide design pattern improvements and optimizing at scale.',
+      'Software Engineer with 9 years of experience owning and scaling data-driven web applications and analytics platforms. Specialized in high-performance data-driven systems, large-scale data processing, and application architecture. Experienced with VB.NET, Entity Framework, T-SQL, SQL Server, Python, and PHP. Increased team velocity and accuracy while serving as Scrum Master. Known for improving system speed, driving platform-wide design pattern improvements, optimizing at scale, and working effectively both independently and as part of a development team.',
     careerHighlights: [
-      'Nine years delivering data-driven applications, analytics platforms, and full-stack architecture',
+      'Nine years delivering data-driven web applications, analytics platforms, and full-stack architecture',
+      'Built a Django event-registration platform for a Northern Colorado nonprofit, from discovery to launch',
       'Scrum Master for a seven-person engineering team—raised velocity 50% through clearer requirements and realistic scoping',
       'Architected an event-driven AI orchestration platform (Go, Python, Redis Streams, WebSockets, DynamoDB/PostgreSQL on AWS)',
-      'Built an agentic development platform integrating LLMs, MCP integrations, and agent skills via the Cursor SDK',
-      'Led a platform-wide frontend redesign with Vue.js, Sass, Pinia, and Material Design',
+      'Developed, tested, and published web services with OpenAPI and AsyncAPI contracts across Python microservices',
+      'Led a platform-wide frontend redesign with Vue.js, SCSS, Pinia, and Material Design',
       'Shipped analytics dashboards processing 1M+ data points; normalized schemas and queries yielding 3-5x faster loads',
-      'Processed billion-record datasets with Python; automated pipelines improving slow queries up to 100x',
-      'Built custom CSU web applications for environmental and public health workflows, APIs, and dashboards',
+      'Built custom CSU web applications in VB.NET with Entity Framework, backed by SQL Server and T-SQL',
+      'Trained end-users and provided direct technical and application support to department administrators',
     ],
   }
 
@@ -82,23 +94,31 @@ export const useResumeData = () => {
       endDate: null,
       location: 'Northern Colorado (Fort Collins area)',
       description:
-        'Solo freelance web developer designing, building, launching, and maintaining custom, high-performance websites for small and medium businesses.',
+        'Solo freelance web developer designing, building, launching, and maintaining custom, high-performance websites and applications for small and medium businesses and nonprofits.',
       achievements: [
-        'Designed and shipped a fast, secure custom site for a solo accounting practice, with a client-editable CMS and near-zero ongoing costs (Andrews Accounting LLC)',
+        'Designed and built a custom Django platform for a Northern Colorado nonprofit, replacing a failing Wix site with account-based event registration, atomic spot reservation to prevent overbooking, versioned waiver capture, volunteer-friendly admin tools with CSV roster export, and Stripe Checkout donations',
         'Migrated a specialty food retailer off a restrictive platform to a custom headless-commerce storefront, eliminating platform fees and improving organic traffic (Pantry To Store)',
-        'Delivered sub-second mobile page loads with low-cost static hosting, spam-protected contact forms, and reversible content changes',
-        'Own the full lifecycle—discovery, design, build, launch, and ongoing care—as the single point of contact',
+        'Designed and shipped a custom site for a solo accounting practice, powered by a custom headless CMS with client-editable content and near-zero ongoing costs (Andrews Accounting LLC)',
+        'Implemented authentication and authorization (sessions, JWT, OAuth) and secrets management, designing data handling around COPPA and Colorado Privacy Act obligations for minors\u2019 data',
+        'Deployed and operated client applications on Google Cloud Platform and low-cost static hosting, using GitHub Actions CI/CD for repeatable releases',
+        'Delivered sub-second mobile page loads with spam-protected contact forms and reversible content changes',
+        'Own the full lifecycle—discovery, design, build, launch, and ongoing care—as the single point of contact, using AI-assisted development for scoped tasks while reviewing and holding approval gates on all core code',
       ],
       technologies: [
-        'Nuxt',
+        'Django',
+        'Python',
+        'Stripe',
         'Vue.js',
         'TypeScript',
         'Tailwind CSS',
         'Headless CMS',
         'Static Site Generation',
         'SEO',
-        'Netlify',
+        'OAuth',
+        'Google Cloud Platform',
         'AWS',
+        'GitHub Actions',
+        'Netlify',
       ],
       type: 'work',
       verified: true,
@@ -115,10 +135,10 @@ export const useResumeData = () => {
       achievements: [
         'Architected a multi-service, event-driven AI orchestration platform (Go API, Python workers, Redis Streams, WebSockets, DynamoDB/PostgreSQL on AWS) built around a three-gate workflow with human approval checkpoints and claim-check messaging, turning ambiguous requests into scoped, production-ready web applications and cutting planning from ~4 days to ~1 day',
         'Served as Scrum Master for a seven-person engineering team, partnering with product stakeholders to clarify requirements and scope work realistically; improved requirements clarity and AI workflow, raising velocity 50%',
-        'Designed an extensible, event-driven agentic development platform integrating LLMs, MCP integrations, and agent skills with the Cursor SDK; defined service contracts across Python microservices using OpenAPI and AsyncAPI',
+        'Designed an extensible, event-driven agentic development platform integrating LLMs, MCP integrations, and agent skills with the Cursor SDK; developed, tested, and published web services, defining contracts across Python microservices using OpenAPI and AsyncAPI',
         'Recognized as team expert in database design; designed normalized relational schemas and executed optimizations, improving load times 3-5x while enforcing data integrity',
-        'Built interactive analytics dashboards processing 1M+ data points using an object-oriented, ports-and-adapters architecture in PHP and Vue.js',
-        'Led a platform-wide frontend redesign using Vue.js, Sass, Pinia, and Material Design, overhauling frontend architecture and UX',
+        'Built interactive analytics dashboards processing 1M+ data points using an object-oriented, ports-and-adapters architecture in PHP and Vue.js, serving JSON RESTful APIs',
+        'Led a platform-wide frontend redesign using Vue.js, SCSS, Pinia, and Material Design, overhauling frontend architecture and UX',
         'Maintained CI/CD pipelines with GitHub Actions to automate testing, linting, builds, and deployments to AWS, enabling low-risk, fast releases across multiple instances',
       ],
       technologies: [
@@ -138,11 +158,12 @@ export const useResumeData = () => {
         'Cursor SDK',
         'AWS',
         'GitHub Actions',
-        'Sass',
+        'SCSS',
         'Pinia',
         'Material Design',
         'JavaScript',
         'TypeScript',
+        'JSON',
       ],
       type: 'work',
       verified: true,
@@ -155,15 +176,14 @@ export const useResumeData = () => {
       endDate: '2021-03-01',
       location: 'Fort Collins, CO',
       description:
-        'Processed and modeled large datasets to improve predictive accuracy and analytical insights for research teams.',
+        'Built and maintained data engineering pipelines and analytics platforms for large-scale academic research, emphasizing data integrity, query performance, and automation.',
       achievements: [
-        'Promoted from Software Developer Intern to Data Science Developer, contributing to advanced analytics and predictive modeling',
-        'Integrated external datasets (census, weather, violent crime) into statistical models to improve predictive accuracy and depth of analysis',
+        'Promoted from Software Developer Intern to Data Science Developer',
+        'Specialized in data engineering on a small team—rock-solid data integrity and performant dashboards built on extensive aggregations and time-series data',
+        'Conducted exploratory research to evaluate dataset reliability, correlation, and completeness, integrating large external datasets (census, weather, GIS, violent crime) into statistical models',
         'Used Python’s analytics stack to process and analyze datasets exceeding one billion records',
         'Automated data ingestion and update pipelines, reducing downtime to near zero and improving slow query performance by up to 100×',
-        'Developed time-series and big-data models supporting research in travel risk, lead exposure, and public trust',
-        'Conducted exploratory research on dataset reliability, correlation, and completeness including GIS, UK demographic, and violent crime data',
-        'Performed data visualization with GIS tools, D3, and Python visualization libraries for spatial analysis and reporting',
+        'Performed data visualization with GIS tools, D3, and Python visualization libraries for spatial analysis and visual reporting',
         'Integrated with third-party client microservices using the Azure ecosystem',
       ],
       technologies: [
@@ -189,26 +209,67 @@ export const useResumeData = () => {
       endDate: '2019-05-01',
       location: 'Fort Collins, CO',
       description:
-        'Built custom web tools for public health and environmental risk management used by multiple university departments.',
+        'Developed custom web applications in VB.NET with Entity Framework for public health and environmental risk management, used by multiple university departments.',
       achievements: [
-        'Created web applications for Environmental Health, Public Health, and Risk Management supporting administrative data workflows',
-        'Planned and implemented APIs, databases, and interactive dashboards for 10–15 department administrators',
+        'Developed custom web applications in VB.NET with Entity Framework supporting internal administrative data workflows for Environmental Health, Public Health, and Risk Management departments',
+        'Planned and implemented APIs, SQL Server databases, interactive dashboards, and operational reports using XML and JSON data interchange, backed by databases queried with T-SQL',
         'Led development of data-driven applications for drone tracking, public health logging, ergonomics assessments, and international travel risk management',
-        'Translated non-technical stakeholder requirements into scalable technical solutions',
+        'Provided direct technical and application support to 10–15 department administrators: trained end-users, resolved application issues, and translated non-technical requirements into scalable solutions',
         'Collaborated using pair programming and Agile practices for an efficient, flexible team',
         'Applied SOLID principles and object-oriented design patterns for extensible, maintainable systems',
       ],
       technologies: [
-        'JavaScript',
-        'SQL',
+        'VB.NET',
+        '.NET Framework',
+        'Entity Framework',
+        'SQL Server',
+        'T-SQL',
+        'XML',
+        'JSON',
         'REST APIs',
-        'Relational databases',
         'SOLID',
         'OOD',
         'Agile',
         'Pair programming',
       ],
       type: 'work',
+      verified: true,
+    },
+  ]
+
+  // Selected projects — verified authentic data; headless CMS and Pantry To Store are separate projects
+  const projects: Project[] = [
+    {
+      id: 'nonprofit-event-platform',
+      name: 'Nonprofit Event Platform',
+      period: 'Recent',
+      summary:
+        'Custom Django platform replacing a failing Wix site for a Northern Colorado nonprofit—account-based event registration, atomic spot reservation to prevent overbooking, versioned waiver capture, volunteer-friendly admin tools with CSV roster export, and Stripe Checkout donations.',
+      stack: ['Django', 'Python', 'Stripe', 'Google Cloud Platform', 'GitHub Actions'],
+      link: 'https://focowebsites.com',
+      type: 'project',
+      verified: true,
+    },
+    {
+      id: 'pantry-to-store',
+      name: 'Pantry To Store',
+      period: 'Recent',
+      summary:
+        'Food waste reduction platform for a specialty food retailer—migrated off a restrictive platform to a custom headless-commerce storefront, eliminating platform fees and improving organic traffic.',
+      stack: ['Vue.js', 'Headless Commerce', 'Static Site Generation', 'SEO'],
+      link: 'https://pantrytostore.com',
+      type: 'project',
+      verified: true,
+    },
+    {
+      id: 'andrews-accounting',
+      name: 'Andrews Accounting',
+      period: 'Recent',
+      summary:
+        'Designed and shipped a custom site for a solo accounting practice, powered by a custom headless CMS with client-editable content and near-zero ongoing hosting costs.',
+      stack: ['Headless CMS', 'Static Site Generation', 'SEO', 'Netlify'],
+      link: 'https://andrewsaccountingllc.com',
+      type: 'project',
       verified: true,
     },
   ]
@@ -294,24 +355,10 @@ export const useResumeData = () => {
     },
 
     {
-      name: 'PHP',
-      category: 'Backend',
-      proficiency: 'Expert',
-      yearsExperience: 5,
-      verified: true,
-    },
-    {
       name: 'Python',
       category: 'Backend',
       proficiency: 'Advanced',
       yearsExperience: 5,
-      verified: true,
-    },
-    {
-      name: 'Java',
-      category: 'Backend',
-      proficiency: 'Intermediate',
-      yearsExperience: 3,
       verified: true,
     },
     {
@@ -329,7 +376,14 @@ export const useResumeData = () => {
       verified: true,
     },
     {
-      name: 'Laravel',
+      name: 'VB.NET',
+      category: 'Backend',
+      proficiency: 'Intermediate',
+      yearsExperience: 2,
+      verified: true,
+    },
+    {
+      name: 'Entity Framework',
       category: 'Backend',
       proficiency: 'Intermediate',
       yearsExperience: 2,
@@ -342,12 +396,26 @@ export const useResumeData = () => {
       yearsExperience: 9,
       verified: true,
     },
+    {
+      name: 'XML / JSON',
+      category: 'Backend',
+      proficiency: 'Advanced',
+      yearsExperience: 9,
+      verified: true,
+    },
 
     {
       name: 'SQL',
       category: 'Database',
       proficiency: 'Expert',
       yearsExperience: 9,
+      verified: true,
+    },
+    {
+      name: 'T-SQL',
+      category: 'Database',
+      proficiency: 'Advanced',
+      yearsExperience: 2,
       verified: true,
     },
     {
@@ -551,7 +619,7 @@ export const useResumeData = () => {
       verified: true,
     },
     {
-      name: 'AWS services (S3, EC2, IAM, Route 53, Lightsail)',
+      name: 'AWS services (S3, EC2, IAM)',
       category: 'Cloud',
       proficiency: 'Advanced',
       yearsExperience: 4,
@@ -623,20 +691,22 @@ export const useResumeData = () => {
 
   // Constitutional Requirement I: Authentic Representation - Personal info
   const personal = {
-    bio: 'Background in sociology and computer science—focused on data platforms, analytics, and shipping software that teams can rely on at scale.',
+    bio: 'Background in sociology and computer science—focused on building reliable full-stack applications, data platforms, and software that users are confident running.',
     philosophy:
       'The best systems pair solid relational design and performance discipline with clear communication. I care about measurable outcomes, maintainable code, and how teams work together to deliver.',
     careerPassions: [
+      'Full-stack application development from design through deployment',
       'Data platforms, analytics, and performance at scale',
+      'Database design—normalized schemas, T-SQL, and query optimization',
+      'Training end-users and providing direct technical support',
       'Scrum Master practice and healthy agile ceremonies',
-      'Normalized data models, APIs, and full-stack delivery',
       'AI-assisted and agentic development with rigorous review and testing',
-      'Accessible, well-structured frontends',
       'Freelance web development for small and medium businesses (FoCo Websites)',
     ],
     funFacts: [
       'Engineering Scrum Master for a seven-person team while staying hands-on in code',
       'Architected an event-driven AI orchestration platform and an agentic development workflow',
+      'Built custom VB.NET and Entity Framework applications for university departments at CSU',
       'Improved query and load performance from multi-fold gains up to ~100x on large pipelines',
       'Dual degree path: sociology (Fort Lewis) and computer science (CSU)',
     ],
@@ -644,7 +714,7 @@ export const useResumeData = () => {
   }
 
   const contactMessage =
-    'Open to discussing roles in data platforms, analytics engineering, and full-stack delivery—especially where leadership and hands-on architecture both matter. Also available for freelance web projects through FoCo Websites.'
+    'Open to discussing roles in application development, data platforms, and full-stack delivery—especially where leadership and hands-on architecture both matter. Also available for freelance web projects through FoCo Websites.'
 
   // Helper function for AboutSection
   const getKeyHighlights = () => [
@@ -666,7 +736,12 @@ export const useResumeData = () => {
     {
       title: 'Modern full-stack craft',
       description:
-        'Vue, Nuxt, PHP, Go, SQL, REST, Sass, Pinia, Tailwind, Material Design, CI/CD, and AI-assisted development with strong review habits',
+        'Vue, Nuxt, Django, Go, SQL, REST, SCSS, Pinia, Tailwind, Material Design, CI/CD, and AI-assisted development with strong review habits',
+    },
+    {
+      title: 'Support & training',
+      description:
+        'Provided direct technical and application support to department administrators—trained end-users, resolved issues, and translated non-technical requirements',
     },
     {
       title: 'Freelance web development',
@@ -709,6 +784,7 @@ export const useResumeData = () => {
   return {
     profile,
     workExperience,
+    projects,
     technicalSkills,
     education,
     personal,

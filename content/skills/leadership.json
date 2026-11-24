@@ -61,5 +61,12 @@
     "proficiency": "advanced",
     "yearsExperience": 2,
     "verified": true
+  },
+  {
+    "name": "Technical support & end-user training",
+    "category": "leadership",
+    "proficiency": "advanced",
+    "yearsExperience": 2,
+    "verified": true
   }
 ]

@@ -6,23 +6,31 @@
     "startDate": "2026-01-01",
     "endDate": null,
     "location": "Northern Colorado (Fort Collins area)",
-    "description": "Solo freelance web developer designing, building, launching, and maintaining custom, high-performance websites for small and medium businesses.",
+    "description": "Solo freelance web developer designing, building, launching, and maintaining custom, high-performance websites and applications for small and medium businesses and nonprofits.",
     "achievements": [
-      "Designed and shipped a fast, secure custom site for a solo accounting practice, with a client-editable CMS and near-zero ongoing costs (Andrews Accounting LLC)",
+      "Designed and built a custom Django platform for a Northern Colorado nonprofit, replacing a failing Wix site with account-based event registration, atomic spot reservation to prevent overbooking, versioned waiver capture, volunteer-friendly admin tools with CSV roster export, and Stripe Checkout donations",
       "Migrated a specialty food retailer off a restrictive platform to a custom headless-commerce storefront, eliminating platform fees and improving organic traffic (Pantry To Store)",
-      "Delivered sub-second mobile page loads with low-cost static hosting, spam-protected contact forms, and reversible content changes",
-      "Own the full lifecycle—discovery, design, build, launch, and ongoing care—as the single point of contact"
+      "Designed and shipped a custom site for a solo accounting practice, powered by a custom headless CMS with client-editable content and near-zero ongoing costs (Andrews Accounting LLC)",
+      "Implemented authentication and authorization (sessions, JWT, OAuth) and secrets management, designing data handling around COPPA and Colorado Privacy Act obligations for minors' data",
+      "Deployed and operated client applications on Google Cloud Platform and low-cost static hosting, using GitHub Actions CI/CD for repeatable releases",
+      "Delivered sub-second mobile page loads with spam-protected contact forms and reversible content changes",
+      "Own the full lifecycle—discovery, design, build, launch, and ongoing care—as the single point of contact, using AI-assisted development for scoped tasks while reviewing and holding approval gates on all core code"
     ],
     "technologies": [
-      "Nuxt",
+      "Django",
+      "Python",
+      "Stripe",
       "Vue.js",
       "TypeScript",
       "Tailwind CSS",
       "Headless CMS",
       "Static Site Generation",
       "SEO",
-      "Netlify",
-      "AWS"
+      "OAuth",
+      "Google Cloud Platform",
+      "AWS",
+      "GitHub Actions",
+      "Netlify"
     ],
     "type": "work",
     "verified": true
@@ -38,10 +46,10 @@
     "achievements": [
       "Architected a multi-service, event-driven AI orchestration platform (Go API, Python workers, Redis Streams, WebSockets, DynamoDB/PostgreSQL on AWS) built around a three-gate workflow with human approval checkpoints and claim-check messaging, cutting planning from ~4 days to ~1 day",
       "Served as Scrum Master for a seven-person engineering team, partnering with product stakeholders to clarify requirements and scope work realistically; raised velocity 50%",
-      "Designed an extensible, event-driven agentic development platform integrating LLMs, MCP integrations, and agent skills with the Cursor SDK; defined service contracts across Python microservices using OpenAPI and AsyncAPI",
+      "Designed an extensible, event-driven agentic development platform integrating LLMs, MCP integrations, and agent skills with the Cursor SDK; developed, tested, and published web services, defining contracts across Python microservices using OpenAPI and AsyncAPI",
       "Recognized as team expert in database design; designed normalized relational schemas and executed optimizations, improving load times 3-5x while enforcing data integrity",
-      "Built interactive analytics dashboards processing 1M+ data points using an object-oriented, ports-and-adapters architecture in PHP and Vue.js",
-      "Led a platform-wide frontend redesign using Vue.js, Sass, Pinia, and Material Design, overhauling frontend architecture and UX",
+      "Built interactive analytics dashboards processing 1M+ data points using an object-oriented, ports-and-adapters architecture in PHP and Vue.js, serving JSON RESTful APIs",
+      "Led a platform-wide frontend redesign using Vue.js, SCSS, Pinia, and Material Design, overhauling frontend architecture and UX",
       "Maintained CI/CD pipelines with GitHub Actions to automate testing, linting, builds, and deployments to AWS, enabling low-risk, fast releases across multiple instances"
     ],
     "technologies": [
@@ -61,11 +69,12 @@
       "Cursor SDK",
       "AWS",
       "GitHub Actions",
-      "Sass",
+      "SCSS",
       "Pinia",
       "Material Design",
       "JavaScript",
-      "TypeScript"
+      "TypeScript",
+      "JSON"
     ],
     "type": "work",
     "verified": true
@@ -77,15 +86,14 @@
     "startDate": "2019-05-01",
     "endDate": "2021-03-01",
     "location": "Fort Collins, CO",
-    "description": "Processed and modeled large datasets to improve predictive accuracy and analytical insights for research teams.",
+    "description": "Built and maintained data engineering pipelines and analytics platforms for large-scale academic research, emphasizing data integrity, query performance, and automation.",
     "achievements": [
       "Promoted from Software Developer Intern to Data Science Developer",
-      "Integrated external datasets (census, weather, violent crime) into statistical models",
+      "Specialized in data engineering on a small team—rock-solid data integrity and performant dashboards built on extensive aggregations and time-series data",
+      "Conducted exploratory research to evaluate dataset reliability, correlation, and completeness, integrating large external datasets (census, weather, GIS, violent crime) into statistical models",
       "Used Python's analytics stack to process datasets exceeding one billion records",
       "Automated data ingestion and update pipelines; improved slow queries by up to 100x",
-      "Developed time-series and big-data models supporting research in travel risk, lead exposure, and public trust",
-      "Exploratory research on GIS, UK demographic, and violent crime data quality and correlation",
-      "Data visualization with GIS tools, D3, and Python visualization libraries",
+      "Data visualization with GIS tools, D3, and Python visualization libraries, supporting spatial analysis and visual reporting",
       "Integrated with third-party client microservices using the Azure ecosystem"
     ],
     "technologies": [
@@ -110,20 +118,24 @@
     "startDate": "2017-05-01",
     "endDate": "2019-05-01",
     "location": "Fort Collins, CO",
-    "description": "Built custom web tools for public health and environmental risk management used by multiple university departments.",
+    "description": "Developed custom web applications in VB.NET with Entity Framework for public health and environmental risk management, used by multiple university departments.",
     "achievements": [
-      "Created web applications for Environmental Health, Public Health, and Risk Management workflows",
-      "Planned and implemented APIs, databases, and interactive dashboards for 10-15 department administrators",
-      "Led data-driven applications for drone tracking, public health logging, ergonomics assessments, and international travel risk",
-      "Translated stakeholder requirements into scalable technical solutions",
+      "Developed custom web applications in VB.NET with Entity Framework supporting internal administrative data workflows for Environmental Health, Public Health, and Risk Management departments",
+      "Planned and implemented APIs, SQL Server databases, interactive dashboards, and operational reports using XML and JSON data interchange, backed by databases queried with T-SQL",
+      "Led development of data-driven applications for drone tracking, public health logging, ergonomics assessments, and international travel risk management",
+      "Provided direct technical and application support to 10-15 department administrators: trained end-users, resolved application issues, and translated non-technical requirements into scalable solutions",
       "Collaborated using pair programming and Agile practices",
       "Applied SOLID principles and object-oriented design patterns"
     ],
     "technologies": [
-      "JavaScript",
-      "SQL",
+      "VB.NET",
+      ".NET Framework",
+      "Entity Framework",
+      "SQL Server",
+      "T-SQL",
+      "XML",
+      "JSON",
       "REST APIs",
-      "Relational databases",
       "SOLID",
       "OOD",
       "Agile",
