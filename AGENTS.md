@@ -72,10 +72,13 @@ npm run lint                     # ESLint (must be clean)
 npm run build                    # production build (.output/)
 npm run generate                 # static site generation → .output/public
 npm run preview                  # serve the built site locally
+npm run verify                   # ALL CI gates: test + lint + format + build
+                                 # (run before every push — CI enforces these)
 ```
 
 Root-level (from repo root): `make dev`, `make test`, `make build`,
-`make deploy-preview` (generate + preview), `make deploy-github`.
+`make verify` (full CI gate check), `make deploy-preview` (generate + preview),
+`make deploy-github`.
 
 ## Testing Conventions
 

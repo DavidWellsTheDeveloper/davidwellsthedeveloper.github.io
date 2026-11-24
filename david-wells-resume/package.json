@@ -22,9 +22,10 @@
     "type-check": "nuxt typecheck",
     "quality": "npm run lint && npm run format:check && npm run test:run",
     "deploy:aws": "bash deploy/aws-s3.sh",
+    "verify": "npm run test:run && npm run lint && npm run format:check && npm run build",
     "deploy:preview": "npm run generate && npm run preview",
     "setup:domain": "../setup-free-https.sh",
-    "constitutional:check": "npm run test:run && npm run lint && echo '✅ Constitutional compliance verified'"
+    "constitutional:check": "npm run test:run && npm run lint && echo '\u2705 Constitutional compliance verified'"
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.6.5",

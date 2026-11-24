@@ -8,7 +8,7 @@
 #   make deploy       - Deploy to production
 #   make constitutional - Verify constitutional compliance
 
-.PHONY: help install dev build test lint format constitutional deploy clean
+.PHONY: help install dev build test lint format constitutional verify deploy clean
 
 # Default target
 .DEFAULT_GOAL := help
@@ -83,6 +83,10 @@ constitutional: test lint ## Verify constitutional compliance
 	@echo "$(GREEN)🎯 Constitutional compliance verified$(NC)"
 
 quality: constitutional ## Run all quality checks (alias for constitutional)
+
+verify: ## Run all CI quality gates locally (test, lint, format, build)
+	@echo "$(YELLOW)Running full verification suite...$(NC)"
+	cd david-wells-resume && npm run verify
 
 deploy-preview: build ## Preview deployment locally
 	@echo "$(YELLOW)Starting preview server...$(NC)"
