@@ -7,12 +7,12 @@ Digital resume and portfolio site for David T. Wells (davidwellsthedeveloper.com
 ```
 ├── AGENTS.md                      # This file
 ├── Makefile                       # Root-level command shortcuts (make dev, test, deploy)
-├── content/                       # Content-of-record (JSON mirrors — see warning below)
-│   ├── profile.json               # Name, title, email, summary
+├── content/                       # Single source of record for site data (JSON)
+│   ├── profile.json               # Name, title, contact info, summary, careerHighlights
 │   ├── personal.json              # Bio, passions, interests
-│   ├── homepage-highlights.json   # Hero highlights, key achievements, recent work
+│   ├── homepage-highlights.json   # Planning/marketing doc (not read at runtime)
 │   ├── experience/work.json       # Work history (job entries with achievements/technologies)
-│   ├── skills/{technical,leadership,tools}.json
+│   ├── skills/skills.json         # Flat skills list; `category` drives SkillsMatrix grouping
 │   ├── education.json
 │   ├── projects.json              # Selected projects
 │   └── ai-development-practices.json
@@ -30,17 +30,27 @@ Digital resume and portfolio site for David T. Wells (davidwellsthedeveloper.com
 └── specs/, supportingDocs/        # Planning documents
 ```
 
-## ⚠️ Critical: Data Source Duplication
+## Data Flow (single source of record)
 
-The site **does not read `content/*.json` at runtime**. All rendered data is
-hardcoded in `david-wells-resume/composables/useResumeData.ts`. The JSON files
-are content-of-record mirrors that must be kept in sync manually.
+All rendered data comes from `content/*.json`. The composable
+`david-wells-resume/composables/useResumeData.ts` imports those files at build
+time and exposes them with typed interfaces plus derived helpers
+(`getKeyHighlights`, `getSkillCategories`, `getExperienceDuration`,
+`contactMessage` — those live in the composable, not the JSON).
 
-**When updating content, always update BOTH:**
-1. `content/*.json` (source of record)
-2. `david-wells-resume/composables/useResumeData.ts` (what actually renders)
+**To change site content: edit `content/*.json` only.** No composable edits
+needed unless you're adding new fields or helpers.
 
-(A refactor to read the JSONs directly is planned as a separate iteration.)
+- `content/profile.json` — name, title, contact info, summary, careerHighlights
+- `content/experience/work.json` — work history entries
+- `content/projects.json` — selected projects
+- `content/skills/skills.json` — flat skills list (categories control the
+  SkillsMatrix grouping and section order: Frontend → Backend → Database →
+  Data Science → Leadership → Tools → Cloud → Modern Development)
+- `content/education.json` — degrees, coursework, achievements
+- `content/personal.json` — bio, philosophy, passions, interests
+- `content/homepage-highlights.json` — planning/marketing doc, **not** read at
+  runtime (hero/achievements copy lives in the composable helpers)
 
 ## Constitutional Principles (project rules, enforced by tests)
 

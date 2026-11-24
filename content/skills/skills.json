@@ -1,0 +1,380 @@
+[
+  {
+    "name": "Vue.js",
+    "category": "Frontend",
+    "proficiency": "Expert",
+    "yearsExperience": 6,
+    "verified": true
+  },
+  {
+    "name": "Nuxt",
+    "category": "Frontend",
+    "proficiency": "Advanced",
+    "yearsExperience": 2,
+    "verified": true
+  },
+  {
+    "name": "React",
+    "category": "Frontend",
+    "proficiency": "Intermediate",
+    "yearsExperience": 2,
+    "verified": true
+  },
+  {
+    "name": "Pinia",
+    "category": "Frontend",
+    "proficiency": "Advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "JavaScript",
+    "category": "Frontend",
+    "proficiency": "Expert",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "TypeScript",
+    "category": "Frontend",
+    "proficiency": "Intermediate",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "HTML5",
+    "category": "Frontend",
+    "proficiency": "Expert",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "CSS3",
+    "category": "Frontend",
+    "proficiency": "Expert",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "Sass",
+    "category": "Frontend",
+    "proficiency": "Advanced",
+    "yearsExperience": 5,
+    "verified": true
+  },
+  {
+    "name": "Material Design",
+    "category": "Frontend",
+    "proficiency": "Advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "Tailwind CSS",
+    "category": "Frontend",
+    "proficiency": "Advanced",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "Python",
+    "category": "Backend",
+    "proficiency": "Advanced",
+    "yearsExperience": 5,
+    "verified": true
+  },
+  {
+    "name": "Go",
+    "category": "Backend",
+    "proficiency": "Advanced",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "Django",
+    "category": "Backend",
+    "proficiency": "Intermediate",
+    "yearsExperience": 2,
+    "verified": true
+  },
+  {
+    "name": "VB.NET",
+    "category": "Backend",
+    "proficiency": "Intermediate",
+    "yearsExperience": 2,
+    "verified": true
+  },
+  {
+    "name": "Entity Framework",
+    "category": "Backend",
+    "proficiency": "Intermediate",
+    "yearsExperience": 2,
+    "verified": true
+  },
+  {
+    "name": "REST APIs",
+    "category": "Backend",
+    "proficiency": "Expert",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "XML / JSON",
+    "category": "Backend",
+    "proficiency": "Advanced",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "SQL",
+    "category": "Database",
+    "proficiency": "Expert",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "T-SQL",
+    "category": "Database",
+    "proficiency": "Advanced",
+    "yearsExperience": 2,
+    "verified": true
+  },
+  {
+    "name": "MySQL",
+    "category": "Database",
+    "proficiency": "Advanced",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "SQL Server",
+    "category": "Database",
+    "proficiency": "Intermediate",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "Relational modeling & normalization",
+    "category": "Database",
+    "proficiency": "Expert",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "ORMs",
+    "category": "Database",
+    "proficiency": "Advanced",
+    "yearsExperience": 6,
+    "verified": true
+  },
+  {
+    "name": "PostgreSQL",
+    "category": "Database",
+    "proficiency": "Advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "Redis",
+    "category": "Database",
+    "proficiency": "Advanced",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "DynamoDB",
+    "category": "Database",
+    "proficiency": "Intermediate",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "Data analytics",
+    "category": "Data Science",
+    "proficiency": "Advanced",
+    "yearsExperience": 6,
+    "verified": true
+  },
+  {
+    "name": "Data visualization",
+    "category": "Data Science",
+    "proficiency": "Advanced",
+    "yearsExperience": 6,
+    "verified": true
+  },
+  {
+    "name": "Statistical modeling",
+    "category": "Data Science",
+    "proficiency": "Advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "Large-scale / big data processing",
+    "category": "Data Science",
+    "proficiency": "Advanced",
+    "yearsExperience": 5,
+    "verified": true
+  },
+  {
+    "name": "GIS & spatial analysis",
+    "category": "Data Science",
+    "proficiency": "Intermediate",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "Scrum Master",
+    "category": "Leadership",
+    "proficiency": "Advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "Agile & Scrum",
+    "category": "Leadership",
+    "proficiency": "Expert",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "Behavior-driven development",
+    "category": "Leadership",
+    "proficiency": "Advanced",
+    "yearsExperience": 5,
+    "verified": true
+  },
+  {
+    "name": "Pair programming",
+    "category": "Leadership",
+    "proficiency": "Advanced",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "Object-oriented design",
+    "category": "Leadership",
+    "proficiency": "Expert",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "Design patterns",
+    "category": "Leadership",
+    "proficiency": "Advanced",
+    "yearsExperience": 6,
+    "verified": true
+  },
+  {
+    "name": "Git",
+    "category": "Tools",
+    "proficiency": "Advanced",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "GitHub",
+    "category": "Tools",
+    "proficiency": "Advanced",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "GitLab",
+    "category": "Tools",
+    "proficiency": "Intermediate",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "Docker",
+    "category": "Tools",
+    "proficiency": "Intermediate",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "Nginx",
+    "category": "Tools",
+    "proficiency": "Intermediate",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "YAML / JSON",
+    "category": "Tools",
+    "proficiency": "Advanced",
+    "yearsExperience": 9,
+    "verified": true
+  },
+  {
+    "name": "GitHub Actions (CI/CD)",
+    "category": "Tools",
+    "proficiency": "Advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "WebSockets",
+    "category": "Tools",
+    "proficiency": "Advanced",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "AWS",
+    "category": "Cloud",
+    "proficiency": "Advanced",
+    "yearsExperience": 5,
+    "verified": true
+  },
+  {
+    "name": "GCP",
+    "category": "Cloud",
+    "proficiency": "Intermediate",
+    "yearsExperience": 2,
+    "verified": true
+  },
+  {
+    "name": "AWS services (S3, EC2, IAM)",
+    "category": "Cloud",
+    "proficiency": "Advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "OAuth integration",
+    "category": "Cloud",
+    "proficiency": "Advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "Cloud cost optimization",
+    "category": "Cloud",
+    "proficiency": "Advanced",
+    "yearsExperience": 3,
+    "verified": true
+  },
+  {
+    "name": "AI-assisted development",
+    "category": "Modern Development",
+    "proficiency": "Advanced",
+    "yearsExperience": 4,
+    "verified": true
+  },
+  {
+    "name": "LLM & MCP integrations",
+    "category": "Modern Development",
+    "proficiency": "Advanced",
+    "yearsExperience": 2,
+    "verified": true
+  },
+  {
+    "name": "Agentic development workflows",
+    "category": "Modern Development",
+    "proficiency": "Advanced",
+    "yearsExperience": 2,
+    "verified": true
+  }
+]

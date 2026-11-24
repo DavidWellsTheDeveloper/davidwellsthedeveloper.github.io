@@ -8,5 +8,17 @@
   "github": "https://github.com/DavidWellsTheDeveloper",
   "photo": "/images/profile-photo.jpg",
   "summary": "Software Engineer with 9 years of experience owning and scaling data-driven web applications and analytics platforms. Specialized in high-performance data-driven systems, large-scale data processing, and application architecture. Experienced with VB.NET, Entity Framework, T-SQL, SQL Server, Python, and PHP. Increased team velocity and accuracy while serving as Scrum Master. Known for improving system speed, driving platform-wide design pattern improvements, optimizing at scale, and working effectively both independently and as part of a development team.",
-  "tagline": "Reliable full-stack applications, data platforms, and performance at scale"
+  "tagline": "Reliable full-stack applications, data platforms, and performance at scale",
+  "phone": "(970) 691-3143",
+  "careerHighlights": [
+    "Nine years delivering data-driven web applications, analytics platforms, and full-stack architecture",
+    "Built a Django event-registration platform for a Northern Colorado nonprofit, from discovery to launch",
+    "Scrum Master for a seven-person engineering team—raised velocity 50% through clearer requirements and realistic scoping",
+    "Architected an event-driven AI orchestration platform (Go, Python, Redis Streams, WebSockets, DynamoDB/PostgreSQL on AWS)",
+    "Developed, tested, and published web services with OpenAPI and AsyncAPI contracts across Python microservices",
+    "Led a platform-wide frontend redesign with Vue.js, SCSS, Pinia, and Material Design",
+    "Shipped analytics dashboards processing 1M+ data points; normalized schemas and queries yielding 3-5x faster loads",
+    "Built custom CSU web applications in VB.NET with Entity Framework, backed by SQL Server and T-SQL",
+    "Trained end-users and provided direct technical and application support to department administrators"
+  ]
 }
