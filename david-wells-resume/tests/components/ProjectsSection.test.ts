@@ -43,10 +43,15 @@ describe('ProjectsSection Component', () => {
   it('treats the headless CMS and Pantry To Store as separate projects', () => {
     const pantryCard = wrapper
       .findAll('[data-testid="project-card"]')
-      .find(c => c.find('[data-testid="project-name"]').text() === 'Pantry To Store')
+      .find(
+        c => c.find('[data-testid="project-name"]').text() === 'Pantry To Store'
+      )
     const andrewsCard = wrapper
       .findAll('[data-testid="project-card"]')
-      .find(c => c.find('[data-testid="project-name"]').text() === 'Andrews Accounting')
+      .find(
+        c =>
+          c.find('[data-testid="project-name"]').text() === 'Andrews Accounting'
+      )
     expect(pantryCard).toBeDefined()
     expect(andrewsCard).toBeDefined()
     // Pantry To Store must not reference the headless CMS
@@ -79,9 +84,7 @@ describe('ProjectsSection Component', () => {
     const djangoCard = cards.find(c =>
       c.find('[data-testid="project-name"]').text().includes('Nonprofit')
     )
-    const chips = djangoCard!
-      .find('[data-testid="project-stack"]')
-      .text()
+    const chips = djangoCard!.find('[data-testid="project-stack"]').text()
     expect(chips).toContain('Django')
     expect(chips).toContain('Stripe')
   })

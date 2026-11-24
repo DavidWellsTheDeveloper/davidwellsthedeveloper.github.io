@@ -67,12 +67,6 @@ interface Education {
 }
 
 export const useResumeData = () => {
-
-
-
-
-
-
   const contactMessage =
     'Open to discussing roles in application development, data platforms, and full-stack delivery—especially where leadership and hands-on architecture both matter. Also available for freelance web projects through FoCo Websites.'
 
