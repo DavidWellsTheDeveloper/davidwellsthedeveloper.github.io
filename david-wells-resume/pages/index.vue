@@ -32,16 +32,16 @@ const siteUrl = (
   runtimeConfig.public.appUrl || 'https://davidwellsthedeveloper.com'
 ).replace(/\/$/, '')
 
-const pageTitle = 'David T. Wells — Senior Software Engineer'
+const pageTitle = 'David T. Wells — Software Engineer'
 const pageDescription =
-  'Senior software engineer with 9 years of experience building and scaling data platforms, analytics, and full-stack systems. View the resume, experience, and freelance web development work of David T. Wells.'
+  'Software Engineer with 9 years of experience building and scaling data platforms, analytics, and full-stack systems. View the resume, experience, and freelance web development work of David T. Wells.'
 const shareImage = `${siteUrl}/og-image.png`
 
 // Page configuration
 definePageMeta({
-  title: 'David T. Wells — Senior Software Engineer',
+  title: 'David T. Wells — Software Engineer',
   description:
-    'Senior software engineer with 9 years of experience building and scaling data platforms, analytics, and full-stack systems.',
+    'Software Engineer with 9 years of experience building and scaling data platforms, analytics, and full-stack systems.',
 })
 
 // Constitutional compliance monitoring
@@ -56,7 +56,7 @@ useSeoMeta({
   robots:
     'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
   ogType: 'website',
-  ogSiteName: 'David T. Wells — Senior Software Engineer',
+  ogSiteName: 'David T. Wells — Software Engineer',
   ogTitle: pageTitle,
   ogDescription: pageDescription,
   ogUrl: `${siteUrl}/`,
@@ -64,7 +64,7 @@ useSeoMeta({
   ogImage: shareImage,
   ogImageWidth: 1200,
   ogImageHeight: 630,
-  ogImageAlt: 'David T. Wells — Senior Software Engineer',
+  ogImageAlt: 'David T. Wells — Software Engineer',
 })
 
 useHead({
@@ -76,7 +76,7 @@ useHead({
         '@context': 'https://schema.org',
         '@type': 'Person',
         name: 'David T. Wells',
-        jobTitle: 'Senior Software Engineer',
+        jobTitle: 'Software Engineer',
         description: pageDescription,
         url: `${siteUrl}/`,
         image: shareImage,

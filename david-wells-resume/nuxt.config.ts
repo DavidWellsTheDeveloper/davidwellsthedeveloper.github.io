@@ -2,9 +2,9 @@
 const siteUrl = (
   process.env.NUXT_PUBLIC_APP_URL || 'https://davidwellsthedeveloper.com'
 ).replace(/\/$/, '')
-const siteName = 'David T. Wells — Senior Software Engineer'
+const siteName = 'David T. Wells — Software Engineer'
 const siteDescription =
-  'Senior software engineer with 9 years of experience building and scaling data platforms, analytics, and full-stack systems.'
+  'Software Engineer with 9 years of experience building and scaling data platforms, analytics, and full-stack systems.'
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-10-05',

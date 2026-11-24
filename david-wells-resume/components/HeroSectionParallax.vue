@@ -93,7 +93,7 @@
         >
           {{
             profile?.summary ||
-            'Senior Software Engineer focused on data platforms, analytics, and full-stack systems—with experience as a Scrum Master and a track record of performance and clean architecture.'
+            'Software Engineer focused on data platforms, analytics, and full-stack systems—with experience as a Scrum Master and a track record of performance and clean architecture.'
           }}
         </p>
 

@@ -74,7 +74,7 @@ def main():
     draw.line([(WIDTH / 2 - 40, 150), (WIDTH / 2 + 40, 150)], fill=ACCENT_2, width=5)
 
     centered(draw, "David T. Wells", font(BOLD, 92), 180, INK)
-    centered(draw, "Senior Software Engineer", font(REGULAR, 46), 310, ACCENT)
+    centered(draw, "Software Engineer", font(REGULAR, 46), 310, ACCENT)
     centered(
         draw,
         "Data Platforms  ·  Analytics  ·  Full-Stack  ·  AI Orchestration",
